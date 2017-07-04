@@ -1,0 +1,39 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #222845;
+  transition: all 0.5s ease; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none;
+  display: inline; }
+
+a {
+  text-transform: uppercase;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none;
+    outline: none; }
+
+i {
+  margin-right: 6px;
+  font-size: 15px; }
+
+.paddingZero {
+  padding: 0; }
+
+.clearfix {
+  clear: both; }
+
+/*# sourceMappingURL=reset.css.map */

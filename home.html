@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i|Merriweather+Sans:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<div id="home">
+		<!-- Home TopHeader -->
+		<div class="header">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-2 language">
+						<ul>
+							<li><a href="#">english</a></li>
+							<li><a href="#">spanish</a></li>
+						</ul>
+					</div>
+					<div class="col-md-7 info">
+						<div class="address">
+							<span class="fa fa-map-marker" aria-hidden="true"></span>
+							<span>2925 SWICK HILL STREET, CHARLOTTE, NC 28202</span>
+						</div>
+						<div class="phone">
+							<span class="fa fa-phone" aria-hidden="true"></span>
+							<span>+1 984-700-7129</span>
+						</div>
+						<div class="worktime">
+							<span class="fa fa-clock-o" aria-hidden="true"></span>
+							<span>MON - FRI: 7:00AM - 6:00PM</span>
+						</div>
+					</div>
+					<div class="col-md-3 user">
+						<ul>
+							<li class="user-login"><a href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+							<li><a href="contact.html">contact</a></li>
+							<li><a href="#" class="searchIcon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog pull-right" role="document">
+					    <div class="login modal-content">
+					    	<h3>login to your account</h3>
+							<form>
+								<ul class="signin">
+									<li>
+										<input type="text" value="Your Username" onfocus="this.value=''" onblur="this.value='Your Username'">
+									</li>
+									<li>
+										<input type="password" value="password" onfocus="this.value=''" onblur="this.value='password'">
+									</li>
+									<li>
+										<a href="#">forgot password?</a>
+									</li>
+									<li>
+										<button class="btn">sign in</button>
+									</li>
+								</ul>
+							</form>
+							<h3>or try our socials</h3>
+							<ul class="social">
+								<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+								</li>
+								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
+								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+							</ul>
+							<p>Not a member yet?<a href="#">sign-up now</a></p>
+					    </div>
+				  	</div>
+				</div>
+				<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog pull-right" role="document">
+					    <div class="search modal-content">
+					    	<h3>search your keyword</h3>
+					    	<ul>
+					    		<li><input type="search" value="Keywords..." onblur="this.value='Keywords...'" onfocus="this.value=''"></li>
+					    		<li><button class="btn">search</button></li>
+					    	</ul>
+					    </div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<!-- Home TopHeader -->
+		<div class="clearfix"></div>
+		<!-- Home Navbar -->
+		<div class="navBar">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-3 logo">
+						<a href="home.html">
+							<img src="img/home/logo.png" alt="NavLogo">
+						</a>
+					</div>
+					<div class="col-md-9 menu">
+						<ul class="menuList">
+							<li class="home"><a href="home.html">home</a></li>
+							<li class="course">
+								<a href="courses.html">courses</a>
+								<ul class="menuDropdown courseDropdown">
+									<li><a href="course-grid.html">Courses Grid</a></li>
+									<li><a href="course-list.html">Courses List</a></li>
+									<li><a href="course-detail.html">Courses Detail</a></li>
+								</ul>
+							</li>
+							<li class="event">
+								<a href="events.html">event</a>
+								<ul class="menuDropdown eventDropdown">
+									<li><a href="events.html">Event Grid</a></li>
+									<li><a href="events.html">Event List</a></li>
+								</ul>
+							</li>
+							<li class="dashboard">
+								<a href="dashboard.html">dashboard</a>
+								<ul class="menuDropdown dashboardDropdown">
+									<li><a href="my-profile.html">My Profile</a></li>
+									<li><a href="my-courses.html">My Courses</a></li>
+									<li><a href="favorites.html">Favorites</a></li>
+									<li><a href="statement.html">Statement</a></li>
+									<li><a href="settings.html">Settings</a></li>
+								</ul>
+							</li>
+							<li class="pages">
+								<a href="pages.html">pages</a>
+								<ul class="menuDropdown pagesDropdown">
+									<li><a href="error.html">404 page</a></li>
+									<li><a href="about.html">about us</a></li>
+									<li><a href="blog-grid.html">blog grid</a></li>
+									<li><a href="blog-list.html">blog list</a></li>
+									<li><a href="blog-detail.html">blog detail</a></li>
+									<li><a href="faq.html">faq page</a></li>
+								</ul>
+							</li>
+							<li class="shop">
+								<a href="shop.html">shop</a>
+								<ul class="menuDropdown shopDropdown">
+									<li><a href="shop-grid.html">Shop Grid</a></li>
+									<li><a href="shop-list.html">Shop List</a></li>
+									<li><a href="shop-detail.html">Shop Detail</a></li>
+								</ul>
+							</li>
+							<li class="contact"><a href="contact.html">contact  us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Home Navbar -->
+		<div class="clearfix"></div>
+		<!-- Home Main Slider -->
+		<div class="main-slider">
+			<div class="main-container">
+				<div class="slider-leftSide">
+					<div class="list-leftSide">
+						<div class="leftSide-container">
+							<div class="leftSide-slide"><img src="img/banner1.jpg" alt=""></div>
+							<div class="leftSide-slide"><img src="img/banner2.jpg" alt=""></div>
+							<div class="leftSide-slide"><img src="img/banner3.jpg" alt=""></div>
+							<div class="leftSide-slide"><img src="img/banner1.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-rightSide">
+					<div class="list-rightSide">
+						<div class="rightSide-container">
+							<div class="rightSide-slide odd">
+								<h1>International Programmes</h1>
+								<p>The study programmes of the Enroll Campus University are open to people from all nationalities.</p>
+								<a href="">learn more</a>
+							</div>
+							<div class="rightSide-slide even">
+								<h1>International Programmes</h1>
+								<p>The study programmes of the Enroll Campus University are open to people from all nationalities.</p>
+								<a href="">learn more</a>
+							</div>
+							<div class="rightSide-slide odd">
+								<h1>International Programmes</h1>
+								<p>The study programmes of the Enroll Campus University are open to people from all nationalities.</p>
+								<a href="">learn more</a>
+							</div>
+							<div class="rightSide-slide even">
+								<h1>International Programmes</h1>
+								<p>The study programmes of the Enroll Campus University are open to people from all nationalities.</p>
+								<a href="">learn more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Home Main Slider -->
+		<!-- Main Content -->
+		<div class="find-your-course">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-4 fyc-left">
+						<h3>find your course</h3>
+						<p>Fill in te form below to find your course:</p>
+						<form>
+							<ul>
+								<li>
+									<div class="checkboxes">
+									  <input type="checkbox" id="id"></input>
+									  <label for="id"></label>
+									  <p>by ID</p>
+									  <input type="checkbox" id="name"></input>
+									  <label for="name"></label>
+									  <p>by name</p>
+									</div>
+								</li>
+								<li>
+									<input type="text" value="Course Name" onfocus="this.value=''" onblur="this.value='Course Name'">
+									<i class="fa fa-search"></i>
+								</li>
+								<li>
+									<select class="form-control" id="sel1">
+									    <option>Category</option>
+									    <option>Category</option>
+									    <option>Category</option>
+									    <option>Category</option>
+									</select>
+								</li>
+								<li>
+									<button>search course</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+					<div class="col-md-8 fyc-right">
+						<ul>
+							<li>
+								<div>
+									<i class="fa fa-briefcase" aria-hidden="true"></i>
+									<h6><a href="#">business</a></h6>
+								</div>
+							</li>
+							<li>
+								<div>
+									<i class="fa fa-calculator" aria-hidden="true"></i>
+									<h6><a href="#">economics</a></h6>
+								</div>
+							</li>
+							<li>
+								<div>
+									<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+									<h6><a href="#">math</a></h6>
+								</div>
+							</li>
+							<li>
+								<div>
+									<i class="fa fa-flask" aria-hidden="true"></i>
+									<h6><a href="#">science</a></h6>
+								</div>
+							</li>
+							<li>
+								<div>
+									<i class="fa fa-laptop" aria-hidden="true"></i>
+									<h6><a href="#">computing</a></h6>
+								</div>
+							</li>
+							<li>
+								<div>
+									<i  class="fa fa-pencil" aria-hidden="true"></i>
+									<h6><a href="#">web design</a></h6>
+								</div>
+							</li>
+							<li>
+								<div>
+									<i class="fa fa-code" aria-hidden="true"></i>
+									<h6><a href="#">development</a></h6>
+								</div>
+							</li>
+							<li>
+								<div>
+									<i class="fa fa-th" aria-hidden="true"></i>
+									<h6><a href="#">biology</a></h6>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="popular-courses">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="pc-title">
+							<h2>Popular<span>Courses</span></h2>
+						</div>
+						<div class="pc-courses">
+							<ul class="row">
+								<li class="col-md-3">
+									<div class="course-wrap">
+										<figure>
+											<a href="#">
+												<img src="img/home/2.jpg" alt="">
+												<span><small>see course</small></span>
+											</a>
+											<figcaption>
+												<img src="img/home/2-2.jpg" alt="">
+												<h6><a href="#">Shelly T. Forrester</a></h6>
+											</figcaption>
+										</figure>
+										<div class="courses-text">
+											<h6><a href="#">Advanced Architectural Research</a></h6>
+											<div class="courses-price"><span>$32</span></div>
+											<ul>
+												<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+												<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-3">
+									<div class="course-wrap">
+										<figure>
+											<a href="#">
+												<img src="img/home/3.jpg" alt="">
+												<span><small>see course</small></span>
+											</a>
+											<figcaption>
+												<img src="img/home/3-3.jpg" alt="">
+												<h6><a href="#">Sam K. Harrington</a></h6>
+											</figcaption>
+										</figure>
+										<div class="courses-text">
+											<h6><a href="#">Advanced Landscape & Urbanism</a></h6>
+											<div class="courses-price"><span>$41</span></div>
+											<ul>
+												<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>438</a></li>
+												<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>8</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-3">
+									<div class="course-wrap">
+										<figure>
+											<a href="#">
+												<img src="img/home/4.jpg" alt="">
+												<span><small>see course</small></span>
+											</a>
+											<figcaption>
+												<img src="img/home/4-4.jpg" alt="">
+												<h6><a href="#">Sara A. Shirley</a></h6>
+											</figcaption>
+										</figure>
+										<div class="courses-text">
+											<h6><a href="#">Transdisciplinary <br> Design</a></h6>
+											<div class="courses-price"><span>$79</span></div>
+											<ul>
+												<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>309</a></li>
+												<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>9</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-3">
+									<div class="course-wrap">
+										<figure>
+											<a href="#">
+												<img src="img/home/5.jpg" alt="">
+												<span><small>see course</small></span>
+											</a>
+											<figcaption>
+												<img src="img/home/5-5.jpg" alt="">
+												<h6><a href="#">Julius M. Lepage</a></h6>
+											</figcaption>
+										</figure>
+										<div class="courses-text">
+											<h6><a href="#">Financial Information Systems</a></h6>
+											<div class="courses-price"><span>$50</span></div>
+											<ul>
+												<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>298</a></li>
+												<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>11</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="why-choose-us">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="wcu-title">
+							<h2>Why<span>Choose Us</span></h2>
+						</div>
+						<div class="wcu-list">
+							<ul class="row">
+								<li class="col-md-4">
+									<span>209</span>
+									<h6>of our trainees have got a prestigious job</h6>
+								</li>
+								<li class="col-md-4">
+									<span>91%</span>
+									<h6>students have established successful business</h6>
+								</li>
+								<li class="col-md-4">
+									<span>35%</span>
+									<h6>have already earned their first million</h6>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="wcu-questions">
+							<img src="img/home/6.png" alt="">
+							<h4>Questions about studying with us?</h4>
+							<p>We have a team of student advisers & officers to answer any questions:</p>
+							<a href="#">ask us now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="u-can-learn">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="ucl-title">
+						<h2>You Can<span>Learn</span></h2>
+					</div>
+					<div class="ucl-list">
+						<ul class="row">
+							<li class="col-md-6">
+								<figure>
+									<a href="#">
+										<img src="img/home/7.png" alt="">
+									</a>
+									<figcaption class="hover">
+										<h2 class="fig-title">Research</h2>
+										<a href="#" class="fig-btn">read more</a>
+									</figcaption>
+								</figure>
+								<div class="layer"></div>
+							</li>
+							<li class="col-md-6">
+								<figure>
+									<a href="#">
+										<img src="img/home/8.png" alt="">
+									</a>
+									<figcaption class="hover">
+										<h2 class="fig-title">Academics</h2>
+										<a href="#" class="fig-btn">read more</a>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-6">
+								<figure>
+									<a href="#">
+										<img src="img/home/9.png" alt="">
+									</a>
+									<figcaption class="hover">
+										<h2 class="fig-title">Admissions</h2>
+										<a href="#" class="fig-btn">read more</a>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-6">
+								<figure>
+									<a href="#">
+										<img src="img/home/10.png" alt="">
+									</a>
+									<figcaption class="hover">
+										<h2 class="fig-title">Student Life</h2>
+										<a href="#" class="fig-btn">read more</a>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="our-latest-events">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="ole-title">
+							<h2>Our Latest Events</h2>
+						</div>
+						<div class="ole-list">
+							<ul class="row">
+								<li class="col-md-4">
+									<div class="ole-slider">
+										<span class="fa fa-chevron-left arrow left" aria-hidden="true"></span>
+										<div class="ole-slider-content #ole-slider">
+											<div class="ole-slider-list">
+												<div class="ole-slides">
+													<h6>Enjoy the best experience for you with the choice of our campus - a truly international university campus in Barcelona.</h6>
+                                            		<a href="#" class="">about us</a>
+												</div>
+												<div class="ole-slides">
+													<h6>Enjoy the best experience for you with the choice of our campus - a truly international university campus in Barcelona.</h6>
+                                            		<a href="#" class="">about us</a>
+												</div>
+												<div class="ole-slides">
+													<h6>Enjoy the best experience for you with the choice of our campus - a truly international university campus in Barcelona.</h6>
+                                            		<a href="#" class="">about us</a>
+												</div>
+												<div class="ole-slides">
+													<h6>Enjoy the best experience for you with the choice of our campus - a truly international university campus in Barcelona.</h6>
+                                            		<a href="#" class="">about us</a>
+												</div>
+											</div>
+										</div>
+										<span class="fa fa-chevron-right arrow right" aria-hidden="true"></span>
+									</div>
+								</li>
+								<li class="col-md-4">
+									<figure>
+										<a href="#"><img src="img/home/11.png" alt=""></a>
+									</figure>
+									<div class="ole-event-text">
+										<h6><a href="">Out of This World: The Family Fun Day</a></h6>
+										<time datetime="">30/06/2017</time>
+										<p>Join us for outer-space themed games, prizes, science & talks about careers in the UK.</p>
+										<a href="">check event</a>
+									</div>
+								</li>
+								<li class="col-md-4">
+									<figure>
+										<a href="#"><img src="img/home/12.png" alt=""></a>
+									</figure>
+									<div class="ole-event-text">
+										<h6><a href="">Shakespeare at Balliol in those five acts</a></h6>
+										<time datetime="">30/07/2016</time>
+										<p>A.C. Bradley and J.C. Maxwell get down to serious criticism; another Balliol writer launches the.</p>
+										<a href="">check event</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="ole-counter">
+							<ul class="row">
+								<li class="col-md-12">
+									<span class="num-count">5</span>
+									<h6>th best University in Europe (Youth Inc. 2015 ranking)</h6>
+								</li>
+								<li class="col-md-12">
+									<span class="num-count">68</span>
+									<h6>% International students especially from Asia, Africa & Europe</h6>
+								</li>
+								<li class="col-md-12">
+									<span class="num-count">91</span>
+									<h6>Student Nationalities</h6>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="what-clients-say">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="wcs-title">
+							<h2>What <span>Clients Say</span></h2>
+							<p>Don't take our word for it, see what our awesome clients say.</p>
+						</div>
+						<div class="wcs-slider">
+							<span class="fa fa-chevron-left arrow left" aria-hidden="true"></span>
+							<div class="wcs-slider-content">
+								<div class="wcs-slider-list">
+									<div class="wcs-slides">
+										<p>I chose them because it gave me flexibility. I was working full-time at the same time I was studying, so the OU gave me that flexibility. Also my Dad, I’m Danish of origin.</p>
+										<figure>
+											<a href="#">
+												<img src="img/home/13.png" alt="">
+											</a>
+											<figcaption>
+												<h5><a href="#">Priya E. Abraham</a></h5>
+												<span>Paris, France</span>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="wcs-slides">
+										<p>I chose them because it gave me flexibility. I was working full-time at the same time I was studying, so the OU gave me that flexibility. Also my Dad, I’m Danish of origin.</p>
+										<figure>
+											<a href="#">
+												<img src="img/home/14.png" alt="">
+											</a>
+											<figcaption>
+												<h5><a href="#">Priya E. Abraham</a></h5>
+												<span>Paris, France</span>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="wcs-slides">
+										<p>I chose them because it gave me flexibility. I was working full-time at the same time I was studying, so the OU gave me that flexibility. Also my Dad, I’m Danish of origin.</p>
+										<figure>
+											<a href="#">
+												<img src="img/home/13.png" alt="">
+											</a>
+											<figcaption>
+												<h5><a href="#">Priya E. Abraham</a></h5>
+												<span>Paris, France</span>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="wcs-slides">
+										<p>I chose them because it gave me flexibility. I was working full-time at the same time I was studying, so the OU gave me that flexibility. Also my Dad, I’m Danish of origin.</p>
+										<figure>
+											<a href="#">
+												<img src="img/home/14.png" alt="">
+											</a>
+											<figcaption>
+												<h5><a href="#">Priya E. Abraham</a></h5>
+												<span>Paris, France</span>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="wcs-slides">
+										<p>I chose them because it gave me flexibility. I was working full-time at the same time I was studying, so the OU gave me that flexibility. Also my Dad, I’m Danish of origin.</p>
+										<figure>
+											<a href="#">
+												<img src="img/home/14.png" alt="">
+											</a>
+											<figcaption>
+												<h5><a href="#">Priya E. Abraham</a></h5>
+												<span>Paris, France</span>
+											</figcaption>
+										</figure>
+									</div>
+									<div class="wcs-slides">
+										<p>I chose them because it gave me flexibility. I was working full-time at the same time I was studying, so the OU gave me that flexibility. Also my Dad, I’m Danish of origin.</p>
+										<figure>
+											<a href="#">
+												<img src="img/home/13.png" alt="">
+											</a>
+											<figcaption>
+												<h5><a href="#">Priya E. Abraham</a></h5>
+												<span>Paris, France</span>
+											</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+							<span class="fa fa-chevron-right arrow right" aria-hidden="true"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="our-history">
+			<div class="oh-layer"></div>
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="oh-list">
+							<h2>Our History</h2>
+							<ul>
+								<li>
+									<time>2016</time>
+									<span>Released the Arctic Collection the Perennial Collection of handknotted luxury area rugs.</span>
+								</li>
+								<li>
+									<time>2015</time>
+									<span>Installed our first custom floorcovering for a museum at the Aga Khan Museum in Toronto</span>
+								</li>
+								<li>
+									<time>2014</time>
+									<span>Designed our first wallcovering for all these healthcare sector at the Toronto Centre.</span>
+								</li>
+								<li>
+									<time>2013</time>
+									<span>Celebrated 25 years in business with “The Art Day Project” – a partnership.</span>
+								</li>
+								<li>
+									<time>2016</time>
+									<span>Released the Arctic Collection the Perennial Collection of handknotted luxury area rugs.</span>
+								</li>
+								<li>
+									<time>2015</time>
+									<span>Installed our first custom floorcovering for a museum at the Aga Khan Museum in Toronto</span>
+								</li>
+								<li>
+									<time>2014</time>
+									<span>Designed our first wallcovering for all these healthcare sector at the Toronto Centre.</span>
+								</li>
+								<li>
+									<time>2013</time>
+									<span>Celebrated 25 years in business with “The Art Day Project” – a partnership.</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="oh-subscribe">
+							<h2>Still not convinced? <span>We can help you!</span></h2>
+							<p>Fill out the form below and we will contact you.</p>
+							<form action="">
+								<input type="text" value="Name:" onblur="this.value='Name:'" onfocus="this.value=''">
+								<input type="email" value="E-mail:" onblur="this.value='E-mail:'" onfocus="this.value=''">
+								<input type="submit" value="Get Advice">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="blog-news">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="bn-title">
+							<h2>Blog<span>News</span></h2>
+							<p>We bring you all the useful information of the University's Community</p>
+						</div>
+						<div class="bn-list">
+							<div class="col-md-4">
+								<div class="bn-wrap">
+									<figure>
+										<a href="#">
+											<img src="img/home/16.png" alt="">
+										</a>
+										<figcaption>
+											<img src="img/home/2-2.jpg" alt="">
+											<h6>Posted by: <a href="#">Shelly T. Forrester</a></h6>
+										</figcaption>
+									</figure>
+									<div class="bn-text">
+										<ul>
+											<li><time datetime="">7/4/2016</time></li>
+											<li><i class="fa fa-comments-o" aria-hidden="true"></i><a href="#">12 comments</a></li>
+											<li><i class="fa fa-folder-open" aria-hidden="true"></i><a href="#">admission</a></li>
+										</ul>
+										<h5>Seven UK business schools make the Top 10</h5>
+										<p>The largest-ever QS Distance Online MBA Rankings have been released by higher and business education analysts QS.</p>
+										<a href="">read article</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="bn-wrap">
+									<figure>
+										<a href="#">
+											<img src="img/home/17.png" alt="">
+										</a>
+										<figcaption>
+											<img src="img/home/3-3.jpg" alt="">
+											<h6>Posted by: <a href="#">Shelly T. Forrester</a></h6>
+										</figcaption>
+									</figure>
+									<div class="bn-text">
+										<ul>
+											<li><time datetime="">4/4/2016</time></li>
+											<li><i class="fa fa-comments-o" aria-hidden="true"></i><a href="#">21 comments</a></li>
+											<li><i class="fa fa-folder-open" aria-hidden="true"></i><a href="#">business</a></li>
+										</ul>
+										<h5>The University Business School centre of excellence</h5>
+										<p>The University has announced the launch of its first free online course as part. These individuals or groups can more effectively.</p>
+										<a href="">read article</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="bn-wrap">
+									<figure>
+										<a href="#">
+											<img src="img/home/18.png" alt="">
+										</a>
+										<figcaption>
+											<img src="img/home/4-4.jpg" alt="">
+											<h6>Posted by: <a href="#">Shelly T. Forrester</a></h6>
+										</figcaption>
+									</figure>
+									<div class="bn-text">
+										<ul>
+											<li><time datetime="">5/4/2016</time></li>
+											<li><i class="fa fa-comments-o" aria-hidden="true"></i><a href="#">15 comments</a></li>
+											<li><i class="fa fa-folder-open" aria-hidden="true"></i><a href="#">students</a></li>
+										</ul>
+										<h5>Our research could slash energy bills in Milton</h5>
+										<p>The University is developing the UK’s first community based website that will allow people in Milton Keynes.</p>
+										<a href="">read article</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="partners">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="part-title">
+							<h2>University<span>Partners</span></h2>
+						</div>
+						<div class="part-slider">
+							<span class="fa fa-chevron-left arrow left" aria-hidden="true"></span>
+							<div class="up-slider-content">
+								<div class="up-slider-list">
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-1.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-2.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-3.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-4.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-5.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-6.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-1.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-2.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-3.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-4.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-5.png" alt=""></a>
+									</div>
+									<div class="up-part-uni">
+										<a href=""><img src="img/home/uni-6.png" alt=""></a>
+									</div>
+								</div>
+							</div>
+							<span class="fa fa-chevron-right arrow right" aria-hidden="true"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact-us">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="cu-title">
+							<li class="xe active"><a href="#cu-home" aria-controls="cu-home" data-toggle="cu-panel" aria-expanded="true">Contact Us</a></li>
+							<li class="ex"><a href="#cu-profile" aria-controls="cu-profile" data-toggle="cu-panel" aria-expanded="false">Information Details</a></li>
+						</ul>
+						<div class="cu-content">
+							<div class="cu-panel active" id="cu-home">
+								<div class="row">
+									<div class="col-md-4">
+										<div id="cu-map">
+											
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="cu-form">
+											<h2>Talk To Us Today</h2>
+											<form>
+												<ul>
+													<li>
+														<i class="fa fa-user i-name" aria-hidden="true"></i><input type="text" value="Name" onblur="this.value='Name'" onfocus="this.value=''">
+													</li>
+													<li>
+														<i class="fa fa-envelope i-mail" aria-hidden="true"></i><input type="email" value="E-mail" onblur="this.value='E-mail'" onfocus="this.value=''">
+													</li>
+													<li>
+														<i class="fa fa-phone i-phone" aria-hidden="true"></i><input type="text" value="Phone" onblur="this.value='Phone'" onfocus="this.value=''">
+													</li>
+													<li>
+														<i class="fa fa-comment i-msg" aria-hidden="true"></i><textarea placeholder="Message" onblur="this.value='Message'" onfocus="this.value=''"></textarea>
+													</li>
+													<li>
+														<input class="submit" type="submit" value="Send Message">
+													</li>
+												</ul>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cu-panel" id="cu-profile">
+								<h2>Contact Info</h2>
+								<div class="cu-service">
+									<ul class="row">
+										<li class="col-md-4">
+											<span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+											<h5>Address</h5>
+											<p>195 Cooks Mine Road Espanola, NM 87532</p>
+										</li>
+										<li class="col-md-4">
+											<span><i class="fa fa-phone" aria-hidden="true"></i></span>
+											<h5>Phone & Fax</h5>
+											<p>+1 505-753-5656</p>
+											<p>+1 505-753-4437</p>
+										</li>
+										<li class="col-md-4">
+											<span><i class="fa fa-envelope-open-o" aria-hidden="true"></i></span>
+											<h5>E-mail</h5>
+											<p><a href="#">info@university.com</a><a href="#">support@university.com</a></p>
+										</li>
+									</ul>
+								</div>
+								<ul class="cu-social">
+									<li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+									<li><a href="#"><i class="fa fa-twitter-square"></i>Twitter</a></li>
+									<li><a href="#"><i class="fa fa-linkedin-square"></i>Linkedin</a></li>
+									<li><a href="#"><i class="fa fa-vimeo-square"></i>Vimeo</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main Content -->
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-newsletter">
+				<div class="container paddingZero">
+					<div class="row">
+						<div class="col-md-12">
+							<form action="">
+								<i class="fa  fa-envelope"></i>
+								<input type="text" value="Enter your e-mail address" onblur="this.value ='Enter your e-mail address'" onfocus="this.value=''">
+								<input type="submit" value="SUBSCRIBE TO OUR NEWSLETTER">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-content">
+				<div class="container paddingZero">
+					<div class="row">
+						<div class="col-md-3">
+							<a href="home.html" class="footer-logo"><img src="img/home/logo.png" alt=""></a>
+							<ul>
+								<li>
+									<i class="fa fa-map-marker"></i>
+									<p>195 Cooks Mine Road Espanola, NM 87532</p>
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>
+									<p>+1 505-753-5656 <br> +1 505-753-4437</p>
+								</li>
+								<li>
+									<i class="fa fa-envelope-open-o"></i>
+									<p>info@university.com <br> support@university.com</p>
+								</li>
+							</ul>
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook-square"></i></a>
+								<a href="#"><i class="fa fa-twitter-square"></i></a>
+								<a href="#"><i class="fa fa-linkedin-square"></i></a>
+								<a href="#"><i class="fa fa-vimeo-square"></i></a>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<h5>Quick Links</h5>
+							<ul>
+								<li><a href="events.html">Our Latest Events</a></li>
+								<li><a href="courses.html">Our Courses</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="error.html">404 Page</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="home.html">All Instructors</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h5><i class="fa fa-twitter"></i> @enrollcampus</h5>
+							<ul>
+								<li>
+									<p>Check Youniverse - Multipurpose PSD Template @ThemeForest: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+									<time>4 hrs ago</time>
+								</li>
+								<li>
+									<p>Check out my New PSD:  FashionPlus - Fashion eCommerce: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+									<time>4 hrs ago</time>
+								</li>
+								<li>
+									<p>MedicAid - Medical Template @ThemeForest: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+									<time>4 hrs ago</time>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-slider">
+							<h5>Our Instructors</h5>
+							<ul>
+								<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="0"></a></li>
+								<li><a><img src="img/home/3-3.jpg" alt="" class="gallery-img" value="1"></a></li>
+								<li><a><img src="img/home/4-4.jpg" alt="" class="gallery-img" value="2"></a></li>
+								<li><a><img src="img/home/5-5.jpg" alt="" class="gallery-img" value="3"></a></li>
+								<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="4"></a></li>
+								<li><a><img src="img/home/3-3.jpg" alt="" class="gallery-img" value="5"></a></li>
+								<li><a><img src="img/home/4-4.jpg" alt="" class="gallery-img" value="6"></a></li>
+								<li><a><img src="img/home/5-5.jpg" alt="" class="gallery-img" value="7"></a></li>
+								<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="8"></a></li>
+							</ul>
+						</div>
+						<div class="modal">
+							<img src="" class="modal-img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container paddingZero">
+					<div class="row">
+						<div class="col-md-6">
+							<span><i class="fa fa-snowflake-o" aria-hidden="true"></i> Barcelona, Spain 2°F / -17°C</span>
+						</div>
+						<div class="col-md-6">
+							<p>© 2016, All Right Reserved - by <a href="home.html">LiM10</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer -->
+	</div>
+</body>
+</html>
+<script src="js/jquery-3.2.0.js" charset="utf-8"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js" rel="stylesheet"></script>
+<script src="bootstrap/js/bootstrap.js" rel="stylesheet"></script>
+<script>
+	function myMap() {
+		var mapProp = {
+			center:new google.maps.LatLng(40.4,49.8),
+    		zoom:10,
+		};
+		var map=new google.maps.Map(document.getElementById('cu-map'),mapProp);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLtMoItqcxASQnlSiQyD_Lb1TqsDqdmkA&callback=myMap"></script>
+<script src="js/main.js" rel="stylesheet"></script>
+<script src="js/home.js" rel="stylesheet"></script>

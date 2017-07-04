@@ -1,0 +1,1087 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #222845;
+  transition: all 0.5s ease; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none;
+  display: inline; }
+
+a {
+  text-transform: uppercase;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none;
+    outline: none; }
+
+i {
+  margin-right: 6px;
+  font-size: 15px; }
+
+.paddingZero {
+  padding: 0; }
+
+.clearfix {
+  clear: both; }
+
+footer .footer-newsletter {
+  background-color: #222845;
+  padding: 17px 0; }
+  footer .footer-newsletter form i {
+    float: left;
+    font-size: 25px;
+    color: #ffffff;
+    margin: 7px 21px 0px 0px; }
+    footer .footer-newsletter form i:hover {
+      color: #8a8fa7;
+      transition: .3s; }
+  footer .footer-newsletter form input[type="text"] {
+    font-family: "Merriweather Sans", sans-serif;
+    width: 200px;
+    float: left;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9em;
+    color: #8a8fa7;
+    padding: 0px;
+    margin-top: 6px;
+    height: 30px;
+    line-height: 20px;
+    outline: none; }
+  footer .footer-newsletter form input[type="submit"] {
+    font-family: "Merriweather Sans", sans-serif;
+    float: right;
+    background-color: transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 8px 26px 11px 26px;
+    -webkit-appearance: button;
+    cursor: pointer; }
+    footer .footer-newsletter form input[type="submit"]:hover {
+      color: #8a8fa7;
+      border-color: #8a8fa7;
+      transition: .3s; }
+footer .footer-content .col-md-3 .footer-logo {
+  float: left;
+  width: 100%;
+  margin-bottom: 32px; }
+  footer .footer-content .col-md-3 .footer-logo img {
+    height: auto;
+    max-width: 75%; }
+footer .footer-content .col-md-3 ul {
+  float: left;
+  width: 100%; }
+  footer .footer-content .col-md-3 ul li {
+    float: left;
+    width: 100%;
+    list-style: none;
+    position: relative;
+    line-height: 1.5;
+    color: #424242;
+    font-size: 15px;
+    margin-bottom: 13px; }
+    footer .footer-content .col-md-3 ul li i {
+      float: left;
+      font-size: 17px;
+      margin-top: 4px; }
+    footer .footer-content .col-md-3 ul li p {
+      margin-left: 25px;
+      margin-bottom: 0; }
+footer .footer-content .col-md-3 .footer-social {
+  padding: 19px 0px 0px 0px;
+  border-top: 2px solid #eeeeee;
+  text-align: center;
+  margin-top: 25px; }
+  footer .footer-content .col-md-3 .footer-social a {
+    display: inline-block;
+    color: #222845;
+    margin: 0px 0px 7px 7px;
+    font-size: 1.2em; }
+    footer .footer-content .col-md-3 .footer-social a:hover {
+      color: #b99663;
+      transition: .3s; }
+    footer .footer-content .col-md-3 .footer-social a:first-child {
+      margin-left: 0; }
+    footer .footer-content .col-md-3 .footer-social a:last-child {
+      margin-right: 0; }
+footer .footer-content .col-md-2 h5 {
+  font-family: "Merriweather Sans", sans-serif;
+  margin-bottom: 22px;
+  font-weight: 500; }
+footer .footer-content .col-md-2 ul {
+  float: left;
+  width: 100%; }
+  footer .footer-content .col-md-2 ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 15px; }
+    footer .footer-content .col-md-2 ul li:before {
+      content: '';
+      background-color: #e5e5e5;
+      width: 19px;
+      height: 2px;
+      float: left;
+      margin: 10px 15px 0px 0px; }
+    footer .footer-content .col-md-2 ul li a {
+      font-size: 16px;
+      text-transform: none;
+      color: #424242; }
+footer .footer-content .col-md-4 h5 {
+  font-family: "Merriweather Sans", sans-serif;
+  margin-bottom: 22px;
+  font-weight: 500; }
+  footer .footer-content .col-md-4 h5 i {
+    float: left;
+    font-size: 1.2em; }
+footer .footer-content .col-md-4 ul {
+  float: left;
+  width: 100%; }
+  footer .footer-content .col-md-4 ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 24px; }
+    footer .footer-content .col-md-4 ul li p {
+      margin-bottom: 5px; }
+      footer .footer-content .col-md-4 ul li p a {
+        text-transform: none;
+        color: #b99663; }
+    footer .footer-content .col-md-4 ul li time {
+      font-style: italic; }
+footer .footer-content .footer-slider h5 {
+  font-family: "Merriweather Sans", sans-serif;
+  margin-bottom: 22px;
+  font-weight: 500; }
+footer .footer-content .footer-slider ul {
+  width: 100%;
+  float: left; }
+  footer .footer-content .footer-slider ul li {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px 10px 0;
+    margin-bottom: 0; }
+    footer .footer-content .footer-slider ul li a {
+      width: 100%;
+      position: relative;
+      float: left; }
+      footer .footer-content .footer-slider ul li a:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 100%;
+        background-color: #b99663;
+        opacity: .8; }
+      footer .footer-content .footer-slider ul li a:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 0%;
+        height: 100%;
+        background-color: #b99663;
+        opacity: .8; }
+      footer .footer-content .footer-slider ul li a img {
+        cursor: pointer; }
+footer .footer-content .modal {
+  text-align: center; }
+  footer .footer-content .modal:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #222845;
+    opacity: 0.7; }
+  footer .footer-content .modal .modal-img {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 35%; }
+footer .footer-copyright {
+  background-color: #f7f7f7;
+  padding: 35px 0 15px 0; }
+  footer .footer-copyright p {
+    float: right; }
+    footer .footer-copyright p a {
+      text-transform: none;
+      color: #222845; }
+
+.footer, .footer > form, .footer-social, .footer-copyright {
+  float: left;
+  width: 100%; }
+
+.footer-content {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  float: left;
+  width: 100%; }
+
+.header {
+  background-color: #222845; }
+  .header .container .row {
+    padding: 13px 0px; }
+    .header .container .row .col-md-2.language ul li {
+      padding: 0px 18px;
+      line-height: 28px;
+      position: relative; }
+      .header .container .row .col-md-2.language ul li:first-child {
+        padding: 0 18px 0 0; }
+      .header .container .row .col-md-2.language ul li:last-child:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-right: 1px solid #474d6b;
+        width: 1px;
+        height: 22px; }
+      .header .container .row .col-md-2.language ul li a {
+        font-size: 0.80em;
+        color: #8a8fa7;
+        font-family: "Ubuntu", sans-serif;
+        transition: 0.5s ease; }
+        .header .container .row .col-md-2.language ul li a:hover {
+          color: #ffffff; }
+    .header .container .row .col-md-7.info div {
+      display: inline;
+      padding: 0 15px; }
+      .header .container .row .col-md-7.info div:nth-child(2) {
+        padding: 0 15px;
+        position: relative; }
+        .header .container .row .col-md-7.info div:nth-child(2):before {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          border-right: 1px solid #474d6b;
+          width: 1px;
+          height: 22px; }
+      .header .container .row .col-md-7.info div:last-child {
+        position: relative; }
+        .header .container .row .col-md-7.info div:last-child:before {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          border-right: 1px solid #474d6b;
+          width: 1px;
+          height: 22px; }
+      .header .container .row .col-md-7.info div span {
+        font-size: 0.80em;
+        color: #ffffff; }
+        .header .container .row .col-md-7.info div span:first-child {
+          color: #8a8fa7;
+          margin: 9px 5px 0px 0px;
+          font-size: 0.9em; }
+    .header .container .row .col-md-3.user ul {
+      float: right; }
+      .header .container .row .col-md-3.user ul li {
+        line-height: 28px;
+        padding-left: 23px; }
+        .header .container .row .col-md-3.user ul li a {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 0.80em;
+          color: #ffffff; }
+          .header .container .row .col-md-3.user ul li a i {
+            font-size: 1.3em;
+            color: #8a8fa7;
+            position: relative; }
+        .header .container .row .col-md-3.user ul li a.searchIcon {
+          padding-left: 23px;
+          position: relative; }
+          .header .container .row .col-md-3.user ul li a.searchIcon:before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: -3px;
+            border-right: 1px solid #474d6b;
+            width: 1px;
+            height: 20px; }
+  .header .container .modal .modal-dialog {
+    width: 450px;
+    margin: 0;
+    top: 55px;
+    right: 70px; }
+    .header .container .modal .modal-dialog .login {
+      width: 100%;
+      top: 0;
+      right: 0;
+      padding: 37px 35px 21px 35px;
+      display: inline-block;
+      text-transform: uppercase;
+      border-style: none;
+      border-radius: 0;
+      font-family: "Ubuntu", sans-serif; }
+      .header .container .modal .modal-dialog .login h3 {
+        font-size: 1.25em;
+        font-weight: bold;
+        color: #222845;
+        margin-bottom: 30px; }
+      .header .container .modal .modal-dialog .login form {
+        width: 100%;
+        float: left;
+        margin-bottom: 22px; }
+        .header .container .modal .modal-dialog .login form .signin {
+          float: left;
+          width: 100%; }
+          .header .container .modal .modal-dialog .login form .signin li {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px; }
+            .header .container .modal .modal-dialog .login form .signin li input {
+              width: 100%;
+              height: 43px;
+              padding: 6px 21px;
+              border: 1px solid darkKhaki;
+              color: #a9a9a9;
+              font-style: italic;
+              outline: none;
+              font-weight: bold; }
+            .header .container .modal .modal-dialog .login form .signin li a {
+              float: right;
+              font-size: 0.95em;
+              color: #222845;
+              text-decoration: underline;
+              text-transform: capitalize; }
+            .header .container .modal .modal-dialog .login form .signin li button {
+              float: left;
+              padding: 14px 35px 14px 35px;
+              color: #ffffff;
+              font-size: 12px;
+              text-transform: uppercase;
+              background-color: #b99663;
+              border: none;
+              line-height: 1;
+              cursor: pointer;
+              border-radius: 0; }
+      .header .container .modal .modal-dialog .login .social {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px; }
+        .header .container .modal .modal-dialog .login .social li {
+          width: 33.33%;
+          float: left;
+          padding: 0px 10px; }
+          .header .container .modal .modal-dialog .login .social li button {
+            float: left;
+            width: 100%;
+            padding: 12px;
+            color: #ffffff;
+            font-size: 0.7em;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #b99663;
+            border: none;
+            cursor: pointer;
+            border-radius: 0; }
+            .header .container .modal .modal-dialog .login .social li button i {
+              font-size: 1.5em; }
+          .header .container .modal .modal-dialog .login .social li:nth-child(1) button {
+            background-color: #46629c; }
+          .header .container .modal .modal-dialog .login .social li:nth-child(2) button {
+            background-color: #00aced; }
+          .header .container .modal .modal-dialog .login .social li:nth-child(3) button {
+            background-color: #ea634e; }
+      .header .container .modal .modal-dialog .login p {
+        text-align: center;
+        color: #424242;
+        text-transform: none; }
+        .header .container .modal .modal-dialog .login p a {
+          font-weight: bold;
+          color: #424242;
+          text-transform: capitalize;
+          margin-left: 5px; }
+    .header .container .modal .modal-dialog .search {
+      width: 100%;
+      top: 0;
+      right: 0;
+      padding: 37px 35px 21px 35px;
+      display: inline-block;
+      text-transform: uppercase;
+      border-style: none;
+      border-radius: 0;
+      font-family: "Ubuntu", sans-serif; }
+      .header .container .modal .modal-dialog .search h3 {
+        font-size: 1.25em;
+        font-weight: bold;
+        color: #222845;
+        margin-bottom: 30px; }
+      .header .container .modal .modal-dialog .search ul {
+        width: 100%;
+        float: left; }
+        .header .container .modal .modal-dialog .search ul li {
+          width: 100%;
+          float: left;
+          margin-bottom: 20px; }
+          .header .container .modal .modal-dialog .search ul li input {
+            width: 100%;
+            height: 43px;
+            padding: 6px 21px;
+            border: 1px solid darkKhaki;
+            color: #a9a9a9;
+            font-style: italic;
+            outline: none;
+            font-weight: bold; }
+          .header .container .modal .modal-dialog .search ul li button {
+            float: left;
+            padding: 14px 35px 14px 35px;
+            color: #ffffff;
+            font-size: 12px;
+            text-transform: uppercase;
+            background-color: #b99663;
+            border: none;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 0; }
+
+.navBar .container .row {
+  padding: 32px 0; }
+  .navBar .container .row .col-md-3.logo a {
+    float: left; }
+  .navBar .container .row .col-md-9.menu .menuList {
+    float: right; }
+    .navBar .container .row .col-md-9.menu .menuList li {
+      padding: 55px 25px;
+      line-height: 62px; }
+      .navBar .container .row .col-md-9.menu .menuList li a {
+        font-weight: bold;
+        color: #222845; }
+      .navBar .container .row .col-md-9.menu .menuList li .menuDropdown {
+        position: absolute;
+        top: 94px;
+        display: none;
+        background-color: #ffffff; }
+        .navBar .container .row .col-md-9.menu .menuList li .menuDropdown li {
+          padding: 0 35px;
+          display: block;
+          line-height: 40px;
+          border-bottom: 1px solid #f8f8f8; }
+          .navBar .container .row .col-md-9.menu .menuList li .menuDropdown li a {
+            font-weight: 300;
+            padding: 0px;
+            color: #6c8391;
+            text-align: center;
+            text-transform: capitalize; }
+      .navBar .container .row .col-md-9.menu .menuList li .courseDropdown {
+        left: 160px; }
+      .navBar .container .row .col-md-9.menu .menuList li .eventDropdown {
+        left: 281px; }
+      .navBar .container .row .col-md-9.menu .menuList li .dashboardDropdown {
+        left: 385px; }
+      .navBar .container .row .col-md-9.menu .menuList li .pagesDropdown {
+        left: 533px; }
+      .navBar .container .row .col-md-9.menu .menuList li .shopDropdown {
+        left: 633px; }
+    .navBar .container .row .col-md-9.menu .menuList .contact {
+      padding-left: 25px;
+      padding-right: 0;
+      word-spacing: 5px; }
+
+.header, .navBar {
+  float: left;
+  width: 100%;
+  position: relative; }
+
+.mini-header {
+  position: relative;
+  text-align: center;
+  padding: 70px 0;
+  background-image: url(../img/mini-header.jpg);
+  background-repeat: no-repeat; }
+  .mini-header .blue-transparent {
+    background-color: #222845;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .mini-header .mini-title {
+    float: left;
+    width: 100%;
+    font-family: "Merriweather Sans", sans-serif; }
+    .mini-header .mini-title h1 {
+      float: left;
+      width: 100%;
+      font-size: 2em;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 2px; }
+  .mini-header .mini-breadcrumb {
+    float: left;
+    width: 100%;
+    font-family: "Merriweather Sans", sans-serif; }
+    .mini-header .mini-breadcrumb ul {
+      display: inline-block; }
+      .mini-header .mini-breadcrumb ul li {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 0.9em; }
+        .mini-header .mini-breadcrumb ul li a {
+          color: #adb5db;
+          font-size: 0.95em;
+          text-transform: none; }
+      .mini-header .mini-breadcrumb ul li:nth-child(2):before, .mini-header .mini-breadcrumb ul li:nth-child(3):before {
+        font-family: FontAwesome;
+        content: "\f105";
+        font-size: 12px;
+        padding: 10px; }
+
+.course-pagination {
+  float: left;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 15px;
+  text-align: center;
+  margin: 30px 0; }
+  .course-pagination ul {
+    width: 100%;
+    float: left;
+    padding: 15px 0; }
+    .course-pagination ul li {
+      padding: 0 4px; }
+      .course-pagination ul li:first-child {
+        float: left; }
+        .course-pagination ul li:first-child a {
+          padding: 14px 20px 14px 18px; }
+      .course-pagination ul li:last-child {
+        float: right; }
+        .course-pagination ul li:last-child a {
+          padding: 14px 18px 14px 20px; }
+          .course-pagination ul li:last-child a i {
+            margin-left: 8px;
+            margin-right: 0; }
+      .course-pagination ul li a {
+        background-color: #ffffff;
+        text-transform: capitalize;
+        position: relative;
+        border-bottom: 2px solid #eaeaea;
+        font-style: italic;
+        color: #a9a9a9;
+        padding: 14px 20px; }
+        .course-pagination ul li a:hover:before {
+          width: 100%;
+          background-color: #222845;
+          transition: 0.4s ease-in-out; }
+        .course-pagination ul li a:before {
+          content: '';
+          bottom: -2px;
+          position: absolute;
+          left: 0px;
+          height: 2px;
+          width: 0%; }
+      .course-pagination ul li a.active-pag:before {
+        content: '';
+        width: 100%;
+        background-color: #222845;
+        bottom: -2px;
+        position: absolute;
+        left: 0px;
+        height: 2px; }
+
+.wcu-questions > a, .ole-event-text > a, .slides > a, .bn-text > a, .submit, .ole-slides > a, .rightSide-slide > a {
+  padding: 10px 20px;
+  border: 1px solid #b99663;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 0.8em;
+  background-color: #ffffff;
+  color: #b99663; }
+  .wcu-questions > a:hover, .ole-event-text > a:hover, .slides > a:hover, .bn-text > a:hover, .submit:hover, .ole-slides > a:hover, .rightSide-slide > a:hover {
+    background-color: #b99663;
+    color: #ffffff;
+    transition: 0.5s ease-in; }
+
+#favourite, #my-courses, #my-profile, #settings, #statement {
+  padding: 90px 0;
+  float: left;
+  width: 100%; }
+
+.marginZero {
+  margin: 0; }
+
+#dashboard #favourite .student-dashboard, #dashboard #my-courses .student-dashboard, #dashboard #statement .student-dashboard, #dashboard #my-profile .student-dashboard, #dashboard #settings .student-dashboard {
+  float: left;
+  width: 100%;
+  padding-right: 30px;
+  font-family: "Merriweather Sans", sans-serif; }
+  #dashboard #favourite .student-dashboard .student-nav, #dashboard #my-courses .student-dashboard .student-nav, #dashboard #statement .student-dashboard .student-nav, #dashboard #my-profile .student-dashboard .student-nav, #dashboard #settings .student-dashboard .student-nav {
+    float: left;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 38px 42px; }
+    #dashboard #favourite .student-dashboard .student-nav figure, #dashboard #my-courses .student-dashboard .student-nav figure, #dashboard #statement .student-dashboard .student-nav figure, #dashboard #my-profile .student-dashboard .student-nav figure, #dashboard #settings .student-dashboard .student-nav figure {
+      float: left;
+      margin: 0; }
+      #dashboard #favourite .student-dashboard .student-nav figure a, #dashboard #my-courses .student-dashboard .student-nav figure a, #dashboard #statement .student-dashboard .student-nav figure a, #dashboard #my-profile .student-dashboard .student-nav figure a, #dashboard #settings .student-dashboard .student-nav figure a {
+        float: left; }
+        #dashboard #favourite .student-dashboard .student-nav figure a img, #dashboard #my-courses .student-dashboard .student-nav figure a img, #dashboard #statement .student-dashboard .student-nav figure a img, #dashboard #my-profile .student-dashboard .student-nav figure a img, #dashboard #settings .student-dashboard .student-nav figure a img {
+          float: left; }
+    #dashboard #favourite .student-dashboard .student-nav .student-nav-text, #dashboard #my-courses .student-dashboard .student-nav .student-nav-text, #dashboard #statement .student-dashboard .student-nav .student-nav-text, #dashboard #my-profile .student-dashboard .student-nav .student-nav-text, #dashboard #settings .student-dashboard .student-nav .student-nav-text {
+      padding-left: 100px; }
+      #dashboard #favourite .student-dashboard .student-nav .student-nav-text h5, #dashboard #my-courses .student-dashboard .student-nav .student-nav-text h5, #dashboard #statement .student-dashboard .student-nav .student-nav-text h5, #dashboard #my-profile .student-dashboard .student-nav .student-nav-text h5, #dashboard #settings .student-dashboard .student-nav .student-nav-text h5 {
+        font-weight: normal;
+        float: left;
+        position: relative; }
+        #dashboard #favourite .student-dashboard .student-nav .student-nav-text h5:before, #dashboard #my-courses .student-dashboard .student-nav .student-nav-text h5:before, #dashboard #statement .student-dashboard .student-nav .student-nav-text h5:before, #dashboard #my-profile .student-dashboard .student-nav .student-nav-text h5:before, #dashboard #settings .student-dashboard .student-nav .student-nav-text h5:before {
+          content: '';
+          width: 80px;
+          height: 2px;
+          left: 0;
+          bottom: -10px;
+          position: absolute;
+          background-color: #eaeaea; }
+      #dashboard #favourite .student-dashboard .student-nav .student-nav-text a, #dashboard #my-courses .student-dashboard .student-nav .student-nav-text a, #dashboard #statement .student-dashboard .student-nav .student-nav-text a, #dashboard #my-profile .student-dashboard .student-nav .student-nav-text a, #dashboard #settings .student-dashboard .student-nav .student-nav-text a {
+        float: left;
+        text-align: center;
+        padding: 8px 28px;
+        border: 1px solid #b99663;
+        text-transform: uppercase;
+        margin-top: 17px;
+        font-weight: 600;
+        font-size: 12px;
+        background-color: #f7f7f7;
+        color: #b99663; }
+    #dashboard #favourite .student-dashboard .student-nav ul, #dashboard #my-courses .student-dashboard .student-nav ul, #dashboard #statement .student-dashboard .student-nav ul, #dashboard #my-profile .student-dashboard .student-nav ul, #dashboard #settings .student-dashboard .student-nav ul {
+      float: left;
+      width: 100%;
+      padding-top: 50px; }
+      #dashboard #favourite .student-dashboard .student-nav ul li, #dashboard #my-courses .student-dashboard .student-nav ul li, #dashboard #statement .student-dashboard .student-nav ul li, #dashboard #my-profile .student-dashboard .student-nav ul li, #dashboard #settings .student-dashboard .student-nav ul li {
+        float: left;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #eaeaea; }
+        #dashboard #favourite .student-dashboard .student-nav ul li:hover a, #dashboard #my-courses .student-dashboard .student-nav ul li:hover a, #dashboard #statement .student-dashboard .student-nav ul li:hover a, #dashboard #my-profile .student-dashboard .student-nav ul li:hover a, #dashboard #settings .student-dashboard .student-nav ul li:hover a {
+          color: #b99663;
+          transition: 0.8s ease; }
+          #dashboard #favourite .student-dashboard .student-nav ul li:hover a:before, #dashboard #my-courses .student-dashboard .student-nav ul li:hover a:before, #dashboard #statement .student-dashboard .student-nav ul li:hover a:before, #dashboard #my-profile .student-dashboard .student-nav ul li:hover a:before, #dashboard #settings .student-dashboard .student-nav ul li:hover a:before {
+            display: block;
+            color: #b99663;
+            transition: 0.8s ease; }
+          #dashboard #favourite .student-dashboard .student-nav ul li:hover a i, #dashboard #my-courses .student-dashboard .student-nav ul li:hover a i, #dashboard #statement .student-dashboard .student-nav ul li:hover a i, #dashboard #my-profile .student-dashboard .student-nav ul li:hover a i, #dashboard #settings .student-dashboard .student-nav ul li:hover a i {
+            color: #b99663;
+            transition: 0.8s ease; }
+        #dashboard #favourite .student-dashboard .student-nav ul li a, #dashboard #my-courses .student-dashboard .student-nav ul li a, #dashboard #statement .student-dashboard .student-nav ul li a, #dashboard #my-profile .student-dashboard .student-nav ul li a, #dashboard #settings .student-dashboard .student-nav ul li a {
+          text-transform: none;
+          color: #222845;
+          font-size: 14px; }
+          #dashboard #favourite .student-dashboard .student-nav ul li a:before, #dashboard #my-courses .student-dashboard .student-nav ul li a:before, #dashboard #statement .student-dashboard .student-nav ul li a:before, #dashboard #my-profile .student-dashboard .student-nav ul li a:before, #dashboard #settings .student-dashboard .student-nav ul li a:before {
+            content: "\f054";
+            font-family: FontAwesome;
+            display: none;
+            position: absolute;
+            right: 86px;
+            font-size: 12px;
+            color: #e9e9e9;
+            padding-top: 3px; }
+          #dashboard #favourite .student-dashboard .student-nav ul li a i, #dashboard #my-courses .student-dashboard .student-nav ul li a i, #dashboard #statement .student-dashboard .student-nav ul li a i, #dashboard #my-profile .student-dashboard .student-nav ul li a i, #dashboard #settings .student-dashboard .student-nav ul li a i {
+            padding-right: 12px;
+            color: #e9e9e9; }
+      #dashboard #favourite .student-dashboard .student-nav ul li.active a, #dashboard #my-courses .student-dashboard .student-nav ul li.active a, #dashboard #statement .student-dashboard .student-nav ul li.active a, #dashboard #my-profile .student-dashboard .student-nav ul li.active a, #dashboard #settings .student-dashboard .student-nav ul li.active a {
+        color: #b99663; }
+        #dashboard #favourite .student-dashboard .student-nav ul li.active a:before, #dashboard #my-courses .student-dashboard .student-nav ul li.active a:before, #dashboard #statement .student-dashboard .student-nav ul li.active a:before, #dashboard #my-profile .student-dashboard .student-nav ul li.active a:before, #dashboard #settings .student-dashboard .student-nav ul li.active a:before {
+          display: block;
+          color: #b99663; }
+        #dashboard #favourite .student-dashboard .student-nav ul li.active a i, #dashboard #my-courses .student-dashboard .student-nav ul li.active a i, #dashboard #statement .student-dashboard .student-nav ul li.active a i, #dashboard #my-profile .student-dashboard .student-nav ul li.active a i, #dashboard #settings .student-dashboard .student-nav ul li.active a i {
+          color: #b99663; }
+#dashboard #favourite .favorite-courses {
+  float: left;
+  width: 100%; }
+  #dashboard #favourite .favorite-courses .favorite-title {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px; }
+    #dashboard #favourite .favorite-courses .favorite-title h2 {
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: 500; }
+  #dashboard #favourite .favorite-courses ul {
+    float: left;
+    width: 100%; }
+    #dashboard #favourite .favorite-courses ul li {
+      float: left;
+      width: 100%;
+      margin-bottom: 20px; }
+      #dashboard #favourite .favorite-courses ul li figure {
+        float: left;
+        width: 225px;
+        margin-bottom: 0px;
+        overflow: hidden; }
+        #dashboard #favourite .favorite-courses ul li figure a {
+          position: relative; }
+        #dashboard #favourite .favorite-courses ul li figure figcaption {
+          position: relative;
+          padding: 11px 15px;
+          background-color: #222845; }
+          #dashboard #favourite .favorite-courses ul li figure figcaption img {
+            float: left;
+            border-radius: 100%;
+            margin: -39px 13px 0px 0px;
+            max-width: 30%;
+            height: auto; }
+          #dashboard #favourite .favorite-courses ul li figure figcaption h6 {
+            color: #6c8391;
+            line-height: 1.5;
+            margin: 4px 0; }
+            #dashboard #favourite .favorite-courses ul li figure figcaption h6 a {
+              text-transform: capitalize;
+              font-size: 14px;
+              color: #ffffff; }
+      #dashboard #favourite .favorite-courses ul li .course-text {
+        padding: 49.5px 30px;
+        margin-left: 225px;
+        border: 1px solid #eaeaea; }
+        #dashboard #favourite .favorite-courses ul li .course-text h6 {
+          text-align: left;
+          margin-bottom: 13px;
+          font-family: "Merriweather Sans", sans-serif;
+          line-height: 1.5; }
+          #dashboard #favourite .favorite-courses ul li .course-text h6 a {
+            font-size: 1.3em;
+            color: #222845;
+            text-transform: none; }
+        #dashboard #favourite .favorite-courses ul li .course-text .favorite-rating {
+          margin-bottom: 25px; }
+          #dashboard #favourite .favorite-courses ul li .course-text .favorite-rating span:before {
+            font-family: FontAwesome;
+            content: "\f005";
+            color: #aeaeae;
+            padding-right: 5px; }
+        #dashboard #favourite .favorite-courses ul li .course-text a.fBtn {
+          text-align: center;
+          padding: 8px 20px;
+          border: 1px solid #b99663;
+          text-transform: uppercase;
+          margin-top: 17px;
+          font-weight: normal;
+          font-size: 14px;
+          background-color: #ffffff;
+          color: #b99663; }
+#dashboard #statement .my-courses-list {
+  float: left;
+  width: 100%; }
+  #dashboard #statement .my-courses-list .my-courses-title {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px; }
+    #dashboard #statement .my-courses-list .my-courses-title h2 {
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: 500; }
+  #dashboard #statement .my-courses-list .course-table {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea; }
+    #dashboard #statement .my-courses-list .course-table .th {
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid #eaeaea; }
+      #dashboard #statement .my-courses-list .course-table .th ul {
+        float: left;
+        width: 100%;
+        text-align: center; }
+        #dashboard #statement .my-courses-list .course-table .th ul li:nth-child(1) {
+          float: left;
+          width: 65%;
+          padding: 10px 40px;
+          text-align: left; }
+        #dashboard #statement .my-courses-list .course-table .th ul li {
+          float: left;
+          width: 17.5%;
+          padding: 10px 25px; }
+          #dashboard #statement .my-courses-list .course-table .th ul li span {
+            font-size: 16px;
+            font-weight: bold; }
+    #dashboard #statement .my-courses-list .course-table .tb {
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid #eaeaea; }
+      #dashboard #statement .my-courses-list .course-table .tb ul {
+        float: left;
+        width: 100%;
+        text-align: center; }
+        #dashboard #statement .my-courses-list .course-table .tb ul li:nth-child(1) {
+          float: left;
+          width: 65%;
+          padding: 15px 40px;
+          text-align: left;
+          border-left: none; }
+          #dashboard #statement .my-courses-list .course-table .tb ul li:nth-child(1) h6 a {
+            font-family: "Merriweather Sans", sans-serif;
+            font-size: 16px;
+            text-transform: none;
+            color: #b99663; }
+          #dashboard #statement .my-courses-list .course-table .tb ul li:nth-child(1) span {
+            margin-right: 15px; }
+            #dashboard #statement .my-courses-list .course-table .tb ul li:nth-child(1) span:before {
+              content: "\f0d6";
+              font-family: FontAwesome;
+              padding-right: 5px;
+              color: #dadada; }
+          #dashboard #statement .my-courses-list .course-table .tb ul li:nth-child(1) time:before {
+            content: "\f073";
+            font-family: FontAwesome;
+            padding-right: 5px;
+            color: #dadada; }
+        #dashboard #statement .my-courses-list .course-table .tb ul li {
+          float: left;
+          width: 17.5%;
+          padding: 12px 10px 12px;
+          border-left: 1px solid #eaeaea; }
+          #dashboard #statement .my-courses-list .course-table .tb ul li p {
+            font-size: 15px;
+            padding: 15px 0;
+            margin: 0; }
+          #dashboard #statement .my-courses-list .course-table .tb ul li a.down {
+            background-color: #69ca87;
+            color: #ffffff;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 10px;
+            text-transform: none; }
+            #dashboard #statement .my-courses-list .course-table .tb ul li a.down:before {
+              font-family: FontAwesome;
+              content: "\f019";
+              padding-right: 5px;
+              font-size: 12px; }
+#dashboard #my-courses .my-courses-list {
+  float: left;
+  width: 100%; }
+  #dashboard #my-courses .my-courses-list .my-courses-title {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px; }
+    #dashboard #my-courses .my-courses-list .my-courses-title h2 {
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: 500; }
+  #dashboard #my-courses .my-courses-list .course-table {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea; }
+    #dashboard #my-courses .my-courses-list .course-table .th {
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid #eaeaea; }
+      #dashboard #my-courses .my-courses-list .course-table .th ul {
+        float: left;
+        width: 100%;
+        text-align: center; }
+        #dashboard #my-courses .my-courses-list .course-table .th ul li:nth-child(1) {
+          float: left;
+          width: 65%;
+          padding: 10px 40px;
+          text-align: left; }
+        #dashboard #my-courses .my-courses-list .course-table .th ul li {
+          float: left;
+          width: 17.5%;
+          padding: 10px 25px; }
+          #dashboard #my-courses .my-courses-list .course-table .th ul li span {
+            font-size: 16px;
+            font-weight: bold; }
+    #dashboard #my-courses .my-courses-list .course-table .tb {
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid #eaeaea; }
+      #dashboard #my-courses .my-courses-list .course-table .tb ul {
+        float: left;
+        width: 100%;
+        text-align: center; }
+        #dashboard #my-courses .my-courses-list .course-table .tb ul li:nth-child(1) {
+          float: left;
+          width: 65%;
+          padding: 15px 40px;
+          text-align: left;
+          border-left: none; }
+          #dashboard #my-courses .my-courses-list .course-table .tb ul li:nth-child(1) h6 a {
+            font-family: "Merriweather Sans", sans-serif;
+            font-size: 16px;
+            text-transform: none;
+            color: #b99663; }
+          #dashboard #my-courses .my-courses-list .course-table .tb ul li:nth-child(1) span {
+            margin-right: 15px; }
+            #dashboard #my-courses .my-courses-list .course-table .tb ul li:nth-child(1) span:before {
+              content: "\f0d6";
+              font-family: FontAwesome;
+              padding-right: 5px;
+              color: #dadada; }
+          #dashboard #my-courses .my-courses-list .course-table .tb ul li:nth-child(1) time:before {
+            content: "\f073";
+            font-family: FontAwesome;
+            padding-right: 5px;
+            color: #dadada; }
+        #dashboard #my-courses .my-courses-list .course-table .tb ul li {
+          float: left;
+          width: 17.5%;
+          padding: 12px 10px 12px;
+          border-left: 1px solid #eaeaea; }
+          #dashboard #my-courses .my-courses-list .course-table .tb ul li p {
+            font-size: 15px;
+            padding: 15px 0;
+            margin: 0; }
+          #dashboard #my-courses .my-courses-list .course-table .tb ul li a.paid {
+            background-color: #69ca87;
+            color: #ffffff;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 15px;
+            text-transform: none; }
+          #dashboard #my-courses .my-courses-list .course-table .tb ul li a.completed {
+            background-color: #e84caf;
+            color: #ffffff;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 15px;
+            text-transform: none; }
+          #dashboard #my-courses .my-courses-list .course-table .tb ul li a.expired {
+            background-color: #222845;
+            color: #ffffff;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 15px;
+            text-transform: none; }
+          #dashboard #my-courses .my-courses-list .course-table .tb ul li a.inprogress {
+            background-color: #b99663;
+            color: #ffffff;
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 15px;
+            text-transform: none; }
+#dashboard #my-profile .my-courses-list {
+  float: left;
+  width: 100%; }
+  #dashboard #my-profile .my-courses-list .my-courses-title {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px; }
+    #dashboard #my-profile .my-courses-list .my-courses-title h2 {
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: 500; }
+  #dashboard #my-profile .my-courses-list ul.row {
+    float: left;
+    width: 100%;
+    margin-bottom: 25px; }
+    #dashboard #my-profile .my-courses-list ul.row li.col-md-4:first-child {
+      padding-left: 0; }
+    #dashboard #my-profile .my-courses-list ul.row li.col-md-4:last-child {
+      padding-right: 0; }
+    #dashboard #my-profile .my-courses-list ul.row li.col-md-4 .contact-info {
+      float: left;
+      width: 100%;
+      padding: 15px 10px;
+      border: 2px solid #eaeaea; }
+      #dashboard #my-profile .my-courses-list ul.row li.col-md-4 .contact-info .info-icon {
+        border: 2px solid #f2f2f2;
+        border-radius: 100%;
+        float: left;
+        font-size: 17px;
+        height: 47px;
+        margin: 0px 13px 0px 0px;
+        padding: 8px 13px;
+        width: 47px;
+        text-align: center; }
+        #dashboard #my-profile .my-courses-list ul.row li.col-md-4 .contact-info .info-icon i {
+          margin: 0;
+          color: #222845; }
+      #dashboard #my-profile .my-courses-list ul.row li.col-md-4 .contact-info div {
+        padding-left: 60px; }
+        #dashboard #my-profile .my-courses-list ul.row li.col-md-4 .contact-info div span {
+          float: left;
+          font-size: 17px;
+          font-weight: 500; }
+        #dashboard #my-profile .my-courses-list ul.row li.col-md-4 .contact-info div a {
+          float: left;
+          color: #222845;
+          text-transform: none; }
+  #dashboard #my-profile .my-courses-list p {
+    line-height: 28px;
+    margin-bottom: 45px; }
+  #dashboard #my-profile .my-courses-list h5 {
+    padding-bottom: 8px;
+    font-family: "Merriweather Sans", sans-serif;
+    border-bottom: 2px solid #eaeaea;
+    margin-bottom: 20px; }
+  #dashboard #my-profile .my-courses-list .tb {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea; }
+    #dashboard #my-profile .my-courses-list .tb ul {
+      float: left;
+      width: 100%;
+      text-align: center;
+      border-left: 1px solid #eaeaea;
+      border-right: 1px solid #eaeaea; }
+      #dashboard #my-profile .my-courses-list .tb ul li:nth-child(1) {
+        float: left;
+        width: 100%;
+        text-align: right;
+        padding: 11px 35px;
+        border-bottom: 1px solid #eaeaea; }
+        #dashboard #my-profile .my-courses-list .tb ul li:nth-child(1) span {
+          font-size: 16px;
+          font-weight: 500; }
+      #dashboard #my-profile .my-courses-list .tb ul li:nth-child(2), #dashboard #my-profile .my-courses-list .tb ul li:nth-child(5), #dashboard #my-profile .my-courses-list .tb ul li:nth-child(8) {
+        float: left;
+        width: 60%;
+        padding: 11px 35px;
+        text-align: left;
+        border-right: 1px solid #eaeaea; }
+        #dashboard #my-profile .my-courses-list .tb ul li:nth-child(2) h6 a, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(5) h6 a, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(8) h6 a {
+          font-family: "Merriweather Sans", sans-serif;
+          font-size: 16px;
+          text-transform: none;
+          color: #b99663; }
+        #dashboard #my-profile .my-courses-list .tb ul li:nth-child(2) span, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(5) span, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(8) span {
+          margin-right: 15px; }
+      #dashboard #my-profile .my-courses-list .tb ul li:nth-child(3), #dashboard #my-profile .my-courses-list .tb ul li:nth-child(6), #dashboard #my-profile .my-courses-list .tb ul li:nth-child(9) {
+        float: left;
+        width: 20%;
+        padding: 22px 35px;
+        border-right: 1px solid #eaeaea; }
+        #dashboard #my-profile .my-courses-list .tb ul li:nth-child(3) a, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(6) a, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(9) a {
+          text-transform: capitalize;
+          color: #222845; }
+          #dashboard #my-profile .my-courses-list .tb ul li:nth-child(3) a:before, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(6) a:before, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(9) a:before {
+            content: "\f040";
+            font-family: FontAwesome;
+            padding-right: 8px;
+            color: #c2c2c2;
+            font-size: 17px; }
+      #dashboard #my-profile .my-courses-list .tb ul li:nth-child(4), #dashboard #my-profile .my-courses-list .tb ul li:nth-child(7), #dashboard #my-profile .my-courses-list .tb ul li:nth-child(10) {
+        float: left;
+        width: 20%;
+        padding: 24px 35px; }
+        #dashboard #my-profile .my-courses-list .tb ul li:nth-child(4) input[type="checkbox"], #dashboard #my-profile .my-courses-list .tb ul li:nth-child(7) input[type="checkbox"], #dashboard #my-profile .my-courses-list .tb ul li:nth-child(10) input[type="checkbox"] {
+          display: none; }
+        #dashboard #my-profile .my-courses-list .tb ul li:nth-child(4) input[type="checkbox"]:checked + label, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(7) input[type="checkbox"]:checked + label, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(10) input[type="checkbox"]:checked + label {
+          background-color: #b99663;
+          box-shadow: 0px 0px 0px 1px #f7f7f7 inset; }
+        #dashboard #my-profile .my-courses-list .tb ul li:nth-child(4) label, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(7) label, #dashboard #my-profile .my-courses-list .tb ul li:nth-child(10) label {
+          width: 12px;
+          height: 12px;
+          border: 1px solid #b99663;
+          margin: 5px 0 5px 33px;
+          cursor: pointer;
+          float: left; }
+
+/*# sourceMappingURL=dashboard.css.map */

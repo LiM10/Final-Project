@@ -1,0 +1,116 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+
+body{
+	padding-right: 0;
+}
+
+#events{
+	.event-content{
+		float: left;
+		width: 100%;
+		padding: 90px 0 30px 0;
+		.event-link{
+			float: left;
+			width: 100%;
+			text-align: center;
+			ul{
+				display: inline-block;
+				border-bottom: 2px solid $gray;
+				margin-bottom: 50px;
+				padding-bottom: 5px;
+				li{
+					float: left;
+					padding: 0 15px;
+					font-family: $merriweather;
+					text-transform: none;
+					color: $darkBlue;
+					position: relative;
+					font-size: $size+5px;
+					cursor: pointer; 
+					&:first-child{
+						padding-left: 0;
+					}
+					&:last-child{
+						padding-right: 0;
+					}
+				}
+				.active{
+					color: $darkKhaki;
+					position: relative;
+					&:before{
+						content: '';
+					    width: 90%;
+					    top: 35px;
+					    position: absolute;
+					    background-color: $darkKhaki;
+					    height: 2px;
+					}
+				}
+			}
+		}
+		.event-gallery{
+			float: left;
+			width: 100%;
+			height: 1002px;
+			position: relative;
+			.col-md-3{
+				float: left;
+				margin-bottom: 30px;
+				.bn-wrap{
+					&:hover{
+						figure>span{
+							opacity: .7;
+							transition: .5s ease;
+						}
+					}
+					figure{
+						margin: 0;
+						a{
+							img{
+							}
+						}
+						span{
+						    position: absolute;
+						    left: 5%;
+						    top: 0px;
+						    width: 90%;
+						    height: 50.3%;
+						    opacity: 0;
+						    background-color: $darkBlue;
+						}
+					}
+								.bn-text{
+									padding: 15px 0;
+									h6{
+										font-family: $merriweather;
+										margin-bottom: 15px;
+										font-size: 16px;
+									}
+									time{
+										font-size: 14px;
+										font-family: $merriweather;
+										color: $darkKhaki;
+										padding-bottom: 5px;
+										border-bottom: 2px solid darken($lightgray, 10%);
+										span{
+											color: $darkKhaki;
+											font-family: $ubuntu;
+											margin-left: 20px;
+											i{
+
+											}
+										}
+									}
+									p{
+										margin-top: 15px;
+										margin-bottom: 30px;
+									}
+									
+								}
+				}
+			}
+		}
+	}
+}
