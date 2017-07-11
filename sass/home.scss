@@ -88,7 +88,7 @@ li.active{
 			.slider-leftSide{
 				width: 54%;
 				.list-leftSide{
-					//width: 100%;
+					width: 100%;
 					display: block;
 				    margin: 0;
 				    overflow: hidden;
@@ -541,7 +541,7 @@ li.active{
 										font-family: $merriweather;		
 									}
 									a{
-										visibility: hidden;
+										display: none;
 										position: relative;
 										top: 0;
 			    						padding: 10px 20px;
@@ -555,7 +555,7 @@ li.active{
 										&:hover{
 											background-color: $darkKhaki;
 											color: $white;
-											transition: 0.7s ease-in;
+											transition: 0.5s ease-in;
 										}
 								    }
 								}
@@ -617,7 +617,6 @@ li.active{
 											position: relative;
 											top: 0;
 											transform: translate3d(0, 0, 0);
-											transition: 0.2s;
 											.ole-slides{
 												width: 262px;
 												display: inline-block;
@@ -1076,12 +1075,10 @@ li.active{
 						margin-bottom: 80px;
 						.up-slider-content{
 							margin: 0;
-							overflow: hidden;
 							padding: 0;
 							position: relative;
 							.up-slider-list{
 								opacity: 1;
-								width: 2470px;
 								position: relative;
 								left: 0;
 								top: 0;
@@ -1105,9 +1102,9 @@ li.active{
 								}
 							}
 						}
-						span.arrow{
+						.arrow{
 							position: absolute;
-							top: 3%;
+							top: -95px;
 							cursor: pointer;
 							color: $gray;
 							font-size: 1.1em;
@@ -1136,31 +1133,31 @@ li.active{
 		.container{
 			.row{
 				.col-md-12{
-					ul.cu-title{
-						display: inline-block;
-						border-bottom: 2px solid $gray;
-						margin-bottom: 75px;
-						padding-bottom: 12px;
-						li{
-							padding: 0 15px;
-							a{
-								font-family: $merriweather;
-								text-transform: none;
-								color: $darkKhaki;
-								position: relative;
-								font-size: 1.1em; 
-							}
-							&:first-child{
-								padding-left: 0;
-							}
-							&:last-child{
-								padding-right: 0;
+					.cu-content{
+						ul.cu-title{
+							display: inline-block;
+							border-bottom: 2px solid $gray;
+							padding-bottom: 12px;
+							li{
+								padding: 0 15px;
+								a{
+									font-family: $merriweather;
+									text-transform: none;
+									color: $darkKhaki;
+									position: relative;
+									font-size: 1.1em; 
+								}
+								&:first-child{
+									padding-left: 0;
+								}
+								&:last-child{
+									padding-right: 0;
+								}
 							}
 						}
-					}
-					.cu-content{
 						.cu-panel#cu-home{
 							display: block;
+							padding-top: 75px;
 							.row{
 								.col-md-4{
 									#cu-map{
@@ -1231,7 +1228,7 @@ li.active{
 													    min-height: 175px;
 													    max-height: 225px;
 													    font-size: 15px;
-													    color: #777;
+													    color: #a9a9a9;
 													    padding: 12px 20px 7px 74px;
 													    background-color: #ffffff;
 													    border-width:0 0 2px 0;
@@ -1250,6 +1247,7 @@ li.active{
 						}
 						.cu-panel#cu-profile{
 							display: none;
+							padding-top: 75px;
 							h2{
 								width: 100%;
 								font-size: 3.1em;

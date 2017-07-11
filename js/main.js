@@ -1,65 +1,65 @@
 //Course Dropdown
 $('.course a').hover(function() {
-	$('.courseDropdown').show('700');
+	$('.courseDropdown').show();
 	$('.courseDropdown').css('z-index',20);
 });
 $('.course').mouseleave(function(event) {
-	$('.courseDropdown').hide('700');
+	$('.courseDropdown').hide();
 });
 $('.courseDropdown').mouseover(function(event) {
-	$('.courseDropdown').show('700');
+	$('.courseDropdown').show();
 });
 //Course Dropdown
 
 //Event Dropdown
 $('.event a').hover(function() {
-	$('.eventDropdown').show('700');
+	$('.eventDropdown').show();
 	$('.eventDropdown').css('z-index',20);
 });
 $('.event').mouseleave(function(event) {
-	$('.eventDropdown').hide('700');
+	$('.eventDropdown').hide();
 });
 $('.eventDropdown').mouseover(function(event) {
-	$('.eventDropdown').show('700');
+	$('.eventDropdown').show();
 });
 //Event Dropdown
 
 //Dashboard Dropdown
 $('.dashboard a').hover(function() {
-	$('.dashboardDropdown').show('700');
+	$('.dashboardDropdown').show();
 	$('.dashboardDropdown').css('z-index',20);
 });
 $('.dashboard').mouseleave(function(event) {
-	$('.dashboardDropdown').hide('700');
+	$('.dashboardDropdown').hide();
 });
 $('.dashboardDropdown').mouseover(function(event) {
-	$('.dashboardDropdown').show('700');
+	$('.dashboardDropdown').show();
 });
 //Dashboard Dropdown
 
 //Pages Dropdown
 $('.pages a').hover(function() {
-	$('.pagesDropdown').show('700');
+	$('.pagesDropdown').show();
 	$('.pagesDropdown').css('z-index',20);
 });
 $('.pages').mouseleave(function(event) {
-	$('.pagesDropdown').hide('700');
+	$('.pagesDropdown').hide();
 });
 $('.pagesDropdown').mouseover(function(event) {
-	$('.pagesDropdown').show('700');
+	$('.pagesDropdown').show();
 });
 //Pages Dropdown
 
 //Shop Dropdown
 $('.shop a').hover(function() {
-	$('.shopDropdown').show('700');
+	$('.shopDropdown').show();
 	$('.shopDropdown').css('z-index',20);
 });
 $('.shop').mouseleave(function(event) {
-	$('.shopDropdown').hide('700');
+	$('.shopDropdown').hide();
 });
 $('.shopDropdown').mouseover(function(event) {
-	$('.shopDropdown').show('700');
+	$('.shopDropdown').show();
 });
 //Shop Dropdown
 
@@ -83,3 +83,44 @@ $(document).ready(function(){
 	});
 });
 // Footer Gallery
+
+
+// Page - BLog List hover
+jQuery(document).ready(function() {
+	$('.bn-wrap').on('mouseenter', function() {
+		var hover = $(this).find('.blogList-hover');
+		$(hover).fadeIn('400');
+	});
+	$('.bn-wrap').on('mouseleave', function() {
+		var hover = $(this).find('.blogList-hover');
+		$(hover).fadeOut('400');
+	});
+});
+// Page - BLog List hover
+
+// Page - About Us hover
+jQuery(document).ready(function($) {
+	$('.professors .col-md-4').on('mouseenter', function() {
+		var hover = $(this).find('figcaption');
+		var btn = $(this).find('.prof-btn');
+
+		$(hover).fadeIn('400');
+		$(btn).animate({
+			opacity: '1',
+			top: '40%'
+		}, 400);
+	});
+	$('.professors .col-md-4').on('mouseleave', function() {
+		var hover = $(this).find('figcaption');
+		var btn = $(this).find('.prof-btn');
+
+		$(hover).fadeOut('400');
+		$(btn).animate({
+			opacity: '0',
+			top: '-25px'
+		}, 400);
+	});
+});
+// Page - About Us hover
+
+

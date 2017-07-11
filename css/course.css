@@ -466,7 +466,8 @@ footer .footer-copyright {
         position: absolute;
         top: 94px;
         display: none;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        padding-right: 50px; }
         .navBar .container .row .col-md-9.menu .menuList li .menuDropdown li {
           padding: 0 35px;
           display: block;
@@ -608,7 +609,7 @@ footer .footer-copyright {
   .wcu-questions > a:hover, .ole-event-text > a:hover, .slides > a:hover, .bn-text > a:hover, .submit:hover, .ole-slides > a:hover, .rightSide-slide > a:hover {
     background-color: #b99663;
     color: #ffffff;
-    transition: 0.5s ease-in; }
+    transition: 0.4s ease-in; }
 
 .course-searchByType, .course-searchByPrice, .course-searchByAvailability, .course-searchByLevel, .course-searchByLanguage, .course-searchByDuration {
   float: left;
@@ -758,6 +759,7 @@ footer .footer-copyright {
     #courses .course-content .col-md-3 .course-searchByType ul::-webkit-scrollbar-thumb:window-inactive {
       background: #dbdbdb; }
   #courses .course-content .col-md-3 .course-searchByPrice .range-slider .range-slider-range {
+    width: 100%;
     -webkit-appearance: none;
     height: 8px;
     background-color: #f5e8d5;

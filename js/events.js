@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 		$('#expired,#upcoming').removeClass('active');
 		$('.event-gallery').height(1002);
 
-		$('.event-gallery .col-md-3').show('fast');
+		$('.event-gallery .col-md-3').css('opacity', '1').show('fast');
 		
 		$('.one').css({
 			top: '0',
@@ -44,9 +44,11 @@ jQuery(document).ready(function($) {
 	$('#upcoming').click(function(event) {
 		$(this).addClass('active');
 		$('#latest,#expired').removeClass('active');
+		$('.expired').css('opacity', '0');
 		$('.expired').hide('fast');
 		$('.event-gallery').height(501);
 
+		$('.upcoming').css('opacity', '1');
 		$('.upcoming').show('fast');
 		$('.three').css({
 			'left': '570px',
@@ -61,9 +63,11 @@ jQuery(document).ready(function($) {
 	$('#expired').click(function(event) {
 		$(this).addClass('active');
 		$('#latest,#upcoming').removeClass('active');
+		$('.upcoming').css('opacity', '0');
 		$('.upcoming').hide('fast');
 		$('.event-gallery').height(501);
 
+		$('.expired').css('opacity', '1');
 		$('.expired').show('fast');
 
 		$('.five').css({

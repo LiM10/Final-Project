@@ -466,7 +466,8 @@ footer .footer-copyright {
         position: absolute;
         top: 94px;
         display: none;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        padding-right: 50px; }
         .navBar .container .row .col-md-9.menu .menuList li .menuDropdown li {
           padding: 0 35px;
           display: block;
@@ -608,7 +609,7 @@ footer .footer-copyright {
   .wcu-questions > a:hover, .ole-event-text > a:hover, .slides > a:hover, .bn-text > a:hover, .submit:hover, .ole-slides > a:hover, .rightSide-slide > a:hover {
     background-color: #b99663;
     color: #ffffff;
-    transition: 0.5s ease-in; }
+    transition: 0.4s ease-in; }
 
 #favourite, #my-courses, #my-profile, #settings, #statement {
   padding: 90px 0;
@@ -1083,5 +1084,139 @@ footer .footer-copyright {
           margin: 5px 0 5px 33px;
           cursor: pointer;
           float: left; }
+#dashboard #settings .my-courses-list .my-courses-title {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px; }
+  #dashboard #settings .my-courses-list .my-courses-title h2 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 500;
+    margin-left: 7px; }
+#dashboard #settings .my-courses-list form {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px; }
+  #dashboard #settings .my-courses-list form .flpe, #dashboard #settings .my-courses-list form .uPassword {
+    float: left;
+    width: 50%;
+    padding: 7px;
+    position: relative; }
+    #dashboard #settings .my-courses-list form .flpe input[type="text"], #dashboard #settings .my-courses-list form .uPassword input[type="text"] {
+      float: left;
+      width: 100%;
+      height: 43px;
+      padding: 5px 0 5px 20px;
+      border-width: 0 0 2px 0;
+      border-color: #eaeaea;
+      color: #a9a9a9;
+      font-style: italic;
+      outline: none;
+      background-color: #f7f7f7; }
+  #dashboard #settings .my-courses-list form .birth {
+    float: left;
+    width: 33.33%;
+    padding: 7px; }
+    #dashboard #settings .my-courses-list form .birth select {
+      padding: 5px 17px;
+      font-style: italic;
+      margin: 0px;
+      background: #f7f7f7;
+      color: #a9a9a9;
+      height: 43px;
+      font-size: 15px;
+      border: none;
+      outline: none;
+      display: inline-block;
+      cursor: pointer;
+      border-bottom: 2px solid #eaeaea; }
+      #dashboard #settings .my-courses-list form .birth select option {
+        outline: none; }
+        #dashboard #settings .my-courses-list form .birth select option:active, #dashboard #settings .my-courses-list form .birth select option:focus, #dashboard #settings .my-courses-list form .birth select option:visited {
+          outline: none; }
+  #dashboard #settings .my-courses-list form .location {
+    float: left;
+    width: 50%;
+    padding: 7px; }
+    #dashboard #settings .my-courses-list form .location select {
+      padding: 5px 17px;
+      font-style: italic;
+      margin: 0px;
+      background: #f7f7f7;
+      color: #a9a9a9;
+      height: 43px;
+      font-size: 15px;
+      border: none;
+      outline: none;
+      display: inline-block;
+      cursor: pointer;
+      border-bottom: 2px solid #eaeaea; }
+      #dashboard #settings .my-courses-list form .location select option {
+        outline: none; }
+        #dashboard #settings .my-courses-list form .location select option:active, #dashboard #settings .my-courses-list form .location select option:focus, #dashboard #settings .my-courses-list form .location select option:visited {
+          outline: none; }
+  #dashboard #settings .my-courses-list form .uPassword, #dashboard #settings .my-courses-list form .sMedia {
+    width: 51%; }
+#dashboard #settings .my-courses-list h5 {
+  padding-bottom: 8px;
+  font-family: "Merriweather Sans", sans-serif;
+  border-bottom: 2px solid #eaeaea;
+  margin-bottom: 20px;
+  margin-left: 7px; }
+#dashboard #settings .my-courses-list .updateBtn {
+  text-align: center;
+  padding: 8px 17px;
+  border: 1px solid #b99663;
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-left: 7px;
+  font-weight: normal;
+  font-size: 12px;
+  background-color: #ffffff;
+  color: #b99663;
+  cursor: pointer; }
+#dashboard #settings .passUpdate, #dashboard #settings .socMedia {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px; }
+  #dashboard #settings .passUpdate .sMedia, #dashboard #settings .socMedia .sMedia {
+    float: left;
+    width: 50%;
+    padding: 7px;
+    position: relative; }
+    #dashboard #settings .passUpdate .sMedia input[type="text"], #dashboard #settings .socMedia .sMedia input[type="text"] {
+      float: left;
+      width: 100%;
+      height: 43px;
+      padding: 5px 0 5px 73px;
+      border-width: 0 0 2px 0;
+      border-color: #eaeaea;
+      color: #a9a9a9;
+      font-style: italic;
+      outline: none;
+      background-color: #f7f7f7; }
+    #dashboard #settings .passUpdate .sMedia:nth-child(1):before, #dashboard #settings .socMedia .sMedia:nth-child(1):before {
+      content: "\f09a";
+      font-family: FontAwesome;
+      position: absolute;
+      color: #a9a9a9;
+      border-right: 5px solid white;
+      padding: 10px 20px;
+      cursor: pointer; }
+    #dashboard #settings .passUpdate .sMedia:nth-child(2):before, #dashboard #settings .socMedia .sMedia:nth-child(2):before {
+      content: "\f16d";
+      font-family: FontAwesome;
+      position: absolute;
+      color: #a9a9a9;
+      border-right: 5px solid white;
+      padding: 10px 20px;
+      cursor: pointer; }
+    #dashboard #settings .passUpdate .sMedia:nth-child(3):before, #dashboard #settings .socMedia .sMedia:nth-child(3):before {
+      content: "\f167";
+      font-family: FontAwesome;
+      position: absolute;
+      color: #a9a9a9;
+      border-right: 5px solid white;
+      padding: 10px 20px;
+      cursor: pointer; }
 
 /*# sourceMappingURL=dashboard.css.map */

@@ -466,7 +466,8 @@ footer .footer-copyright {
         position: absolute;
         top: 94px;
         display: none;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        padding-right: 50px; }
         .navBar .container .row .col-md-9.menu .menuList li .menuDropdown li {
           padding: 0 35px;
           display: block;
@@ -608,7 +609,7 @@ footer .footer-copyright {
   .wcu-questions > a:hover, .ole-event-text > a:hover, .slides > a:hover, .bn-text > a:hover, .submit:hover, .ole-slides > a:hover, .rightSide-slide > a:hover {
     background-color: #b99663;
     color: #ffffff;
-    transition: 0.5s ease-in; }
+    transition: 0.4s ease-in; }
 
 .find-your-course, .popular-courses, .wcu-title, .u-can-learn, .our-latest-events, .what-clients-say, .blog-news, .contact-us {
   padding-top: 90px;
@@ -686,6 +687,7 @@ li.active {
     #home .main-slider .main-container .slider-leftSide {
       width: 54%; }
       #home .main-slider .main-container .slider-leftSide .list-leftSide {
+        width: 100%;
         display: block;
         margin: 0;
         overflow: hidden;
@@ -1013,7 +1015,7 @@ li.active {
         margin-bottom: 25px;
         font-family: "Merriweather Sans", sans-serif; }
       #home .u-can-learn .container .row .ucl-list ul.row li.col-md-6 figure figcaption a {
-        visibility: hidden;
+        display: none;
         position: relative;
         top: 0;
         padding: 10px 20px;
@@ -1027,7 +1029,7 @@ li.active {
         #home .u-can-learn .container .row .ucl-list ul.row li.col-md-6 figure figcaption a:hover {
           background-color: #b99663;
           color: #ffffff;
-          transition: 0.7s ease-in; }
+          transition: 0.5s ease-in; }
 #home .our-latest-events {
   background-color: #f7f7f7;
   padding-bottom: 60px; }
@@ -1061,8 +1063,7 @@ li.active {
         left: 0px;
         position: relative;
         top: 0;
-        transform: translate3d(0, 0, 0);
-        transition: 0.2s; }
+        transform: translate3d(0, 0, 0); }
         #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider .ole-slider-content .ole-slider-list .ole-slides {
           width: 262px;
           display: inline-block;
@@ -1380,12 +1381,10 @@ li.active {
   margin-bottom: 80px; }
   #home .partners .container .row .col-md-12 .part-slider .up-slider-content {
     margin: 0;
-    overflow: hidden;
     padding: 0;
     position: relative; }
     #home .partners .container .row .col-md-12 .part-slider .up-slider-content .up-slider-list {
       opacity: 1;
-      width: 2470px;
       position: relative;
       left: 0;
       top: 0;
@@ -1403,13 +1402,13 @@ li.active {
               filter: none;
               opacity: 1;
               transition: .3s ease-in; }
-  #home .partners .container .row .col-md-12 .part-slider span.arrow {
+  #home .partners .container .row .col-md-12 .part-slider .arrow {
     position: absolute;
-    top: 3%;
+    top: -95px;
     cursor: pointer;
     color: #dadada;
     font-size: 1.1em; }
-    #home .partners .container .row .col-md-12 .part-slider span.arrow:hover {
+    #home .partners .container .row .col-md-12 .part-slider .arrow:hover {
       color: #222845;
       transition: 0.3s ease; }
   #home .partners .container .row .col-md-12 .part-slider .left {
@@ -1422,25 +1421,25 @@ li.active {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center; }
-  #home .contact-us .container .row .col-md-12 ul.cu-title {
+  #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title {
     display: inline-block;
     border-bottom: 2px solid #dadada;
-    margin-bottom: 75px;
     padding-bottom: 12px; }
-    #home .contact-us .container .row .col-md-12 ul.cu-title li {
+    #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title li {
       padding: 0 15px; }
-      #home .contact-us .container .row .col-md-12 ul.cu-title li a {
+      #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title li a {
         font-family: "Merriweather Sans", sans-serif;
         text-transform: none;
         color: #b99663;
         position: relative;
         font-size: 1.1em; }
-      #home .contact-us .container .row .col-md-12 ul.cu-title li:first-child {
+      #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title li:first-child {
         padding-left: 0; }
-      #home .contact-us .container .row .col-md-12 ul.cu-title li:last-child {
+      #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title li:last-child {
         padding-right: 0; }
   #home .contact-us .container .row .col-md-12 .cu-content .cu-panel#cu-home {
-    display: block; }
+    display: block;
+    padding-top: 75px; }
     #home .contact-us .container .row .col-md-12 .cu-content .cu-panel#cu-home .row .col-md-4 #cu-map {
       width: 100%;
       height: 100%; }
@@ -1492,7 +1491,7 @@ li.active {
       min-height: 175px;
       max-height: 225px;
       font-size: 15px;
-      color: #777;
+      color: #a9a9a9;
       padding: 12px 20px 7px 74px;
       background-color: #ffffff;
       border-width: 0 0 2px 0;
@@ -1501,7 +1500,8 @@ li.active {
       #home .contact-us .container .row .col-md-12 .cu-content .cu-panel#cu-home .row .col-md-8 .cu-form form ul li textarea::-webkit-input-placeholder {
         color: #a9a9a9; }
   #home .contact-us .container .row .col-md-12 .cu-content .cu-panel#cu-profile {
-    display: none; }
+    display: none;
+    padding-top: 75px; }
     #home .contact-us .container .row .col-md-12 .cu-content .cu-panel#cu-profile h2 {
       width: 100%;
       font-size: 3.1em;

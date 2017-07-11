@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Page - Gallery</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i|Merriweather+Sans:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+	<div id="page">
+		<!-- Home TopHeader -->
+		<div class="header">
+				<div class="container paddingZero">
+					<div class="row">
+						<div class="col-md-2 language">
+							<ul>
+								<li><a href="#">english</a></li>
+								<li><a href="#">spanish</a></li>
+							</ul>
+						</div>
+						<div class="col-md-7 info">
+							<div class="address">
+								<span class="fa fa-map-marker" aria-hidden="true"></span>
+								<span>2925 SWICK HILL STREET, CHARLOTTE, NC 28202</span>
+							</div>
+							<div class="phone">
+								<span class="fa fa-phone" aria-hidden="true"></span>
+								<span>+1 984-700-7129</span>
+							</div>
+							<div class="worktime">
+								<span class="fa fa-clock-o" aria-hidden="true"></span>
+								<span>MON - FRI: 7:00AM - 6:00PM</span>
+							</div>
+						</div>
+						<div class="col-md-3 user">
+							<ul>
+								<li class="user-login"><a href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+								<li><a href="contact.html">contact</a></li>
+								<li><a href="#" class="searchIcon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog pull-right" role="document">
+						    <div class="login modal-content">
+						    	<h3>login to your account</h3>
+								<form>
+									<ul class="signin">
+										<li>
+											<input type="text" value="Your Username" onfocus="this.value=''" onblur="this.value='Your Username'">
+										</li>
+										<li>
+											<input type="password" value="password" onfocus="this.value=''" onblur="this.value='password'">
+										</li>
+										<li>
+											<a href="#">forgot password?</a>
+										</li>
+										<li>
+											<button class="btn">sign in</button>
+										</li>
+									</ul>
+								</form>
+								<h3>or try our socials</h3>
+								<ul class="social">
+									<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+									</li>
+									<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
+									<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+								</ul>
+								<p>Not a member yet?<a href="#">sign-up now</a></p>
+						    </div>
+					  	</div>
+					</div>
+					<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog pull-right" role="document">
+						    <div class="search modal-content">
+						    	<h3>search your keyword</h3>
+						    	<ul>
+						    		<li><input type="search" value="Keywords..." onblur="this.value='Keywords...'" onfocus="this.value=''"></li>
+						    		<li><button class="btn">search</button></li>
+						    	</ul>
+						    </div>
+					  	</div>
+					</div>
+				</div>
+		</div>
+		<!-- Home TopHeader -->
+		<div class="clearfix"></div>
+		<!-- Home Navbar -->
+		<div class="navBar">
+				<div class="container paddingZero">
+					<div class="row">
+						<div class="col-md-3 logo">
+							<a href="home.html">
+								<img src="img/home/logo.png" alt="NavLogo">
+							</a>
+						</div>
+						<div class="col-md-9 menu">
+							<ul class="menuList">
+								<li class="home"><a href="home.html">home</a></li>
+								<li class="course">
+									<a href="courses.html">courses</a>
+									<ul class="menuDropdown courseDropdown">
+										<li><a href="courses.html">Courses Grid</a></li>
+										<li><a href="courses.html">Courses List</a></li>
+										<li><a href="courses.html">Courses Detail</a></li>
+									</ul>
+								</li>
+								<li class="event">
+									<a href="events.html">event</a>
+									<ul class="menuDropdown eventDropdown">
+										<li><a href="events.html">Event Grid</a></li>
+										<li><a href="events.html">Event List</a></li>
+									</ul>
+								</li>
+								<li class="dashboard">
+									<a href="my-profile.html">dashboard</a>
+									<ul class="menuDropdown dashboardDropdown">
+										<li><a href="my-profile.html">My Profile</a></li>
+										<li><a href="my-courses.html">My Courses</a></li>
+										<li><a href="favorites.html">Favorites</a></li>
+										<li><a href="statement.html">Statement</a></li>
+										<li><a href="settings.html">Settings</a></li>
+									</ul>
+								</li>
+								<li class="pages">
+									<a href="pages.html">pages</a>
+									<ul class="menuDropdown pagesDropdown">
+										<li><a href="error.html">404 page</a></li>
+										<li><a href="about.html">about us</a></li>
+										<li><a href="blog-list.html">blog list</a></li>
+										<li><a href="blog-detail.html">blog detail</a></li>
+										<li><a href="faq.html">faq page</a></li>
+										<li><a href="gallery.html">gallery</a></li>
+									</ul>
+								</li>
+								<li class="shop">
+									<a href="shop.html">shop</a>
+									<ul class="menuDropdown shopDropdown">
+										<li><a href="shop.html">Shop Grid</a></li>
+										<li><a href="shop.html">Shop List</a></li>
+										<li><a href="shop.html">Shop Detail</a></li>
+									</ul>
+								</li>
+								<li class="contact"><a href="contact.html">contact  us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>
+		<!-- Home Navbar -->
+		<div class="clearfix"></div>
+		<!-- Mini Header -->
+		<div class="mini-header">
+			<div class="blue-transparent"></div>
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mini-title">
+							<h1>Gallery</h1>
+						</div>
+						<div class="mini-breadcrumb">
+							<ul>
+								<li><a href="home.html">Home</a></li>
+								<li><a href="course.html">Pages</a></li>
+								<li>Gallery</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mini Header -->
+		<div class="clearfix"></div>
+		<!-- Course Content -->
+		<div id="gallery">
+			<div class="container paddingZero">
+				<div class="row">
+					<div class="gallery-filter">
+						<ul>
+							<li><a href="#" class="active all">all</a></li>
+							<li ><a href="#" class="uni">university</a></li>
+							<li><a href="#" class="camp">campus</a></li>
+							<li><a href="#" class="pro">professors</a></li>
+							<li><a href="#" class="class">classes</a></li>
+						</ul>
+					</div>
+					<div class="gallery-items">
+						<ul class="row">
+							<li class="col-md-4 pro-one professors">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/1.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-4 uni-one university">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/2.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-4 camp-one campus">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/3.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-4 pro-two professors">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/4.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-4 uni-two university">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/5.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-4 camp-two campus">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/6.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-4 pro-three professors">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/7.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-4 uni-three university">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/8.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+							<li class="col-md-4 camp-three campus">
+								<figure class="item-container">
+									<a href="#"><img src="img/gallery/9.jpg" alt=""></a>
+									<figcaption class="layer">
+										<div class="gallery-text">
+											<a href="#"></a>
+											<h6>Students studying hard in Campus L3</h6>
+										</div>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
+					<div class="course-pagination">
+						<ul>
+							<li>
+								<a href="#"><i class="fa fa-angle-left"></i>previous</a>
+							</li>
+							<li>
+								<a href="#" class="active-pag">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+							<li>...</li>
+							<li>
+								<a href="#">11</a>
+							</li>
+							<li>
+								<a href="#">next<i class="fa fa-angle-right"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Course Content -->
+		<div class="clearfix"></div>
+		<!-- Footer -->
+		<footer class="footer">
+				<div class="footer-newsletter">
+					<div class="container paddingZero">
+						<div class="row">
+							<div class="col-md-12">
+								<form action="">
+									<i class="fa  fa-envelope"></i>
+									<input type="text" value="Enter your e-mail address" onblur="this.value ='Enter your e-mail address'" onfocus="this.value=''">
+									<input type="submit" value="SUBSCRIBE TO OUR NEWSLETTER">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-content">
+					<div class="container paddingZero">
+						<div class="row">
+							<div class="col-md-3">
+								<a href="home.html" class="footer-logo"><img src="img/home/logo.png" alt=""></a>
+								<ul>
+									<li>
+										<i class="fa fa-map-marker"></i>
+										<p>195 Cooks Mine Road Espanola, NM 87532</p>
+									</li>
+									<li>
+										<i class="fa fa-phone"></i>
+										<p>+1 505-753-5656 <br> +1 505-753-4437</p>
+									</li>
+									<li>
+										<i class="fa fa-envelope-open-o"></i>
+										<p>info@university.com <br> support@university.com</p>
+									</li>
+								</ul>
+								<div class="footer-social">
+									<a href="#"><i class="fa fa-facebook-square"></i></a>
+									<a href="#"><i class="fa fa-twitter-square"></i></a>
+									<a href="#"><i class="fa fa-linkedin-square"></i></a>
+									<a href="#"><i class="fa fa-vimeo-square"></i></a>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<h5>Quick Links</h5>
+								<ul>
+									<li><a href="events.html">Our Latest Events</a></li>
+									<li><a href="courses.html">Our Courses</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+									<li><a href="error.html">404 Page</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="home.html">All Instructors</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<h5><i class="fa fa-twitter"></i> @enrollcampus</h5>
+								<ul>
+									<li>
+										<p>Check Youniverse - Multipurpose PSD Template @ThemeForest: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+										<time>4 hrs ago</time>
+									</li>
+									<li>
+										<p>Check out my New PSD:  FashionPlus - Fashion eCommerce: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+										<time>4 hrs ago</time>
+									</li>
+									<li>
+										<p>MedicAid - Medical Template @ThemeForest: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+										<time>4 hrs ago</time>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-3 footer-slider">
+								<h5>Our Instructors</h5>
+								<ul>
+									<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="0"></a></li>
+									<li><a><img src="img/home/3-3.jpg" alt="" class="gallery-img" value="1"></a></li>
+									<li><a><img src="img/home/4-4.jpg" alt="" class="gallery-img" value="2"></a></li>
+									<li><a><img src="img/home/5-5.jpg" alt="" class="gallery-img" value="3"></a></li>
+									<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="4"></a></li>
+									<li><a><img src="img/home/3-3.jpg" alt="" class="gallery-img" value="5"></a></li>
+									<li><a><img src="img/home/4-4.jpg" alt="" class="gallery-img" value="6"></a></li>
+									<li><a><img src="img/home/5-5.jpg" alt="" class="gallery-img" value="7"></a></li>
+									<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="8"></a></li>
+								</ul>
+							</div>
+							<div class="modal">
+								<img src="" class="modal-img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container paddingZero">
+						<div class="row">
+							<div class="col-md-6">
+								<span><i class="fa fa-snowflake-o" aria-hidden="true"></i> Barcelona, Spain 2°F / -17°C</span>
+							</div>
+							<div class="col-md-6">
+								<p>© 2016, All Right Reserved - by <a href="home.html">LiM10</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</footer>
+		<!-- Footer -->
+	</div>
+</body>
+</html>
+<script src="js/jquery-3.2.0.js" charset="utf-8"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js" rel="stylesheet"></script>
+<script src="bootstrap/js/bootstrap.js" rel="stylesheet"></script>
+<script src="js/main.js" rel="stylesheet"></script>
+<script src="js/gallery.js" rel="stylesheet"></script>
+

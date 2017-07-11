@@ -4,17 +4,13 @@ jQuery(document).ready(function() {
 		var hover = $(this).find('.hover');
 		var figBtn = $(this).find('.fig-btn');
 		$(hover).animate({top: '40%'},400);
-		$(figBtn).css({
-			visibility: 'visible'
-		});
+		$(figBtn).fadeIn('400');
 	});
 	$(document.body).on('mouseleave', '.u-can-learn figure', function() {
 		var hover = $(this).find('.hover');
 		var figBtn = $(this).find('.fig-btn');
 		$(hover).animate({top: '50%'},400);
-		$(figBtn).css({
-			visibility: 'hidden'
-		});
+		$(figBtn).fadeOut('400');
 	});
 });
 // You can learn - hover
@@ -25,14 +21,14 @@ jQuery(document).ready(function($) {
 	$('.xe').click(function(event) {
 		$(this).addClass('active');
 		$('.ex').removeClass('active');
-		$('#cu-home').show('100');
-		$('#cu-profile').hide('100');
+		$('#cu-home').show();
+		$('#cu-profile').hide();
 	});
 	$('.ex').click(function(event) {
 		$(this).addClass('active');
 		$('.xe').removeClass('active');
-		$('#cu-profile').show('100');
-		$('#cu-home').hide('100');
+		$('#cu-profile').show();
+		$('#cu-home').hide();
 	});
 });
 // Contact US
@@ -82,6 +78,7 @@ jQuery(document).ready(function($) {
 // Slider of Our lates events
 
 // Slider of What clients say
+
 jQuery(document).ready(function($) {
 	
 		var $slider = $('.wcs-slider-content');
@@ -119,50 +116,51 @@ jQuery(document).ready(function($) {
 		startSlider();
 
 });
+
 // Slider of What clients say
 
 // Slider of Our prtners
-jQuery(document).ready(function($) {
-	
-		var $slider = $('.up-slider-content');
-		var $slideContainer = $('.up-slider-list', $slider);
-		var $slides = $('.up-part-uni', $slider);
 
-		var width = $slides.width();
-		var animationSpeed = 2000;
-		var pauseSpeed = 3000;
-		var currentSlide = 1;
+$(document).ready(function(){
 
-
-		var interval;
-
-		function startSlider(){
-			interval = setInterval(function() {
-				$slideContainer.animate({'left': '-='+width}, animationSpeed, function() {
-					if (++currentSlide === $slides.length - 5) {
-						currentSlide = 1;
-						$slideContainer.css('left', '0');
-					}
-				});
-			}, pauseSpeed);
-		}
-
-		function pauseSlider() {
-			clearInterval(interval);
-		}
-
-		$slideContainer
-			.on('mouseenter', pauseSlider)
-			.on('mouseleave', startSlider);
-
-
-		startSlider();
-
+  	var partners = $('.up-slider-list');
+		partners.owlCarousel({
+		    items:6,
+		    loop:true,
+		    autoplay:true,
+		    autoplayTimeout:4000,
+		    autoplayHoverPause:true,
+		    dots: false,
+		    responsiveClass:true,
+		    nav:true,
+		    navText: ["<i class='fa fa-chevron-left arrow left'></i>","<i class='fa fa-chevron-right arrow right'></i>"],
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true,
+		            dot:false
+		        },
+		        600:{
+		            items:3,
+		            nav:false,
+		            dot:false
+		        },
+		        1000:{
+		            items:6,
+		            nav:true,
+		            dot:false,
+		            loop:true
+		        }
+		    }
+		});
 });
+
 // Slider of Our prtners
 
+// Banner
+
 jQuery(document).ready(function($) {
-	var height = 261.5;
+	var height = 328;
 	var animationSpeed = 200;
 	var currentSlide = 1;
 
@@ -177,3 +175,5 @@ jQuery(document).ready(function($) {
 		}
 	});
 });
+
+// Banner
