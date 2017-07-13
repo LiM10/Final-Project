@@ -1145,7 +1145,8 @@ li.active{
 									text-transform: none;
 									color: $darkKhaki;
 									position: relative;
-									font-size: 1.1em; 
+									font-size: 1.1em;
+									cursor: pointer; 
 								}
 								&:first-child{
 									padding-left: 0;

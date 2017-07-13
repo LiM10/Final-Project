@@ -1432,7 +1432,8 @@ li.active {
         text-transform: none;
         color: #b99663;
         position: relative;
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        cursor: pointer; }
       #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title li:first-child {
         padding-left: 0; }
       #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title li:last-child {

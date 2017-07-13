@@ -2046,7 +2046,8 @@ li.active {
         text-transform: none;
         color: #b99663;
         position: relative;
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        cursor: pointer; }
       #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title li:first-child {
         padding-left: 0; }
       #home .contact-us .container .row .col-md-12 .cu-content ul.cu-title li:last-child {
@@ -2177,7 +2178,8 @@ li.active {
   width: 100%; }
 
 #page #page404 {
-  padding-bottom: 204px; }
+  padding-bottom: 204px;
+  position: relative; }
   #page #page404:before {
     content: '';
     background: url(../img/404-image.jpg);
@@ -2185,8 +2187,8 @@ li.active {
     position: absolute;
     width: 38%;
     height: 127%;
-    top: 85%;
-    left: 2%; }
+    top: 39px;
+    left: 57px; }
   #page #page404 .col-md-7 {
     float: right; }
     #page #page404 .col-md-7 .page404-container {
@@ -2385,7 +2387,7 @@ li.active {
   #page #blog-list .col-md-3 .bl-categories ul, #page #blog-detail .col-md-3 .bl-categories ul {
     float: left;
     width: 100%;
-    height: 275px;
+    height: 290px;
     overflow-y: scroll;
     overflow-x: hidden;
     outline: none;
@@ -2481,19 +2483,33 @@ li.active {
     font-family: "Merriweather Sans", sans-serif;
     border-bottom: 2px solid #eaeaea;
     margin-bottom: 20px; }
-  #page #faq .col-md-9 .faq-main .panel-group .panel-default, #page #faq .col-md-9 .faq-others .panel-group .panel-default {
+  #page #faq .col-md-9 .faq-main #accordion .card, #page #faq .col-md-9 .faq-main #accordion1 .card, #page #faq .col-md-9 .faq-others #accordion .card, #page #faq .col-md-9 .faq-others #accordion1 .card {
+    background-color: transparent;
     border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    border-top: none;
     margin-bottom: 10px;
-    padding-bottom: 5px; }
-    #page #faq .col-md-9 .faq-main .panel-group .panel-default .panel-heading .panel-title a, #page #faq .col-md-9 .faq-others .panel-group .panel-default .panel-heading .panel-title a {
-      font-family: "Merriweather Sans", sans-serif;
-      color: #b99663;
-      font-size: 18px;
-      text-transform: none; }
-      #page #faq .col-md-9 .faq-main .panel-group .panel-default .panel-heading .panel-title a:before, #page #faq .col-md-9 .faq-others .panel-group .panel-default .panel-heading .panel-title a:before {
-        content: "\f107";
-        font-family: FontAwesome;
-        float: right; }
+    padding-bottom: 10px;
+    border-radius: none; }
+    #page #faq .col-md-9 .faq-main #accordion .card .card-header, #page #faq .col-md-9 .faq-main #accordion1 .card .card-header, #page #faq .col-md-9 .faq-others #accordion .card .card-header, #page #faq .col-md-9 .faq-others #accordion1 .card .card-header {
+      padding: 0;
+      border-radius: 0;
+      border: none;
+      background-color: transparent; }
+      #page #faq .col-md-9 .faq-main #accordion .card .card-header .mb-0, #page #faq .col-md-9 .faq-main #accordion1 .card .card-header .mb-0, #page #faq .col-md-9 .faq-others #accordion .card .card-header .mb-0, #page #faq .col-md-9 .faq-others #accordion1 .card .card-header .mb-0 {
+        border: none; }
+        #page #faq .col-md-9 .faq-main #accordion .card .card-header .mb-0 a, #page #faq .col-md-9 .faq-main #accordion1 .card .card-header .mb-0 a, #page #faq .col-md-9 .faq-others #accordion .card .card-header .mb-0 a, #page #faq .col-md-9 .faq-others #accordion1 .card .card-header .mb-0 a {
+          font-family: "Merriweather Sans", sans-serif;
+          color: #b99663;
+          font-size: 18px;
+          text-transform: none; }
+          #page #faq .col-md-9 .faq-main #accordion .card .card-header .mb-0 a:before, #page #faq .col-md-9 .faq-main #accordion1 .card .card-header .mb-0 a:before, #page #faq .col-md-9 .faq-others #accordion .card .card-header .mb-0 a:before, #page #faq .col-md-9 .faq-others #accordion1 .card .card-header .mb-0 a:before {
+            content: "\f107";
+            font-family: FontAwesome;
+            float: right; }
+    #page #faq .col-md-9 .faq-main #accordion .card .card-block, #page #faq .col-md-9 .faq-main #accordion1 .card .card-block, #page #faq .col-md-9 .faq-others #accordion .card .card-block, #page #faq .col-md-9 .faq-others #accordion1 .card .card-block {
+      padding: 5px 50px 3px 0; }
 #page #faq .col-md-9 .faq-search {
   float: left;
   width: 100%;

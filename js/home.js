@@ -23,12 +23,14 @@ jQuery(document).ready(function($) {
 		$('.ex').removeClass('active');
 		$('#cu-home').show();
 		$('#cu-profile').hide();
+		
 	});
 	$('.ex').click(function(event) {
 		$(this).addClass('active');
 		$('.xe').removeClass('active');
 		$('#cu-profile').show();
 		$('#cu-home').hide();
+
 	});
 });
 // Contact US
@@ -39,39 +41,47 @@ jQuery(document).ready(function($) {
 // Slider of Our lates events
 jQuery(document).ready(function($) {
 	
-		var $slider = $('.ole-slider-content');
-		var $slideContainer = $('.ole-slider-list', $slider);
-		var $slides = $('.ole-slides', $slider);
+	var slideWidth=273;
+	var sliderTimer;
+	$(function(){
+	$('.ole-slider-list').width($('.ole-slider-list').children().length*slideWidth);
+	    sliderTimer=setInterval(nextSlide,3000);
+	    $('.ole-slider-content').hover(function(){
+	        clearInterval(sliderTimer);
+	    },function(){
+	        sliderTimer=setInterval(nextSlide,300);
+	    });
+	    $('.right').click(function(){
+	        clearInterval(sliderTimer);
+	        nextSlide();
+	        sliderTimer=setInterval(nextSlide,300);
+	    });
+	    $('.left').click(function(){
+	        clearInterval(sliderTimer);
+	        prevSlide();
+	        sliderTimer=setInterval(nextSlide,300);
+	    });
+	});
 
-		var width = $slider.width();
-		var animationSpeed = 1500;
-		var pause = 2000;
-		var currentSlide = 1;
+	function nextSlide(){
+	    var currentSlide=parseInt($('.ole-slider-list').data('current'));
+	    currentSlide++;
+	    if(currentSlide>=$('.ole-slider-list').children().length)
+	    {
+	        currentSlide=0;   
+	    }
+	    $('.ole-slider-list').animate({left: -currentSlide*slideWidth},1000).data('current',currentSlide);
+	}
 
-
-		var interval;
-
-		function startSlider(){
-			interval = setInterval(function() {
-				$slideContainer.animate({'left': '-='+width}, animationSpeed, function() {
-					if (++currentSlide === $slides.length) {
-						currentSlide = 1;
-						$slideContainer.css('left', '0');
-					}
-				});
-			}, pause);
-		}
-
-		function pauseSlider() {
-			clearInterval(interval);
-		}
-
-		$slideContainer
-			.on('mouseenter', pauseSlider)
-			.on('mouseleave', startSlider);
-
-
-		startSlider();
+	function prevSlide(){
+	    var currentSlide=parseInt($('.ole-slider-list').data('current'));
+	    currentSlide--;
+	    if(currentSlide<0)
+	    {
+	        currentSlide=$('.ole-slider-list').children().length-1;   
+	    }
+	    $('.ole-slider-list').animate({left: -currentSlide*slideWidth},1000).data('current',currentSlide);
+	}
 
 
 });
@@ -84,20 +94,17 @@ jQuery(document).ready(function($) {
 		var $slider = $('.wcs-slider-content');
 		var $slideContainer = $('.wcs-slider-list', $slider);
 		var $slides = $('.wcs-slides', $slider);
-
 		var width = $slider.width();
-		var animationSpeed = 2000;
+		var animationSpeed = 750;
 		var pauseSpeed = 4000;
-		var currentSlide = 1;
-
-
+		var currentSlide = 0;
 		var interval;
 
 		function startSlider(){
 			interval = setInterval(function() {
 				$slideContainer.animate({'left': '-='+width}, animationSpeed, function() {
-					if (++currentSlide === 3) {
-						currentSlide = 1;
+					if ((currentSlide+= 2) === $slides.length) {
+						currentSlide = 0;
 						$slideContainer.css('left', '0');
 					}
 				});
@@ -162,15 +169,25 @@ $(document).ready(function(){
 jQuery(document).ready(function($) {
 	var height = 328;
 	var animationSpeed = 200;
-	var currentSlide = 1;
-
+	var count = 1;
 
 	var $slides = $('.rightSide-slide');
+	var $slideOdd = $('.rightSide-slide odd');
+	var $slideEven = $('.rightSide-slide even');
+
 	var $slider = $('.rightSide-container')
-	$slider.on('click', function() {
+	$slideOdd.on('click', function() {
 		$slider.animate({'top': '-='+height}, 200);
-		if (currentSlide++ == $slides.length) {
-			currentSlide = 1;
+		if (count++ == $slides.length) {
+			count = 1;
+			$slider.css('top', '0');
+		}
+	});
+
+	$slideEven.on('click', function() {
+		$slider.animate({'top': '+='+height}, 200);
+		if (count-- == $slides.length) {
+			count = 1;
 			$slider.css('top', '0');
 		}
 	});
