@@ -39,91 +39,115 @@ jQuery(document).ready(function($) {
 
 
 // Slider of Our lates events
-jQuery(document).ready(function($) {
-	
-	var slideWidth=273;
-	var sliderTimer;
-	$(function(){
-	$('.ole-slider-list').width($('.ole-slider-list').children().length*slideWidth);
-	    sliderTimer=setInterval(nextSlide,3000);
-	    $('.ole-slider-content').hover(function(){
-	        clearInterval(sliderTimer);
-	    },function(){
-	        sliderTimer=setInterval(nextSlide,300);
-	    });
-	    $('.right').click(function(){
-	        clearInterval(sliderTimer);
-	        nextSlide();
-	        sliderTimer=setInterval(nextSlide,300);
-	    });
-	    $('.left').click(function(){
-	        clearInterval(sliderTimer);
-	        prevSlide();
-	        sliderTimer=setInterval(nextSlide,300);
-	    });
+$(document).ready(function(){
+
+  	var events = $('.ole-slider-list');
+		events.owlCarousel({
+		    items:1,
+		    loop:true,
+		    autoplay:true,
+		    autoplaySpeed: 750,
+		    autoplayTimeout:4000,
+		    autoplayHoverPause:true,
+		    autoWidth: true,
+		    nav: true,
+		    dots: false,
+		    responsiveClass:true,
+		    navText: ["<i class='fa fa-chevron-left arrow left-ole'></i>","<i class='fa fa-chevron-right arrow right-ole'></i>"],
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true,
+		            dot:false,
+		            loop:true
+		        },
+		        600:{
+		            items:1,
+		            nav:true,
+		            dot:false,
+		            loop:true
+		        },
+		        1000:{
+		            items:1,
+		            nav:true,
+		            dot:false,
+		            loop:true
+		        }
+		    }
+		});
+
+	var block = false;
+	$(".what-clients-say .owl-item").mouseenter(function(){
+	 if(!block) {
+	  block = true;
+	  $(".what-clients-say .owl-item").trigger('stop.owl.autoplay')
+	  block = false;
+	  }
 	});
-
-	function nextSlide(){
-	    var currentSlide=parseInt($('.ole-slider-list').data('current'));
-	    currentSlide++;
-	    if(currentSlide>=$('.ole-slider-list').children().length)
-	    {
-	        currentSlide=0;   
-	    }
-	    $('.ole-slider-list').animate({left: -currentSlide*slideWidth},1000).data('current',currentSlide);
-	}
-
-	function prevSlide(){
-	    var currentSlide=parseInt($('.ole-slider-list').data('current'));
-	    currentSlide--;
-	    if(currentSlide<0)
-	    {
-	        currentSlide=$('.ole-slider-list').children().length-1;   
-	    }
-	    $('.ole-slider-list').animate({left: -currentSlide*slideWidth},1000).data('current',currentSlide);
-	}
-
-
+	$(".what-clients-say .owl-item").mouseleave(function(){
+	 if(!block) {
+	  block = true;
+	  $(".what-clients-say .owl-item").trigger('play.owl.autoplay',[1000])
+	  block = false;
+	 }
+	});	
 });
 // Slider of Our lates events
 
 // Slider of What clients say
+$(document).ready(function(){
 
-jQuery(document).ready(function($) {
-	
-		var $slider = $('.wcs-slider-content');
-		var $slideContainer = $('.wcs-slider-list', $slider);
-		var $slides = $('.wcs-slides', $slider);
-		var width = $slider.width();
-		var animationSpeed = 750;
-		var pauseSpeed = 4000;
-		var currentSlide = 0;
-		var interval;
+  	var clients = $('.wcs-slider-list');
+		clients.owlCarousel({
+		    items:1,
+		    loop:true,
+		    autoplay:true,
+		    autoplaySpeed: 750,
+		    autoplayTimeout:4000,
+		    autoplayHoverPause:true,
+		    autoWidth: true,
+		    nav: true,
+		    dots: false,
+		    responsiveClass:true,
+		    navText: ["<i class='fa fa-chevron-left arrow left-wcs'></i>","<i class='fa fa-chevron-right arrow right-wcs'></i>"],
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true,
+		            dot:false,
+		            loop: true
+		        },
+		        600:{
+		            items:1,
+		            nav:true,
+		            dot:false,
+		            loop: true
+		        },
+		        1000:{
+		            items:1,
+		            nav:true,
+		            dot:false,
+		            loop:true
+		        }
+		    }
+		});
 
-		function startSlider(){
-			interval = setInterval(function() {
-				$slideContainer.animate({'left': '-='+width}, animationSpeed, function() {
-					if ((currentSlide+= 2) === $slides.length) {
-						currentSlide = 0;
-						$slideContainer.css('left', '0');
-					}
-				});
-			}, pauseSpeed);
-		}
-
-		function pauseSlider() {
-			clearInterval(interval);
-		}
-
-		$slideContainer
-			.on('mouseenter', pauseSlider)
-			.on('mouseleave', startSlider);
-
-
-		startSlider();
-
+	var block = false;
+	$(".what-clients-say .owl-item").mouseenter(function(){
+	 if(!block) {
+	  block = true;
+	  $(".what-clients-say .owl-item").trigger('stop.owl.autoplay')
+	  block = false;
+	  }
+	});
+	$(".what-clients-say .owl-item").mouseleave(function(){
+	 if(!block) {
+	  block = true;
+	  $(".what-clients-say .owl-item").trigger('play.owl.autoplay',[1000])
+	  block = false;
+	 }
+	});	
 });
-
 // Slider of What clients say
 
 // Slider of Our prtners
@@ -145,12 +169,14 @@ $(document).ready(function(){
 		        0:{
 		            items:1,
 		            nav:true,
-		            dot:false
+		            dot:false,
+		            loop:true
 		        },
 		        600:{
 		            items:3,
-		            nav:false,
-		            dot:false
+		            nav:true,
+		            dot:false,
+		            loop:true
 		        },
 		        1000:{
 		            items:6,
@@ -160,6 +186,23 @@ $(document).ready(function(){
 		        }
 		    }
 		});
+
+	var block = false;
+	$(".partners .owl-item").mouseenter(function(){
+	 if(!block) {
+	  block = true;
+	  $(".partners .owl-item").trigger('stop.owl.autoplay')
+	  block = false;
+	  }
+	});
+	$(".partners .owl-item").mouseleave(function(){
+	 if(!block) {
+	  block = true;
+	  $(".partners .owl-item").trigger('play.owl.autoplay',[1000])
+	  block = false;
+	 }
+	});
+
 });
 
 // Slider of Our prtners
@@ -176,7 +219,7 @@ jQuery(document).ready(function($) {
 	var $slideEven = $('.rightSide-slide even');
 
 	var $slider = $('.rightSide-container')
-	$slideOdd.on('click', function() {
+	$slider.on('click', function() {
 		$slider.animate({'top': '-='+height}, 200);
 		if (count++ == $slides.length) {
 			count = 1;
@@ -184,13 +227,16 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	$slideEven.on('click', function() {
-		$slider.animate({'top': '+='+height}, 200);
-		if (count-- == $slides.length) {
-			count = 1;
-			$slider.css('top', '0');
-		}
-	});
+	// $slideEven.on('click', function() {
+	// 	$slider.animate({'top': '+='+height}, 200);
+	// 	if (count-- == $slides.length) {
+	// 		count = 1;
+	// 		$slider.css('top', '0');
+	// 	}
+	// });
+
 });
 
 // Banner
+
+

@@ -643,6 +643,12 @@ footer .footer-copyright {
       color: #b99663;
       margin-left: 10px; }
 
+.modal-open, .modal, .fade, .show {
+  transition: none; }
+
+.modal-backdrop {
+  background-color: #222845; }
+
 .courses-text > h6, .ole-event-text > h6 {
   margin-bottom: 6px;
   line-height: 1.5; }
@@ -1080,10 +1086,10 @@ li.active {
       cursor: pointer;
       color: #222845;
       font-size: 1.1em; }
-    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider .left {
+    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider .left-ole {
       left: 42%;
       margin-top: 2px; }
-    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider .right {
+    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider .right-ole {
       right: 42%;
       margin-bottom: 2px; }
   #home .our-latest-events .container .row .col-md-3 .ole-counter {
@@ -1124,86 +1130,91 @@ li.active {
     padding-bottom: 25px;
     position: relative; }
     #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list {
-      width: 4600px;
+      width: 5700px;
       float: left;
       left: 0px;
       position: relative;
       top: 0;
       transform: translate3d(0, 0, 0);
       transition: 0.2s; }
-      #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides {
-        width: 570px;
+      #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder {
         float: left;
+        width: 1140px;
+        height: 310px;
         position: relative; }
-        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides p {
-          font-size: 1.1em;
-          color: #ffffff;
-          padding: 40px 50px;
-          margin-bottom: 35px;
-          line-height: 30px;
-          position: relative;
-          background-color: #222845; }
-          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides p:before {
-            content: '';
-            position: absolute;
-            bottom: -14px;
-            border-left: 9px solid transparent;
-            border-right: 9px solid transparent;
-            border-top: 14px solid; }
-        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides figure {
+        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides {
+          width: 570px;
           float: left;
-          width: 100%;
-          position: relative;
-          margin-bottom: 0;
-          padding: 0 35px; }
-          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides figure a img {
-            border-radius: 100%; }
-          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides figure figcaption {
-            padding: 15px 0px 0px 0px;
-            display: inline-block; }
-            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides figure figcaption h5 {
-              margin-bottom: 0;
-              font-weight: 400; }
-              #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides figure figcaption h5 a {
-                margin-bottom: 7px;
-                text-transform: capitalize;
-                color: #222845; }
-            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides figure figcaption span {
+          position: relative; }
+          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides p {
+            font-size: 1.1em;
+            color: #ffffff;
+            padding: 40px 50px;
+            margin-bottom: 35px;
+            line-height: 30px;
+            position: relative;
+            background-color: #222845; }
+            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides p:before {
+              content: '';
+              position: absolute;
+              bottom: -14px;
+              border-left: 9px solid transparent;
+              border-right: 9px solid transparent;
+              border-top: 14px solid; }
+          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides figure {
+            float: left;
+            width: 100%;
+            position: relative;
+            margin-bottom: 0;
+            padding: 0 35px; }
+            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides figure a img {
+              border-radius: 100%; }
+            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides figure figcaption {
+              padding: 15px 0px 0px 0px;
+              display: inline-block; }
+              #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides figure figcaption h5 {
+                margin-bottom: 0;
+                font-weight: 400; }
+                #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides figure figcaption h5 a {
+                  margin-bottom: 7px;
+                  text-transform: capitalize;
+                  color: #222845; }
+              #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides figure figcaption span {
+                color: #b99663; }
+        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(odd) {
+          left: 10px; }
+          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(odd) p {
+            background-color: #222845; }
+            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(odd) p:before {
+              left: 70px;
+              color: #222845; }
+          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(odd) figure a {
+            float: left;
+            margin-right: 15px; }
+          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(odd) figure figcaption {
+            float: left; }
+            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(odd) figure figcaption span {
+              margin-left: 0; }
+        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(even) {
+          right: 10px;
+          top: 20px; }
+          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(even) p {
+            background-color: #b99663;
+            opacity: .8; }
+            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(even) p:before {
+              right: 70px;
               color: #b99663; }
-      #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(odd) {
-        left: 10px; }
-        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(odd) p {
-          background-color: #222845; }
-          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(odd) p:before {
-            left: 70px;
-            color: #222845; }
-        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(odd) figure a {
-          float: left;
-          margin-right: 15px; }
-        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(odd) figure figcaption {
-          float: left; }
-          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(odd) figure figcaption span {
-            margin-left: 0; }
-      #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(even) {
-        right: 10px;
-        top: 20px; }
-        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(even) p {
-          background-color: #b99663;
-          opacity: .8; }
-          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(even) p:before {
-            right: 70px;
-            color: #b99663; }
-        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(even) figure a {
-          float: right;
-          margin-left: 15px; }
-        #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(even) figure figcaption {
-          float: right; }
-          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slides:nth-child(even) figure figcaption span {
+          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(even) figure a {
+            float: right;
             margin-left: 15px; }
-  #home .what-clients-say .container .row .col-md-12 .wcs-slider .left {
+          #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(even) figure figcaption {
+            float: right; }
+            #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(even) figure figcaption span {
+              margin-left: 15px; }
+  #home .what-clients-say .container .row .col-md-12 .wcs-slider .left-wcs {
     left: -40px;
     top: 30%; }
-  #home .what-clients-say .container .row .col-md-12 .wcs-slider .right {
+  #home .what-clients-say .container .row .col-md-12 .wcs-slider .right-wcs {
     right: -40px;
     top: 30%; }
 #home .our-history {
