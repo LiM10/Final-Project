@@ -1,781 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Courses</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i|Merriweather+Sans:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="css/course.css">
+    <title>Courses</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i|Merriweather+Sans:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/course.css">
 </head>
+
 <body>
-	<div id="courses">
-		<!-- Home TopHeader -->
-		<div class="header">
-				<div class="container paddingZero">
-					<div class="row">
-						<div class="col-md-2 language">
-							<ul>
-								<li><a href="#">english</a></li>
-								<li><a href="#">spanish</a></li>
-							</ul>
-						</div>
-						<div class="col-md-7 info">
-							<div class="address">
-								<span class="fa fa-map-marker" aria-hidden="true"></span>
-								<span>2925 SWICK HILL STREET, CHARLOTTE, NC 28202</span>
-							</div>
-							<div class="phone">
-								<span class="fa fa-phone" aria-hidden="true"></span>
-								<span>+1 984-700-7129</span>
-							</div>
-							<div class="worktime">
-								<span class="fa fa-clock-o" aria-hidden="true"></span>
-								<span>MON - FRI: 7:00AM - 6:00PM</span>
-							</div>
-						</div>
-						<div class="col-md-3 user">
-							<ul>
-								<li class="user-login"><a href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
-								<li><a href="contact.html">contact</a></li>
-								<li><a href="#" class="searchIcon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog pull-right" role="document">
-						    <div class="login modal-content">
-						    	<h3>login to your account</h3>
-								<form>
-									<ul class="signin">
-										<li>
-											<input type="text" value="Your Username" onfocus="this.value=''" onblur="this.value='Your Username'">
-										</li>
-										<li>
-											<input type="password" value="password" onfocus="this.value=''" onblur="this.value='password'">
-										</li>
-										<li>
-											<a href="#">forgot password?</a>
-										</li>
-										<li>
-											<button class="btn">sign in</button>
-										</li>
-									</ul>
-								</form>
-								<h3>or try our socials</h3>
-								<ul class="social">
-									<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
-									</li>
-									<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
-									<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
-								</ul>
-								<p>Not a member yet?<a href="#">sign-up now</a></p>
-						    </div>
-					  	</div>
-					</div>
-					<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog pull-right" role="document">
-						    <div class="search modal-content">
-						    	<h3>search your keyword</h3>
-						    	<ul>
-						    		<li><input type="search" value="Keywords..." onblur="this.value='Keywords...'" onfocus="this.value=''"></li>
-						    		<li><button class="btn">search</button></li>
-						    	</ul>
-						    </div>
-					  	</div>
-					</div>
-				</div>
-		</div>
-		<!-- Home TopHeader -->
-		<div class="clearfix"></div>
-		<!-- Home Navbar -->
-		<div class="navBar">
-				<div class="container paddingZero">
-					<div class="row">
-						<div class="col-md-3 logo">
-							<a href="home.html">
-								<img src="img/home/logo.png" alt="NavLogo">
-							</a>
-						</div>
-						<div class="col-md-9 menu">
-							<ul class="menuList">
-								<li class="home"><a href="home.html">home</a></li>
-								<li class="course">
-									<a href="courses.html">courses</a>
-									<ul class="menuDropdown courseDropdown">
-										<li><a href="courses.html">Courses Grid</a></li>
-										<li><a href="courses.html">Courses List</a></li>
-										<li><a href="courses.html">Courses Detail</a></li>
-									</ul>
-								</li>
-								<li class="event">
-									<a href="events.html">event</a>
-									<ul class="menuDropdown eventDropdown">
-										<li><a href="events.html">Event Grid</a></li>
-										<li><a href="events.html">Event List</a></li>
-									</ul>
-								</li>
-								<li class="dashboard">
-									<a href="my-profile.html">dashboard</a>
-									<ul class="menuDropdown dashboardDropdown">
-										<li><a href="my-profile.html">My Profile</a></li>
-										<li><a href="my-courses.html">My Courses</a></li>
-										<li><a href="favorites.html">Favorites</a></li>
-										<li><a href="statement.html">Statement</a></li>
-										<li><a href="settings.html">Settings</a></li>
-									</ul>
-								</li>
-								<li class="pages">
-									<a href="pages.html">pages</a>
-									<ul class="menuDropdown pagesDropdown">
-										<li><a href="error.html">404 page</a></li>
-										<li><a href="about.html">about us</a></li>
-										<li><a href="blog-list.html">blog list</a></li>
-										<li><a href="blog-detail.html">blog detail</a></li>
-										<li><a href="faq.html">faq page</a></li>
-										<li><a href="gallery.html">gallery</a></li>
-									</ul>
-								</li>
-								<li class="shop">
-									<a href="shop.html">shop</a>
-									<ul class="menuDropdown shopDropdown">
-										<li><a href="shop.html">Shop Grid</a></li>
-										<li><a href="shop.html">Shop List</a></li>
-										<li><a href="shop.html">Shop Detail</a></li>
-									</ul>
-								</li>
-								<li class="contact"><a href="contact.html">contact  us</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-		</div>
-		<!-- Home Navbar -->
-		<div class="clearfix"></div>
-		<!-- Mini Header -->
-		<div class="mini-header">
-			<div class="blue-transparent"></div>
-			<div class="container paddingZero">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mini-title">
-							<h1>Our Courses</h1>
-						</div>
-						<div class="mini-breadcrumb">
-							<ul>
-								<li><a href="home.html">Home</a></li>
-								<li><a href="course.html">Courses</a></li>
-								<li>List</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Mini Header -->
-		<div class="clearfix"></div>
-		<!-- Course Content -->
-		<div class="course-content">
-			<div class="container paddingZero">
-				<div class="row">
-					<div class="col-md-3">
-						<div class="course-find">
-							<h3>find your course</h3>
-							<p>Fill your course here:</p>
+    <div id="courses">
+        <!-- Home TopHeader -->
+        <div class="header">
+            <div class="container paddingZero">
+                <div class="row">
+                    <div class="col-md-2 language">
+                        <ul>
+                            <li><a href="#">english</a></li>
+                            <li><a href="#">spanish</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7 info">
+                        <div class="address">
+                            <span class="fa fa-map-marker" aria-hidden="true"></span>
+                            <span>2925 SWICK HILL STREET, CHARLOTTE, NC 28202</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fa fa-phone" aria-hidden="true"></span>
+                            <span>+1 984-700-7129</span>
+                        </div>
+                        <div class="worktime">
+                            <span class="fa fa-clock-o" aria-hidden="true"></span>
+                            <span>MON - FRI: 7:00AM - 6:00PM</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 user">
+                        <ul>
+                            <li class="user-login"><a href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="#" class="searchIcon" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+				<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog pull-right" role="document">
+					    <div class="login modal-content">
+					    	<h3>login to your account</h3>
 							<form>
-								<ul>
+								<ul class="signin">
 									<li>
-										<div class="checkboxes">
-										  <input type="checkbox" id="find-id"></input>
-										  <label for="find-id"></label>
-										  <p>by ID</p>
-										  <input type="checkbox" id="find-name"></input>
-										  <label for="find-name"></label>
-										  <p>by name</p>
-										</div>
+										<input type="text" value="Your Username" onblur="if(this.value == '') { this.value ='Your Username'; }" onfocus="if(this.value =='Your Username') { this.value = ''; }">
 									</li>
 									<li>
-										<input type="text" value="Course Name" onfocus="this.value=''" onblur="this.value='Course Name'">
-										<i class="fa fa-search"></i>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
 									</li>
 									<li>
-										<select class="form-control" id="sel1">
+										<a href="#">forgot password?</a>
+									</li>
+									<li>
+										<button class="btn">sign in</button>
+									</li>
+								</ul>
+							</form>
+							<h3>or try our socials</h3>
+							<ul class="social">
+								<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+								</li>
+								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
+								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+							</ul>
+							<p>Not a member yet?<a id="signin">sign-up now</a></p>
+					    </div>
+					    <div class="registration modal-content">
+					    	<h3>CREATE YOUR ACCOUNT TODAY</h3>
+							<form>
+								<ul class="signin">
+									<li>
+										<input type="text" value="Your Username" onblur="if(this.value == '') { this.value ='Your Username'; }" onfocus="if(this.value =='Your Username') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="text" value="Your E-mail" onblur="if(this.value == '') { this.value ='Your E-mail'; }" onfocus="if(this.value =='Your E-mail') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<button class="btn">create account</button>
+									</li>
+								</ul>
+							</form>
+							<h3>OR SIGNUP WITH YOUR SOCIALS</h3>
+							<ul class="social">
+								<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+								</li>
+								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
+								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+							</ul>
+							<p>Already a member?<a id="signup">Sign-in Here!</a></p>
+					    </div>
+				  	</div>
+				</div>
+				<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog pull-right" role="document">
+					    <div class="search modal-content">
+					    	<h3>search your keyword</h3>
+					    	<ul>
+					    		<li><input type="text" value="Keywords..." onblur="if(this.value == '') { this.value ='Keywords...'; }" onfocus="if(this.value =='Keywords...') { this.value = ''; }"></li>
+					    		<li><button class="btn">search</button></li>
+					    	</ul>
+					    </div>
+				  	</div>
+				</div>
+            </div>
+        </div>
+        <!-- Home TopHeader -->
+        <div class="clearfix"></div>
+        <!-- Home Navbar -->
+        <div class="navBar">
+            <div class="container paddingZero">
+                <div class="row">
+                    <div class="col-md-3 logo">
+                        <a href="home.html">
+                            <img src="img/home/logo.png" alt="NavLogo">
+                        </a>
+                    </div>
+                    <div class="col-md-9 menu">
+                        <ul class="menuList">
+                            <li class="home"><a href="home.html">home</a></li>
+                            <li class="course">
+                                <a href="courses.html">courses</a>
+                                <ul class="menuDropdown courseDropdown">
+                                    <li><a href="courses.html">Courses Grid</a></li>
+                                    <li><a href="courses.html">Courses List</a></li>
+                                    <li><a href="courses.html">Courses Detail</a></li>
+                                </ul>
+                            </li>
+                            <li class="event">
+                                <a href="events.html">event</a>
+                                <ul class="menuDropdown eventDropdown">
+                                    <li><a href="events.html">Event Grid</a></li>
+                                    <li><a href="events.html">Event List</a></li>
+                                </ul>
+                            </li>
+                            <li class="dashboard">
+                                <a href="my-profile.html">dashboard</a>
+                                <ul class="menuDropdown dashboardDropdown">
+                                    <li><a href="my-profile.html">My Profile</a></li>
+                                    <li><a href="my-courses.html">My Courses</a></li>
+                                    <li><a href="favorites.html">Favorites</a></li>
+                                    <li><a href="statement.html">Statement</a></li>
+                                    <li><a href="settings.html">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li class="pages">
+                                <a href="pages.html">pages</a>
+                                <ul class="menuDropdown pagesDropdown">
+                                    <li><a href="error.html">404 page</a></li>
+                                    <li><a href="about.html">about us</a></li>
+                                    <li><a href="blog-list.html">blog list</a></li>
+                                    <li><a href="blog-detail.html">blog detail</a></li>
+                                    <li><a href="faq.html">faq page</a></li>
+                                    <li><a href="gallery.html">gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="shop">
+                                <a href="shop.html">shop</a>
+                                <ul class="menuDropdown shopDropdown">
+                                    <li><a href="shop.html">Shop Grid</a></li>
+                                    <li><a href="shop.html">Shop List</a></li>
+                                    <li><a href="shop.html">Shop Detail</a></li>
+                                </ul>
+                            </li>
+                            <li class="contact"><a href="contact.html">contact  us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Home Navbar -->
+        <div class="clearfix"></div>
+        <!-- Mini Header -->
+        <div class="mini-header">
+            <div class="blue-transparent"></div>
+            <div class="container paddingZero">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mini-title">
+                            <h1>Our Courses</h1>
+                        </div>
+                        <div class="mini-breadcrumb">
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="course.html">Courses</a></li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mini Header -->
+        <div class="clearfix"></div>
+        <!-- Course Content -->
+        <div class="course-content">
+            <div class="container paddingZero">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="course-find">
+                            <h3>find your course</h3>
+                            <p>Fill your course here:</p>
+                            <form>
+                                <ul>
+                                    <li>
+                                        <div class="checkboxes">
+                                            <input type="checkbox" id="find-id"></input>
+                                            <label for="find-id"></label>
+                                            <p>by ID</p>
+                                            <input type="checkbox" id="find-name"></input>
+                                            <label for="find-name"></label>
+                                            <p>by name</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="text" value="Course Name" onblur="if(this.value == '') { this.value ='Course Name'; }" onfocus="if(this.value =='Course Name') { this.value = ''; }"></i>
+                                    </li>
+                                    <li>
+                                        <select class="form-control" id="sel1">
 										    <option>Category</option>
 										    <option>Category</option>
 										    <option>Category</option>
 										    <option>Category</option>
 										</select>
-									</li>
-									<li>
-										<input type="submit" value="Search Course"></input
-									</li>
-								</ul>
-							</form>
-						</div>
-						<div class="course-searchByType">
-							<h5>search by type<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-							<ul>
-								<li>
-									<input type="checkbox" id="id1"></input>
-										  <label for="id1"></label>
-										  <p>all courses</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id2"></input>
-										  <label for="id2"></label>
-										  <p>chemistry</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id3"></input>
-										  <label for="id3"></label>
-										  <p>classical archaeology</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id4"></input>
-										  <label for="id4"></label>
-										  <p>classics & english</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id5"></input>
-										  <label for="id5"></label>
-										  <p>materials science</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id6"></input>
-										  <label for="id6"></label>
-										  <p>mathematics</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id7"></input>
-										  <label for="id7"></label>
-										  <p>physics & philosophy</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id8"></input>
-										  <label for="id8"></label>
-										  <p>theology & religion</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id9"></input>
-										  <label for="id9"></label>
-										  <p>mathematics</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id10"></input>
-										  <label for="id10"></label>
-										  <p>classical archaeology</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id11"></input>
-										  <label for="id11"></label>
-										  <p>chemistry</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id12"></input>
-										  <label for="id12"></label>
-										  <p>materials science</p>
-								</li>
-							</ul>
-						</div>
-						<div class="course-searchByPrice">
-							<h5>search by price<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-							<div class="range-slider">
-								<input class="range-slider-range" type="range" value="0" min="0" max="100">
-								<span class="range-slider-value">0</span>
-								<input class="range-slider-reset" type="reset" value="clear filters">
-							</div>
-						</div>
-						<div class="course-searchByAvailability">
-							<h5>search by availability<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-							<ul>
-								<li>
-									<input type="checkbox" id="id13"></input>
-										  <label for="id13"></label>
-										  <p>current</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id14"></input>
-										  <label for="id14"></label>
-										  <p>upcoming</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id15"></input>
-										  <label for="id15"></label>
-										  <p>self-placed</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id16"></input>
-										  <label for="id16"></label>
-										  <p>archived</p>
-								</li>
-							</ul>
-						</div>
-						<div class="course-searchByLevel">
-							<h5>search by level<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-							<ul>
-								<li>
-									<input type="checkbox" id="id17"></input>
-										  <label for="id17"></label>
-										  <p>beginner</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id18"></input>
-										  <label for="id18"></label>
-										  <p>intermediate</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id19"></input>
-										  <label for="id19"></label>
-										  <p>advanced</p>
-								</li>
-							</ul>
-						</div>
-						<div class="course-searchByLanguage">
-							<h5>search by language<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-							<ul>
-								<li>
-									<input type="checkbox" id="id20"></input>
-										  <label for="id20"></label>
-										  <p>chinese / mandarin</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id21"></input>
-										  <label for="id21"></label>
-										  <p>spanish</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id22"></input>
-										  <label for="id22"></label>
-										  <p>english</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id23"></input>
-										  <label for="id23"></label>
-										  <p>italian</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id24"></input>
-										  <label for="id24"></label>
-										  <p>french</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id25"></input>
-										  <label for="id25"></label>
-										  <p>turkish</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id26"></input>
-										  <label for="id26"></label>
-										  <p>persian</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id27"></input>
-										  <label for="id27"></label>
-										  <p>arabic</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id28"></input>
-										  <label for="id28"></label>
-										  <p>russian</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id29"></input>
-										  <label for="id29"></label>
-										  <p>dutch</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id30"></input>
-										  <label for="id30"></label>
-										  <p>urdu</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id31"></input>
-										  <label for="id31"></label>
-										  <p>talish</p>
-								</li>
-							</ul>
-						</div>
-						<div class="course-searchByDuration">
-							<h5>search by duration<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-							<ul>
-								<li>
-									<input type="checkbox" id="id32"></input>
-										  <label for="id32"></label>
-										  <p>under 1hr</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id33"></input>
-										  <label for="id33"></label>
-										  <p>1hr - 1hr mins</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id34"></input>
-										  <label for="id34"></label>
-										  <p>2hrs</p>
-								</li>
-								<li>
-									<input type="checkbox" id="id35"></input>
-										  <label for="id35"></label>
-										  <p>2hrs - 3hrs</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-9">
-						<div class="course-filter">
-							<div class="course-select">
-								<select name="" id="">
+                                    </li>
+                                    <li>
+                                        <input type="submit" value="Search Course"></input </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="course-searchByType">
+                            <h5>search by type<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="id1"></input>
+                                    <label for="id1"></label>
+                                    <p>all courses</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id2"></input>
+                                    <label for="id2"></label>
+                                    <p>chemistry</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id3"></input>
+                                    <label for="id3"></label>
+                                    <p>classical archaeology</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id4"></input>
+                                    <label for="id4"></label>
+                                    <p>classics & english</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id5"></input>
+                                    <label for="id5"></label>
+                                    <p>materials science</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id6"></input>
+                                    <label for="id6"></label>
+                                    <p>mathematics</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id7"></input>
+                                    <label for="id7"></label>
+                                    <p>physics & philosophy</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id8"></input>
+                                    <label for="id8"></label>
+                                    <p>theology & religion</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id9"></input>
+                                    <label for="id9"></label>
+                                    <p>mathematics</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id10"></input>
+                                    <label for="id10"></label>
+                                    <p>classical archaeology</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id11"></input>
+                                    <label for="id11"></label>
+                                    <p>chemistry</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id12"></input>
+                                    <label for="id12"></label>
+                                    <p>materials science</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="course-searchByPrice">
+                            <h5>search by price<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                            <div class="range-slider">
+                                <input class="range-slider-range" type="range" value="0" min="0" max="100">
+                                <span class="range-slider-value">0</span>
+                                <input class="range-slider-reset" type="reset" value="clear filters">
+                            </div>
+                        </div>
+                        <div class="course-searchByAvailability">
+                            <h5>search by availability<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="id13"></input>
+                                    <label for="id13"></label>
+                                    <p>current</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id14"></input>
+                                    <label for="id14"></label>
+                                    <p>upcoming</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id15"></input>
+                                    <label for="id15"></label>
+                                    <p>self-placed</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id16"></input>
+                                    <label for="id16"></label>
+                                    <p>archived</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="course-searchByLevel">
+                            <h5>search by level<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="id17"></input>
+                                    <label for="id17"></label>
+                                    <p>beginner</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id18"></input>
+                                    <label for="id18"></label>
+                                    <p>intermediate</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id19"></input>
+                                    <label for="id19"></label>
+                                    <p>advanced</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="course-searchByLanguage">
+                            <h5>search by language<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="id20"></input>
+                                    <label for="id20"></label>
+                                    <p>chinese / mandarin</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id21"></input>
+                                    <label for="id21"></label>
+                                    <p>spanish</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id22"></input>
+                                    <label for="id22"></label>
+                                    <p>english</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id23"></input>
+                                    <label for="id23"></label>
+                                    <p>italian</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id24"></input>
+                                    <label for="id24"></label>
+                                    <p>french</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id25"></input>
+                                    <label for="id25"></label>
+                                    <p>turkish</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id26"></input>
+                                    <label for="id26"></label>
+                                    <p>persian</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id27"></input>
+                                    <label for="id27"></label>
+                                    <p>arabic</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id28"></input>
+                                    <label for="id28"></label>
+                                    <p>russian</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id29"></input>
+                                    <label for="id29"></label>
+                                    <p>dutch</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id30"></input>
+                                    <label for="id30"></label>
+                                    <p>urdu</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id31"></input>
+                                    <label for="id31"></label>
+                                    <p>talish</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="course-searchByDuration">
+                            <h5>search by duration<i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="id32"></input>
+                                    <label for="id32"></label>
+                                    <p>under 1hr</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id33"></input>
+                                    <label for="id33"></label>
+                                    <p>1hr - 1hr mins</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id34"></input>
+                                    <label for="id34"></label>
+                                    <p>2hrs</p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="id35"></input>
+                                    <label for="id35"></label>
+                                    <p>2hrs - 3hrs</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="course-filter">
+                            <div class="course-select">
+                                <select name="" id="">
 									<option value="">By Category</option>
 									<option value="">By Category</option>
 									<option value="">By Category</option>
 									<option value="">By Category</option>
 								</select>
-							</div>
-							<div class="course-select">
-								<select name="" id="">
+                            </div>
+                            <div class="course-select">
+                                <select name="" id="">
 									<option value="">Search By</option>
 									<option value="">Search By</option>
 									<option value="">Search By</option>
 									<option value="">Search By</option>
 								</select>
-							</div>
-							<div class="course-priceBtn">
-								<i class="fa fa-check" aria-hidden="true"></i>
-								<button class="btn-active">Free</button>
-								<button>Paid</button>
-							</div>
-							<div class="course-view">
-								<a href="course.html" class="active-a">
-									<i class="fa fa-th" aria-hidden="true"></i>
-								</a>
-								<a href="course.html">
-									<i class="fa fa-th-list" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-						<div class="course-list">
-							<div class="course-course">
-								<figure>
-									<a href="#">
-										<img src="img/home/2.jpg" alt="">
-										<span><small>see course</small></span>
-									</a>
-									<figcaption>
-										<img src="img/home/2-2.jpg" alt="">
-										<h6><a href="#">Shelly T. Forrester</a></h6>
-									</figcaption>
-								</figure>
-								<div class="course-text">
-									<h6><a href="#">Advanced Architectural Research</a></h6>
-									<p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
-									<div class="courses-price"><span>$32</span></div>
-									<ul>
-										<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
-										<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
-										<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
-										<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="course-course">
-								<figure>
-									<a href="#">
-										<img src="img/home/2.jpg" alt="">
-										<span><small>see course</small></span>
-									</a>
-									<figcaption>
-										<img src="img/home/2-2.jpg" alt="">
-										<h6><a href="#">Shelly T. Forrester</a></h6>
-									</figcaption>
-								</figure>
-								<div class="course-text">
-									<h6><a href="#">Advanced Architectural Research</a></h6>
-									<p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
-									<div class="courses-price"><span>$32</span></div>
-									<ul>
-										<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
-										<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
-										<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
-										<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="course-course">
-								<figure>
-									<a href="#">
-										<img src="img/home/2.jpg" alt="">
-										<span><small>see course</small></span>
-									</a>
-									<figcaption>
-										<img src="img/home/2-2.jpg" alt="">
-										<h6><a href="#">Shelly T. Forrester</a></h6>
-									</figcaption>
-								</figure>
-								<div class="course-text">
-									<h6><a href="#">Advanced Architectural Research</a></h6>
-									<p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
-									<div class="courses-price"><span>$32</span></div>
-									<ul>
-										<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
-										<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
-										<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
-										<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="course-course">
-								<figure>
-									<a href="#">
-										<img src="img/home/2.jpg" alt="">
-										<span><small>see course</small></span>
-									</a>
-									<figcaption>
-										<img src="img/home/2-2.jpg" alt="">
-										<h6><a href="#">Shelly T. Forrester</a></h6>
-									</figcaption>
-								</figure>
-								<div class="course-text">
-									<h6><a href="#">Advanced Architectural Research</a></h6>
-									<p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
-									<div class="courses-price"><span>$32</span></div>
-									<ul>
-										<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
-										<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
-										<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
-										<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="course-course">
-								<figure>
-									<a href="#">
-										<img src="img/home/2.jpg" alt="">
-										<span><small>see course</small></span>
-									</a>
-									<figcaption>
-										<img src="img/home/2-2.jpg" alt="">
-										<h6><a href="#">Shelly T. Forrester</a></h6>
-									</figcaption>
-								</figure>
-								<div class="course-text">
-									<h6><a href="#">Advanced Architectural Research</a></h6>
-									<p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
-									<div class="courses-price"><span>$32</span></div>
-									<ul>
-										<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
-										<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
-										<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
-										<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="course-course">
-								<figure>
-									<a href="#">
-										<img src="img/home/2.jpg" alt="">
-										<span><small>see course</small></span>
-									</a>
-									<figcaption>
-										<img src="img/home/2-2.jpg" alt="">
-										<h6><a href="#">Shelly T. Forrester</a></h6>
-									</figcaption>
-								</figure>
-								<div class="course-text">
-									<h6><a href="#">Advanced Architectural Research</a></h6>
-									<p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
-									<div class="courses-price"><span>$32</span></div>
-									<ul>
-										<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
-										<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
-										<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
-										<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="course-course">
-								<figure>
-									<a href="#">
-										<img src="img/home/2.jpg" alt="">
-										<span><small>see course</small></span>
-									</a>
-									<figcaption>
-										<img src="img/home/2-2.jpg" alt="">
-										<h6><a href="#">Shelly T. Forrester</a></h6>
-									</figcaption>
-								</figure>
-								<div class="course-text">
-									<h6><a href="#">Advanced Architectural Research</a></h6>
-									<p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
-									<div class="courses-price"><span>$32</span></div>
-									<ul>
-										<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
-										<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
-										<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
-										<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="course-course">
-								<figure>
-									<a href="#">
-										<img src="img/home/2.jpg" alt="">
-										<span><small>see course</small></span>
-									</a>
-									<figcaption>
-										<img src="img/home/2-2.jpg" alt="">
-										<h6><a href="#">Shelly T. Forrester</a></h6>
-									</figcaption>
-								</figure>
-								<div class="course-text">
-									<h6><a href="#">Advanced Architectural Research</a></h6>
-									<p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
-									<div class="courses-price"><span>$32</span></div>
-									<ul>
-										<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
-										<li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
-										<li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
-										<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="course-pagination">
-							<ul>
-								<li>
-									<a href="#"><i class="fa fa-angle-left"></i>previous</a>
-								</li>
-								<li>
-									<a href="#" class="active-pag">1</a>
-								</li>
-								<li>
-									<a href="#">2</a>
-								</li>
-								<li>
-									<a href="#">3</a>
-								</li>
-								<li>...</li>
-								<li>
-									<a href="#">11</a>
-								</li>
-								<li>
-									<a href="#">next<i class="fa fa-angle-right"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Course Content -->
-		<div class="clearfix"></div>
-		<!-- Footer -->
-		<footer class="footer">
-				<div class="footer-newsletter">
-					<div class="container paddingZero">
-						<div class="row">
-							<div class="col-md-12">
-								<form action="">
-									<i class="fa  fa-envelope"></i>
-									<input type="text" value="Enter your e-mail address" onblur="this.value ='Enter your e-mail address'" onfocus="this.value=''">
-									<input type="submit" value="SUBSCRIBE TO OUR NEWSLETTER">
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-content">
-					<div class="container paddingZero">
-						<div class="row">
-							<div class="col-md-3">
-								<a href="home.html" class="footer-logo"><img src="img/home/logo.png" alt=""></a>
-								<ul>
-									<li>
-										<i class="fa fa-map-marker"></i>
-										<p>195 Cooks Mine Road Espanola, NM 87532</p>
-									</li>
-									<li>
-										<i class="fa fa-phone"></i>
-										<p>+1 505-753-5656 <br> +1 505-753-4437</p>
-									</li>
-									<li>
-										<i class="fa fa-envelope-open-o"></i>
-										<p>info@university.com <br> support@university.com</p>
-									</li>
-								</ul>
-								<div class="footer-social">
-									<a href="#"><i class="fa fa-facebook-square"></i></a>
-									<a href="#"><i class="fa fa-twitter-square"></i></a>
-									<a href="#"><i class="fa fa-linkedin-square"></i></a>
-									<a href="#"><i class="fa fa-vimeo-square"></i></a>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<h5>Quick Links</h5>
-								<ul>
-									<li><a href="events.html">Our Latest Events</a></li>
-									<li><a href="courses.html">Our Courses</a></li>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="faq.html">FAQ</a></li>
-									<li><a href="error.html">404 Page</a></li>
-									<li><a href="gallery.html">Gallery</a></li>
-									<li><a href="home.html">All Instructors</a></li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<h5><i class="fa fa-twitter"></i> @enrollcampus</h5>
-								<ul>
-									<li>
-										<p>Check Youniverse - Multipurpose PSD Template @ThemeForest: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
-										<time>4 hrs ago</time>
-									</li>
-									<li>
-										<p>Check out my New PSD:  FashionPlus - Fashion eCommerce: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
-										<time>4 hrs ago</time>
-									</li>
-									<li>
-										<p>MedicAid - Medical Template @ThemeForest: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
-										<time>4 hrs ago</time>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-3 footer-slider">
-								<h5>Our Instructors</h5>
-								<ul>
-									<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="0"></a></li>
-									<li><a><img src="img/home/3-3.jpg" alt="" class="gallery-img" value="1"></a></li>
-									<li><a><img src="img/home/4-4.jpg" alt="" class="gallery-img" value="2"></a></li>
-									<li><a><img src="img/home/5-5.jpg" alt="" class="gallery-img" value="3"></a></li>
-									<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="4"></a></li>
-									<li><a><img src="img/home/3-3.jpg" alt="" class="gallery-img" value="5"></a></li>
-									<li><a><img src="img/home/4-4.jpg" alt="" class="gallery-img" value="6"></a></li>
-									<li><a><img src="img/home/5-5.jpg" alt="" class="gallery-img" value="7"></a></li>
-									<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="8"></a></li>
-								</ul>
-							</div>
-							<div class="modal">
-								<img src="" class="modal-img">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-copyright">
-					<div class="container paddingZero">
-						<div class="row">
-							<div class="col-md-6">
-								<span><i class="fa fa-snowflake-o" aria-hidden="true"></i> Barcelona, Spain 2°F / -17°C</span>
-							</div>
-							<div class="col-md-6">
-								<p>© 2016, All Right Reserved - by <a href="home.html">LiM10</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-		</footer>
-		<!-- Footer -->
-	</div>
+                            </div>
+                            <div class="course-priceBtn">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <button class="btn-active">Free</button>
+                                <button>Paid</button>
+                            </div>
+                            <div class="course-view">
+                                <a href="course.html" class="active-a">
+                                    <i class="fa fa-th" aria-hidden="true"></i>
+                                </a>
+                                <a href="course.html">
+                                    <i class="fa fa-th-list" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="course-list">
+                            <div class="course-course">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/home/2.jpg" alt="">
+                                        <span><small>see course</small></span>
+                                    </a>
+                                    <figcaption>
+                                        <img src="img/home/2-2.jpg" alt="">
+                                        <h6><a href="#">Shelly T. Forrester</a></h6>
+                                    </figcaption>
+                                </figure>
+                                <div class="course-text">
+                                    <h6><a href="#">Advanced Architectural Research</a></h6>
+                                    <p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
+                                    <div class="courses-price"><span>$32</span></div>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+                                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
+                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="course-course">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/home/2.jpg" alt="">
+                                        <span><small>see course</small></span>
+                                    </a>
+                                    <figcaption>
+                                        <img src="img/home/2-2.jpg" alt="">
+                                        <h6><a href="#">Shelly T. Forrester</a></h6>
+                                    </figcaption>
+                                </figure>
+                                <div class="course-text">
+                                    <h6><a href="#">Advanced Architectural Research</a></h6>
+                                    <p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
+                                    <div class="courses-price"><span>$32</span></div>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+                                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
+                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="course-course">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/home/2.jpg" alt="">
+                                        <span><small>see course</small></span>
+                                    </a>
+                                    <figcaption>
+                                        <img src="img/home/2-2.jpg" alt="">
+                                        <h6><a href="#">Shelly T. Forrester</a></h6>
+                                    </figcaption>
+                                </figure>
+                                <div class="course-text">
+                                    <h6><a href="#">Advanced Architectural Research</a></h6>
+                                    <p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
+                                    <div class="courses-price"><span>$32</span></div>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+                                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
+                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="course-course">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/home/2.jpg" alt="">
+                                        <span><small>see course</small></span>
+                                    </a>
+                                    <figcaption>
+                                        <img src="img/home/2-2.jpg" alt="">
+                                        <h6><a href="#">Shelly T. Forrester</a></h6>
+                                    </figcaption>
+                                </figure>
+                                <div class="course-text">
+                                    <h6><a href="#">Advanced Architectural Research</a></h6>
+                                    <p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
+                                    <div class="courses-price"><span>$32</span></div>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+                                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
+                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="course-course">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/home/2.jpg" alt="">
+                                        <span><small>see course</small></span>
+                                    </a>
+                                    <figcaption>
+                                        <img src="img/home/2-2.jpg" alt="">
+                                        <h6><a href="#">Shelly T. Forrester</a></h6>
+                                    </figcaption>
+                                </figure>
+                                <div class="course-text">
+                                    <h6><a href="#">Advanced Architectural Research</a></h6>
+                                    <p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
+                                    <div class="courses-price"><span>$32</span></div>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+                                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
+                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="course-course">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/home/2.jpg" alt="">
+                                        <span><small>see course</small></span>
+                                    </a>
+                                    <figcaption>
+                                        <img src="img/home/2-2.jpg" alt="">
+                                        <h6><a href="#">Shelly T. Forrester</a></h6>
+                                    </figcaption>
+                                </figure>
+                                <div class="course-text">
+                                    <h6><a href="#">Advanced Architectural Research</a></h6>
+                                    <p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
+                                    <div class="courses-price"><span>$32</span></div>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+                                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
+                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="course-course">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/home/2.jpg" alt="">
+                                        <span><small>see course</small></span>
+                                    </a>
+                                    <figcaption>
+                                        <img src="img/home/2-2.jpg" alt="">
+                                        <h6><a href="#">Shelly T. Forrester</a></h6>
+                                    </figcaption>
+                                </figure>
+                                <div class="course-text">
+                                    <h6><a href="#">Advanced Architectural Research</a></h6>
+                                    <p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
+                                    <div class="courses-price"><span>$32</span></div>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+                                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
+                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="course-course">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/home/2.jpg" alt="">
+                                        <span><small>see course</small></span>
+                                    </a>
+                                    <figcaption>
+                                        <img src="img/home/2-2.jpg" alt="">
+                                        <h6><a href="#">Shelly T. Forrester</a></h6>
+                                    </figcaption>
+                                </figure>
+                                <div class="course-text">
+                                    <h6><a href="#">Advanced Architectural Research</a></h6>
+                                    <p>The course combines study of the history, archaeology and art of all these classical world. It looks at the societies and cultures of the ancient Greel Mediterranean world through their written texts.</p>
+                                    <div class="courses-price"><span>$32</span></div>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>342</a></li>
+                                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>10</a></li>
+                                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>1 year</a></li>
+                                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Campus L2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-pagination">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-left"></i>previous</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active-pag">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>...</li>
+                                <li>
+                                    <a href="#">11</a>
+                                </li>
+                                <li>
+                                    <a href="#">next<i class="fa fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Course Content -->
+        <div class="clearfix"></div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-newsletter">
+                <div class="container paddingZero">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="">
+                                <i class="fa  fa-envelope"></i>
+                                <input type="text" value="Enter your e-mail address" onblur="if(this.value == '') { this.value ='Enter your e-mail address'; }" onfocus="if(this.value =='Enter your e-mail address') { this.value = ''; }">
+                                <input type="submit" value="SUBSCRIBE TO OUR NEWSLETTER">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="container paddingZero">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="home.html" class="footer-logo"><img src="img/home/logo.png" alt=""></a>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <p>195 Cooks Mine Road Espanola, NM 87532</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <p>+1 505-753-5656 <br> +1 505-753-4437</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope-open-o"></i>
+                                    <p>info@university.com <br> support@university.com</p>
+                                </li>
+                            </ul>
+                            <div class="footer-social">
+                                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="events.html">Our Latest Events</a></li>
+                                <li><a href="courses.html">Our Courses</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="error.html">404 Page</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="home.html">All Instructors</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><i class="fa fa-twitter"></i> @enrollcampus</h5>
+                            <ul>
+                                <li>
+                                    <p>Check Youniverse - Multipurpose PSD Template @ThemeForest: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+                                    <time>4 hrs ago</time>
+                                </li>
+                                <li>
+                                    <p>Check out my New PSD: FashionPlus - Fashion eCommerce: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+                                    <time>4 hrs ago</time>
+                                </li>
+                                <li>
+                                    <p>MedicAid - Medical Template @ThemeForest: <a href="home.html">pic.twitter.com/xcVlqJySjq</a></p>
+                                    <time>4 hrs ago</time>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer-slider">
+                            <h5>Our Instructors</h5>
+                            <ul>
+                                <li>
+                                    <a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="0"></a>
+                                </li>
+                                <li>
+                                    <a><img src="img/home/3-3.jpg" alt="" class="gallery-img" value="1"></a>
+                                </li>
+                                <li>
+                                    <a><img src="img/home/4-4.jpg" alt="" class="gallery-img" value="2"></a>
+                                </li>
+                                <li>
+                                    <a><img src="img/home/5-5.jpg" alt="" class="gallery-img" value="3"></a>
+                                </li>
+                                <li>
+                                    <a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="4"></a>
+                                </li>
+                                <li>
+                                    <a><img src="img/home/3-3.jpg" alt="" class="gallery-img" value="5"></a>
+                                </li>
+                                <li>
+                                    <a><img src="img/home/4-4.jpg" alt="" class="gallery-img" value="6"></a>
+                                </li>
+                                <li>
+                                    <a><img src="img/home/5-5.jpg" alt="" class="gallery-img" value="7"></a>
+                                </li>
+                                <li>
+                                    <a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="8"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal">
+                            <img src="" class="modal-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container paddingZero">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span><i class="fa fa-snowflake-o" aria-hidden="true"></i> Barcelona, Spain 2°F / -17°C</span>
+                        </div>
+                        <div class="col-md-6">
+                            <p>© 2016, All Right Reserved - by <a href="home.html">LiM10</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+    </div>
 </body>
+
 </html>
 <script src="js/jquery-3.2.0.js" charset="utf-8"></script>
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>

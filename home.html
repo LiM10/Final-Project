@@ -55,10 +55,10 @@
 							<form>
 								<ul class="signin">
 									<li>
-										<input type="text" value="Your Username" onfocus="this.value=''" onblur="this.value='Your Username'">
+										<input type="text" value="Your Username" onblur="if(this.value == '') { this.value ='Your Username'; }" onfocus="if(this.value =='Your Username') { this.value = ''; }">
 									</li>
 									<li>
-										<input type="password" value="password" onfocus="this.value=''" onblur="this.value='password'">
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
 									</li>
 									<li>
 										<a href="#">forgot password?</a>
@@ -75,7 +75,37 @@
 								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
 								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
 							</ul>
-							<p>Not a member yet?<a href="#">sign-up now</a></p>
+							<p>Not a member yet?<a id="signin">sign-up now</a></p>
+					    </div>
+					    <div class="registration modal-content">
+					    	<h3>CREATE YOUR ACCOUNT TODAY</h3>
+							<form>
+								<ul class="signin">
+									<li>
+										<input type="text" value="Your Username" onblur="if(this.value == '') { this.value ='Your Username'; }" onfocus="if(this.value =='Your Username') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="text" value="Your E-mail" onblur="if(this.value == '') { this.value ='Your E-mail'; }" onfocus="if(this.value =='Your E-mail') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<button class="btn">create account</button>
+									</li>
+								</ul>
+							</form>
+							<h3>OR SIGNUP WITH YOUR SOCIALS</h3>
+							<ul class="social">
+								<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+								</li>
+								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
+								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+							</ul>
+							<p>Already a member?<a id="signup">Sign-in Here!</a></p>
 					    </div>
 				  	</div>
 				</div>
@@ -84,7 +114,7 @@
 					    <div class="search modal-content">
 					    	<h3>search your keyword</h3>
 					    	<ul>
-					    		<li><input type="search" value="Keywords..." onblur="this.value='Keywords...'" onfocus="this.value=''"></li>
+					    		<li><input type="text" value="Keywords..." onblur="if(this.value == '') { this.value ='Keywords...'; }" onfocus="if(this.value =='Keywords...') { this.value = ''; }"></li>
 					    		<li><button class="btn">search</button></li>
 					    	</ul>
 					    </div>
@@ -260,8 +290,7 @@
 									</div>
 								</li>
 								<li>
-									<input type="text" value="Course Name" onfocus="this.value=''" onblur="this.value='Course Name'">
-									<i class="fa fa-search"></i>
+									<input type="text" value="Course Name" onblur="if(this.value == '') { this.value ='Course Name'; }" onfocus="if(this.value =='Course Name') { this.value = ''; }"></i>
 								</li>
 								<li>
 									<select class="form-control" id="sel1">
@@ -544,7 +573,6 @@
 							<ul class="row">
 								<li class="col-md-4">
 									<div class="ole-slider">
-										<span class="fa fa-chevron-left arrow left-ole" aria-hidden="true"></span>
 										<div class="ole-slider-content #ole-slider">
 											<div class="ole-slider-list owl-carousel" data-current=0>
 												<div class="ole-slides">
@@ -565,7 +593,6 @@
 												</div>
 											</div>
 										</div>
-										<span class="fa fa-chevron-right arrow right-ole" aria-hidden="true"></span>
 									</div>
 								</li>
 								<li class="col-md-4">
@@ -624,7 +651,6 @@
 							<p>Don't take our word for it, see what our awesome clients say.</p>
 						</div>
 						<div class="wcs-slider">
-							<i class="fa fa-chevron-left arrow left-wcs" aria-hidden="true"></i>
 							<div class="wcs-slider-content">
 								<div class="wcs-slider-list owl-carousel">
 									<div class="wcs-slide-holder">
@@ -759,7 +785,6 @@
 									</div>
 								</div>
 							</div>
-							<i class="fa fa-chevron-right arrow right-wcs" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
@@ -814,8 +839,8 @@
 							<h2>Still not convinced? <span>We can help you!</span></h2>
 							<p>Fill out the form below and we will contact you.</p>
 							<form action="">
-								<input type="text" value="Name:" onblur="this.value='Name:'" onfocus="this.value=''">
-								<input type="email" value="E-mail:" onblur="this.value='E-mail:'" onfocus="this.value=''">
+								<input type="text" value="Name:" onblur="if(this.value == '') { this.value ='Name:'; }" onfocus="if(this.value =='Name:') { this.value = ''; }">
+								<input type="email" value="E-mail:" onblur="if(this.value == '') { this.value ='E-mail:'; }" onfocus="if(this.value =='E-mail:') { this.value = ''; }">
 								<input type="submit" value="Get Advice">
 							</form>
 						</div>
@@ -982,16 +1007,16 @@
 											<form>
 												<ul>
 													<li>
-														<i class="fa fa-user i-name" aria-hidden="true"></i><input type="text" value="Name" onblur="this.value='Name'" onfocus="this.value=''">
+														<i class="fa fa-user i-name" aria-hidden="true"></i><input type="text" value="Name" onblur="if(this.value == '') { this.value ='Name'; }" onfocus="if(this.value =='Name') { this.value = ''; }">
 													</li>
 													<li>
-														<i class="fa fa-envelope i-mail" aria-hidden="true"></i><input type="email" value="E-mail" onblur="this.value='E-mail'" onfocus="this.value=''">
+														<i class="fa fa-envelope i-mail" aria-hidden="true"></i><input type="email" value="E-mail" onblur="if(this.value == '') { this.value ='E-mail'; }" onfocus="if(this.value =='E-mail') { this.value = ''; }">
 													</li>
 													<li>
-														<i class="fa fa-phone i-phone" aria-hidden="true"></i><input type="text" value="Phone" onblur="this.value='Phone'" onfocus="this.value=''">
+														<i class="fa fa-phone i-phone" aria-hidden="true"></i><input type="text" value="Phone" onblur="if(this.value == '') { this.value ='Phone'; }" onfocus="if(this.value =='Phone') { this.value = ''; }">
 													</li>
 													<li>
-														<i class="fa fa-comment i-msg" aria-hidden="true"></i><textarea placeholder="Message" onblur="this.value='Message'" onfocus="this.value=''"></textarea>
+														<i class="fa fa-comment i-msg" aria-hidden="true"></i><textarea placeholder="Message" onblur="if(this.value == '') { this.value ='Message'; }" onfocus="if(this.value =='Message') { this.value = ''; }"></textarea>
 													</li>
 													<li>
 														<input class="submit" type="submit" value="Send Message">
@@ -1045,7 +1070,7 @@
 						<div class="col-md-12">
 							<form action="">
 								<i class="fa  fa-envelope"></i>
-								<input type="text" value="Enter your e-mail address" onblur="this.value ='Enter your e-mail address'" onfocus="this.value=''">
+								<input type="text" value="Enter your e-mail address" onblur="if(this.value == '') { this.value ='Enter your e-mail address'; }" onfocus="if(this.value =='Enter your e-mail address') { this.value = ''; }">
 								<input type="submit" value="SUBSCRIBE TO OUR NEWSLETTER">
 							</form>
 						</div>
@@ -1121,8 +1146,8 @@
 								<li><a><img src="img/home/2-2.jpg" alt="" class="gallery-img" value="8"></a></li>
 							</ul>
 						</div>
-						<div class="modal">
-							<img src="" class="modal-img">
+						<div class="modal" id="modal">
+							<img src="" id="modal-img">
 						</div>
 					</div>
 				</div>

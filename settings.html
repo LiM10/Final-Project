@@ -51,10 +51,10 @@
 							<form>
 								<ul class="signin">
 									<li>
-										<input type="text" value="Your Username" onfocus="this.value=''" onblur="this.value='Your Username'">
+										<input type="text" value="Your Username" onblur="if(this.value == '') { this.value ='Your Username'; }" onfocus="if(this.value =='Your Username') { this.value = ''; }">
 									</li>
 									<li>
-										<input type="password" value="password" onfocus="this.value=''" onblur="this.value='password'">
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
 									</li>
 									<li>
 										<a href="#">forgot password?</a>
@@ -71,7 +71,37 @@
 								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
 								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
 							</ul>
-							<p>Not a member yet?<a href="#">sign-up now</a></p>
+							<p>Not a member yet?<a id="signin">sign-up now</a></p>
+					    </div>
+					    <div class="registration modal-content">
+					    	<h3>CREATE YOUR ACCOUNT TODAY</h3>
+							<form>
+								<ul class="signin">
+									<li>
+										<input type="text" value="Your Username" onblur="if(this.value == '') { this.value ='Your Username'; }" onfocus="if(this.value =='Your Username') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="text" value="Your E-mail" onblur="if(this.value == '') { this.value ='Your E-mail'; }" onfocus="if(this.value =='Your E-mail') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<button class="btn">create account</button>
+									</li>
+								</ul>
+							</form>
+							<h3>OR SIGNUP WITH YOUR SOCIALS</h3>
+							<ul class="social">
+								<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+								</li>
+								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
+								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+							</ul>
+							<p>Already a member?<a id="signup">Sign-in Here!</a></p>
 					    </div>
 				  	</div>
 				</div>
@@ -80,7 +110,7 @@
 					    <div class="search modal-content">
 					    	<h3>search your keyword</h3>
 					    	<ul>
-					    		<li><input type="search" value="Keywords..." onblur="this.value='Keywords...'" onfocus="this.value=''"></li>
+					    		<li><input type="text" value="Keywords..." onblur="if(this.value == '') { this.value ='Keywords...'; }" onfocus="if(this.value =='Keywords...') { this.value = ''; }"></li>
 					    		<li><button class="btn">search</button></li>
 					    	</ul>
 					    </div>
@@ -207,16 +237,16 @@
 								<h2>Profile Settings</h2>
 								<form>
 									<li class="flpe">
-										<input type="text" value="First Name" onfocus="this.value=''" onblur="this.value='First Name'">
+										<input type="text" value="First Name" onblur="if(this.value == '') { this.value ='First Name'; }" onfocus="if(this.value =='First Name') { this.value = ''; }">
 									</li>
 									<li class="flpe">
-										<input type="text" value="Last Name" onfocus="this.value=''" onblur="this.value='Last Name'">
+										<input type="text" value="Last Name" onblur="if(this.value == '') { this.value ='Last Name'; }" onfocus="if(this.value =='Last Name') { this.value = ''; }">
 									</li>
 									<li class="flpe">
-										<input type="text" value="Phone Number" onfocus="this.value=''" onblur="this.value='Phone Number'">
+										<input type="text" value="Phone Number" onblur="if(this.value == '') { this.value ='Phone Number'; }" onfocus="if(this.value =='Phone Number') { this.value = ''; }">
 									</li>
 									<li class="flpe">
-										<input type="text" value="E-mail Address" onfocus="this.value=''" onblur="this.value='E-mail Address'">
+										<input type="text" value="E-mail Address" onblur="if(this.value == '') { this.value ='E-mail Address'; }" onfocus="if(this.value =='E-mail Address') { this.value = ''; }">
 									</li>
 									<li class="birth">
 										<select class="form-control" id="dateOfBirth">
@@ -266,13 +296,13 @@
 								<h5>Update Password</h5>
 								<form>
 									<li class="uPassword">
-										<input type="text" value="Old Password" onfocus="this.value=''" onblur="this.value='Old Password'">
+										<input type="text" value="Old Password" onblur="if(this.value == '') { this.value ='Old Password'; }" onfocus="if(this.value =='Old Password') { this.value = ''; }">
 									</li>
 									<li class="uPassword">
-										<input type="text" value="New Password" onfocus="this.value=''" onblur="this.value='New Password'">
+										<input type="text" value="New Password" onblur="if(this.value == '') { this.value ='New Password'; }" onfocus="if(this.value =='New Password') { this.value = ''; }">
 									</li>
 									<li class="uPassword">
-										<input type="text" value="Your Name" onfocus="this.value=''" onblur="this.value='Your Name'">
+										<input type="text" value="Your Name" onblur="if(this.value == '') { this.value ='Your Name'; }" onfocus="if(this.value =='Your Name') { this.value = ''; }">
 									</li>
 								</form>
 							</div>
@@ -280,13 +310,13 @@
 								<h5>Social Media</h5>
 								<form>
 									<li class="sMedia">
-										<input type="text" value="emrahismayilzade" onfocus="this.value=''" onblur="this.value='emrahismayilzade'">
+										<input type="text" value="emrahismayilzade" onblur="if(this.value == '') { this.value ='emrahismayilzade'; }" onfocus="if(this.value =='emrahismayilzade') { this.value = ''; }">
 									</li>
 									<li class="sMedia">
-										<input type="text" value="citr10" onfocus="this.value=''" onblur="this.value='citr10'">
+										<input type="text" value="citr10" onblur="if(this.value == '') { this.value ='citr10'; }" onfocus="if(this.value =='citr10') { this.value = ''; }">
 									</li>
 									<li class="sMedia">
-										<input type="text" value="emrahismayilzade" onfocus="this.value=''" onblur="this.value='emrahismayilzade'">
+										<input type="text" value="emrahismayilzade" onblur="if(this.value == '') { this.value ='emrahismayilzade'; }" onfocus="if(this.value =='emrahismayilzade') { this.value = ''; }">
 									</li>
 								</form>
 								<input class="updateBtn" type="button" value="UPDATE CHANGES">
@@ -305,7 +335,7 @@
 						<div class="col-md-12">
 							<form action="">
 								<i class="fa  fa-envelope"></i>
-								<input type="text" value="Enter your e-mail address" onblur="this.value ='Enter your e-mail address'" onfocus="this.value=''">
+								<input type="text" value="Enter your e-mail address" onblur="if(this.value == '') { this.value ='Enter your e-mail address'; }" onfocus="if(this.value =='Enter your e-mail address') { this.value = ''; }">
 								<input type="submit" value="SUBSCRIBE TO OUR NEWSLETTER">
 							</form>
 						</div>

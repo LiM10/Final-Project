@@ -44,48 +44,78 @@
 							</ul>
 						</div>
 					</div>
-					<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog pull-right" role="document">
-						    <div class="login modal-content">
-						    	<h3>login to your account</h3>
-								<form>
-									<ul class="signin">
-										<li>
-											<input type="text" value="Your Username" onfocus="this.value=''" onblur="this.value='Your Username'">
-										</li>
-										<li>
-											<input type="password" value="password" onfocus="this.value=''" onblur="this.value='password'">
-										</li>
-										<li>
-											<a href="#">forgot password?</a>
-										</li>
-										<li>
-											<button class="btn">sign in</button>
-										</li>
-									</ul>
-								</form>
-								<h3>or try our socials</h3>
-								<ul class="social">
-									<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+				<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog pull-right" role="document">
+					    <div class="login modal-content">
+					    	<h3>login to your account</h3>
+							<form>
+								<ul class="signin">
+									<li>
+										<input type="text" value="Your Username" onblur="if(this.value == '') { this.value ='Your Username'; }" onfocus="if(this.value =='Your Username') { this.value = ''; }">
 									</li>
-									<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
-									<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<a href="#">forgot password?</a>
+									</li>
+									<li>
+										<button class="btn">sign in</button>
+									</li>
 								</ul>
-								<p>Not a member yet?<a href="#">sign-up now</a></p>
-						    </div>
-					  	</div>
-					</div>
-					<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog pull-right" role="document">
-						    <div class="search modal-content">
-						    	<h3>search your keyword</h3>
-						    	<ul>
-						    		<li><input type="search" value="Keywords..." onblur="this.value='Keywords...'" onfocus="this.value=''"></li>
-						    		<li><button class="btn">search</button></li>
-						    	</ul>
-						    </div>
-					  	</div>
-					</div>
+							</form>
+							<h3>or try our socials</h3>
+							<ul class="social">
+								<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+								</li>
+								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
+								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+							</ul>
+							<p>Not a member yet?<a id="signin">sign-up now</a></p>
+					    </div>
+					    <div class="registration modal-content">
+					    	<h3>CREATE YOUR ACCOUNT TODAY</h3>
+							<form>
+								<ul class="signin">
+									<li>
+										<input type="text" value="Your Username" onblur="if(this.value == '') { this.value ='Your Username'; }" onfocus="if(this.value =='Your Username') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="text" value="Your E-mail" onblur="if(this.value == '') { this.value ='Your E-mail'; }" onfocus="if(this.value =='Your E-mail') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<input type="password" value="password" onblur="if(this.value == '') { this.value ='password'; }" onfocus="if(this.value =='password') { this.value = ''; }">
+									</li>
+									<li>
+										<button class="btn">create account</button>
+									</li>
+								</ul>
+							</form>
+							<h3>OR SIGNUP WITH YOUR SOCIALS</h3>
+							<ul class="social">
+								<li><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true"></i>facebook</button>
+								</li>
+								<li><button class="btn"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</button></li>
+								<li><button class="btn"><i class="fa fa-google-plus-square" aria-hidden="true"></i>google+</button></li>
+							</ul>
+							<p>Already a member?<a id="signup">Sign-in Here!</a></p>
+					    </div>
+				  	</div>
+				</div>
+				<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog pull-right" role="document">
+					    <div class="search modal-content">
+					    	<h3>search your keyword</h3>
+					    	<ul>
+					    		<li><input type="text" value="Keywords..." onblur="if(this.value == '') { this.value ='Keywords...'; }" onfocus="if(this.value =='Keywords...') { this.value = ''; }"></li>
+					    		<li><button class="btn">search</button></li>
+					    	</ul>
+					    </div>
+				  	</div>
+				</div>
 				</div>
 		</div>
 		<!-- Home TopHeader -->
@@ -198,16 +228,16 @@
 											<form>
 												<ul>
 													<li>
-														<i class="fa fa-user i-name" aria-hidden="true"></i><input type="text" value="Name" onblur="this.value='Name'" onfocus="this.value=''">
+														<i class="fa fa-user i-name" aria-hidden="true"></i><input type="text" value="Name" onblur="if(this.value == '') { this.value ='Name'; }" onfocus="if(this.value =='Name') { this.value = ''; }">
 													</li>
 													<li>
-														<i class="fa fa-envelope i-mail" aria-hidden="true"></i><input type="email" value="E-mail" onblur="this.value='E-mail'" onfocus="this.value=''">
+														<i class="fa fa-envelope i-mail" aria-hidden="true"></i><input type="email" value="E-mail" onblur="if(this.value == '') { this.value ='E-mail'; }" onfocus="if(this.value =='E-mail') { this.value = ''; }">
 													</li>
 													<li>
-														<i class="fa fa-phone i-phone" aria-hidden="true"></i><input type="text" value="Phone" onblur="this.value='Phone'" onfocus="this.value=''">
+														<i class="fa fa-phone i-phone" aria-hidden="true"></i><input type="text" value="Phone" onblur="if(this.value == '') { this.value ='Phone'; }" onfocus="if(this.value =='Phone') { this.value = ''; }">
 													</li>
 													<li>
-														<i class="fa fa-comment i-msg" aria-hidden="true"></i><textarea placeholder="Message" onblur="this.value='Message'" onfocus="this.value=''"></textarea>
+														<i class="fa fa-comment i-msg" aria-hidden="true"></i><textarea placeholder="Message" onblur="if(this.value == '') { this.value ='Message'; }" onfocus="if(this.value =='Message') { this.value = ''; }"></textarea>
 													</li>
 													<li>
 														<input class="submit" type="submit" value="Send Message">
@@ -262,7 +292,7 @@
 							<div class="col-md-12">
 								<form action="">
 									<i class="fa  fa-envelope"></i>
-									<input type="text" value="Enter your e-mail address" onblur="this.value ='Enter your e-mail address'" onfocus="this.value=''">
+									<input type="text" value="Enter your e-mail address" onblur="if(this.value == '') { this.value ='Enter your e-mail address'; }" onfocus="if(this.value =='Enter your e-mail address') { this.value = ''; }">
 									<input type="submit" value="SUBSCRIBE TO OUR NEWSLETTER">
 								</form>
 							</div>
@@ -376,6 +406,5 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLtMoItqcxASQnlSiQyD_Lb1TqsDqdmkA&callback=myMap"></script>
 <script src="js/main.js" rel="stylesheet"></script>
-<script src="js/home.js" rel="stylesheet"></script>
 
 

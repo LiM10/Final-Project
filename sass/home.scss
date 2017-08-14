@@ -613,6 +613,7 @@ li.active{
 								.ole-slider{
 									margin-bottom: 40px;
 									.ole-slider-content{
+                                        height: 300px;
 										margin: 0;
 										overflow: hidden;
 										padding: 0;
@@ -637,19 +638,21 @@ li.active{
 											}
 										}
 									}
-									span.arrow{
+									i.arrow{
 										position: absolute;
 										top: 55%;
 										cursor: pointer;
 										color: $darkBlue;
 										font-size: 1.1em;
 									}
-									.left-ole{
-										left: 42%;
+									#left-ole{
+                                        top: 110%;
+										left: 7.5%;
 										margin-top: 2px;
 									}
-									.right-ole{
-										right: 42%;
+									#right-ole{
+                                        top: 110%;
+										left: 9.5%;
 										margin-bottom: 2px;
 									}
 								}
@@ -825,13 +828,13 @@ li.active{
 								}
 							}
 						}
-						.left-wcs{
-							left: -40px;
-							top: 30%;
+						#left-wcs{
+							left: 9.5%;
+                            bottom: 0;
 						}
-						.right-wcs{
-							right: -40px;
-							top: 30%;
+						#right-wcs{
+							left: 10.5%;
+                            bottom: 0;
 						}
 					}
 				}
@@ -940,10 +943,12 @@ li.active{
 						    input[type="text"]{
 							    width: 28%;
 							    border-right: 2px solid #c2c8e2;
+                                padding-right: 10px;
 						    }
 						    input[type="email"]{
 							    width: 46%;
 							    border-right: 2px solid #c2c8e2;
+                                padding-right: 10px;
 						    }
 						    input[type="submit"]{
 							    font-weight: 600;
@@ -1344,3 +1349,7 @@ li.active{
 	// Main Content
 }
 
+
+.list-leftSide {
+    
+}

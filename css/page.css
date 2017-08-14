@@ -199,9 +199,9 @@ footer .footer-content .footer-slider ul {
         opacity: .8; }
       footer .footer-content .footer-slider ul li a img {
         cursor: pointer; }
-footer .footer-content .modal {
+footer .footer-content #modal {
   text-align: center; }
-  footer .footer-content .modal:before {
+  footer .footer-content #modal:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -210,7 +210,7 @@ footer .footer-content .modal {
     left: 0;
     background-color: #222845;
     opacity: 0.7; }
-  footer .footer-content .modal .modal-img {
+  footer .footer-content #modal #modal-img {
     position: absolute;
     width: 30%;
     top: 20%;
@@ -319,7 +319,7 @@ footer .footer-copyright {
     margin: 0;
     top: 55px;
     right: 70px; }
-    .header .container .modal .modal-dialog .login {
+    .header .container .modal .modal-dialog .login, .header .container .modal .modal-dialog .registration {
       width: 100%;
       top: 0;
       right: 0;
@@ -329,23 +329,23 @@ footer .footer-copyright {
       border-style: none;
       border-radius: 0;
       font-family: "Ubuntu", sans-serif; }
-      .header .container .modal .modal-dialog .login h3 {
+      .header .container .modal .modal-dialog .login h3, .header .container .modal .modal-dialog .registration h3 {
         font-size: 1.25em;
         font-weight: bold;
         color: #222845;
         margin-bottom: 30px; }
-      .header .container .modal .modal-dialog .login form {
+      .header .container .modal .modal-dialog .login form, .header .container .modal .modal-dialog .registration form {
         width: 100%;
         float: left;
         margin-bottom: 22px; }
-        .header .container .modal .modal-dialog .login form .signin {
+        .header .container .modal .modal-dialog .login form .signin, .header .container .modal .modal-dialog .registration form .signin {
           float: left;
           width: 100%; }
-          .header .container .modal .modal-dialog .login form .signin li {
+          .header .container .modal .modal-dialog .login form .signin li, .header .container .modal .modal-dialog .registration form .signin li {
             width: 100%;
             float: left;
             margin-bottom: 10px; }
-            .header .container .modal .modal-dialog .login form .signin li input {
+            .header .container .modal .modal-dialog .login form .signin li input, .header .container .modal .modal-dialog .registration form .signin li input {
               width: 100%;
               height: 43px;
               padding: 6px 21px;
@@ -354,13 +354,13 @@ footer .footer-copyright {
               font-style: italic;
               outline: none;
               font-weight: bold; }
-            .header .container .modal .modal-dialog .login form .signin li a {
+            .header .container .modal .modal-dialog .login form .signin li a, .header .container .modal .modal-dialog .registration form .signin li a {
               float: right;
               font-size: 0.95em;
               color: #222845;
               text-decoration: underline;
               text-transform: capitalize; }
-            .header .container .modal .modal-dialog .login form .signin li button {
+            .header .container .modal .modal-dialog .login form .signin li button, .header .container .modal .modal-dialog .registration form .signin li button {
               float: left;
               padding: 14px 35px 14px 35px;
               color: #ffffff;
@@ -371,15 +371,15 @@ footer .footer-copyright {
               line-height: 1;
               cursor: pointer;
               border-radius: 0; }
-      .header .container .modal .modal-dialog .login .social {
+      .header .container .modal .modal-dialog .login .social, .header .container .modal .modal-dialog .registration .social {
         width: 100%;
         float: left;
         margin-bottom: 15px; }
-        .header .container .modal .modal-dialog .login .social li {
+        .header .container .modal .modal-dialog .login .social li, .header .container .modal .modal-dialog .registration .social li {
           width: 33.33%;
           float: left;
           padding: 0px 10px; }
-          .header .container .modal .modal-dialog .login .social li button {
+          .header .container .modal .modal-dialog .login .social li button, .header .container .modal .modal-dialog .registration .social li button {
             float: left;
             width: 100%;
             padding: 12px;
@@ -391,23 +391,27 @@ footer .footer-copyright {
             border: none;
             cursor: pointer;
             border-radius: 0; }
-            .header .container .modal .modal-dialog .login .social li button i {
+            .header .container .modal .modal-dialog .login .social li button i, .header .container .modal .modal-dialog .registration .social li button i {
               font-size: 1.5em; }
-          .header .container .modal .modal-dialog .login .social li:nth-child(1) button {
+          .header .container .modal .modal-dialog .login .social li:nth-child(1) button, .header .container .modal .modal-dialog .registration .social li:nth-child(1) button {
             background-color: #46629c; }
-          .header .container .modal .modal-dialog .login .social li:nth-child(2) button {
+          .header .container .modal .modal-dialog .login .social li:nth-child(2) button, .header .container .modal .modal-dialog .registration .social li:nth-child(2) button {
             background-color: #00aced; }
-          .header .container .modal .modal-dialog .login .social li:nth-child(3) button {
+          .header .container .modal .modal-dialog .login .social li:nth-child(3) button, .header .container .modal .modal-dialog .registration .social li:nth-child(3) button {
             background-color: #ea634e; }
-      .header .container .modal .modal-dialog .login p {
+      .header .container .modal .modal-dialog .login p, .header .container .modal .modal-dialog .registration p {
         text-align: center;
         color: #424242;
         text-transform: none; }
-        .header .container .modal .modal-dialog .login p a {
+        .header .container .modal .modal-dialog .login p a, .header .container .modal .modal-dialog .registration p a {
           font-weight: bold;
           color: #424242;
           text-transform: capitalize;
-          margin-left: 5px; }
+          margin-left: 5px;
+          cursor: pointer; }
+    .header .container .modal .modal-dialog .registration {
+      position: absolute;
+      display: none; }
     .header .container .modal .modal-dialog .search {
       width: 100%;
       top: 0;
@@ -812,9 +816,9 @@ footer .footer-content .footer-slider ul {
         opacity: .8; }
       footer .footer-content .footer-slider ul li a img {
         cursor: pointer; }
-footer .footer-content .modal {
+footer .footer-content #modal {
   text-align: center; }
-  footer .footer-content .modal:before {
+  footer .footer-content #modal:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -823,7 +827,7 @@ footer .footer-content .modal {
     left: 0;
     background-color: #222845;
     opacity: 0.7; }
-  footer .footer-content .modal .modal-img {
+  footer .footer-content #modal #modal-img {
     position: absolute;
     width: 30%;
     top: 20%;
@@ -932,7 +936,7 @@ footer .footer-copyright {
     margin: 0;
     top: 55px;
     right: 70px; }
-    .header .container .modal .modal-dialog .login {
+    .header .container .modal .modal-dialog .login, .header .container .modal .modal-dialog .registration {
       width: 100%;
       top: 0;
       right: 0;
@@ -942,23 +946,23 @@ footer .footer-copyright {
       border-style: none;
       border-radius: 0;
       font-family: "Ubuntu", sans-serif; }
-      .header .container .modal .modal-dialog .login h3 {
+      .header .container .modal .modal-dialog .login h3, .header .container .modal .modal-dialog .registration h3 {
         font-size: 1.25em;
         font-weight: bold;
         color: #222845;
         margin-bottom: 30px; }
-      .header .container .modal .modal-dialog .login form {
+      .header .container .modal .modal-dialog .login form, .header .container .modal .modal-dialog .registration form {
         width: 100%;
         float: left;
         margin-bottom: 22px; }
-        .header .container .modal .modal-dialog .login form .signin {
+        .header .container .modal .modal-dialog .login form .signin, .header .container .modal .modal-dialog .registration form .signin {
           float: left;
           width: 100%; }
-          .header .container .modal .modal-dialog .login form .signin li {
+          .header .container .modal .modal-dialog .login form .signin li, .header .container .modal .modal-dialog .registration form .signin li {
             width: 100%;
             float: left;
             margin-bottom: 10px; }
-            .header .container .modal .modal-dialog .login form .signin li input {
+            .header .container .modal .modal-dialog .login form .signin li input, .header .container .modal .modal-dialog .registration form .signin li input {
               width: 100%;
               height: 43px;
               padding: 6px 21px;
@@ -967,13 +971,13 @@ footer .footer-copyright {
               font-style: italic;
               outline: none;
               font-weight: bold; }
-            .header .container .modal .modal-dialog .login form .signin li a {
+            .header .container .modal .modal-dialog .login form .signin li a, .header .container .modal .modal-dialog .registration form .signin li a {
               float: right;
               font-size: 0.95em;
               color: #222845;
               text-decoration: underline;
               text-transform: capitalize; }
-            .header .container .modal .modal-dialog .login form .signin li button {
+            .header .container .modal .modal-dialog .login form .signin li button, .header .container .modal .modal-dialog .registration form .signin li button {
               float: left;
               padding: 14px 35px 14px 35px;
               color: #ffffff;
@@ -984,15 +988,15 @@ footer .footer-copyright {
               line-height: 1;
               cursor: pointer;
               border-radius: 0; }
-      .header .container .modal .modal-dialog .login .social {
+      .header .container .modal .modal-dialog .login .social, .header .container .modal .modal-dialog .registration .social {
         width: 100%;
         float: left;
         margin-bottom: 15px; }
-        .header .container .modal .modal-dialog .login .social li {
+        .header .container .modal .modal-dialog .login .social li, .header .container .modal .modal-dialog .registration .social li {
           width: 33.33%;
           float: left;
           padding: 0px 10px; }
-          .header .container .modal .modal-dialog .login .social li button {
+          .header .container .modal .modal-dialog .login .social li button, .header .container .modal .modal-dialog .registration .social li button {
             float: left;
             width: 100%;
             padding: 12px;
@@ -1004,23 +1008,27 @@ footer .footer-copyright {
             border: none;
             cursor: pointer;
             border-radius: 0; }
-            .header .container .modal .modal-dialog .login .social li button i {
+            .header .container .modal .modal-dialog .login .social li button i, .header .container .modal .modal-dialog .registration .social li button i {
               font-size: 1.5em; }
-          .header .container .modal .modal-dialog .login .social li:nth-child(1) button {
+          .header .container .modal .modal-dialog .login .social li:nth-child(1) button, .header .container .modal .modal-dialog .registration .social li:nth-child(1) button {
             background-color: #46629c; }
-          .header .container .modal .modal-dialog .login .social li:nth-child(2) button {
+          .header .container .modal .modal-dialog .login .social li:nth-child(2) button, .header .container .modal .modal-dialog .registration .social li:nth-child(2) button {
             background-color: #00aced; }
-          .header .container .modal .modal-dialog .login .social li:nth-child(3) button {
+          .header .container .modal .modal-dialog .login .social li:nth-child(3) button, .header .container .modal .modal-dialog .registration .social li:nth-child(3) button {
             background-color: #ea634e; }
-      .header .container .modal .modal-dialog .login p {
+      .header .container .modal .modal-dialog .login p, .header .container .modal .modal-dialog .registration p {
         text-align: center;
         color: #424242;
         text-transform: none; }
-        .header .container .modal .modal-dialog .login p a {
+        .header .container .modal .modal-dialog .login p a, .header .container .modal .modal-dialog .registration p a {
           font-weight: bold;
           color: #424242;
           text-transform: capitalize;
-          margin-left: 5px; }
+          margin-left: 5px;
+          cursor: pointer; }
+    .header .container .modal .modal-dialog .registration {
+      position: absolute;
+      display: none; }
     .header .container .modal .modal-dialog .search {
       width: 100%;
       top: 0;
@@ -1674,6 +1682,7 @@ li.active {
   #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider {
     margin-bottom: 40px; }
     #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider .ole-slider-content {
+      height: 300px;
       margin: 0;
       overflow: hidden;
       padding: 0;
@@ -1694,17 +1703,19 @@ li.active {
             line-height: 30px;
             font-size: 1.1em;
             font-family: "Merriweather Sans", sans-serif; }
-    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider span.arrow {
+    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider i.arrow {
       position: absolute;
       top: 55%;
       cursor: pointer;
       color: #222845;
       font-size: 1.1em; }
-    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider .left-ole {
-      left: 42%;
+    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider #left-ole {
+      top: 110%;
+      left: 7.5%;
       margin-top: 2px; }
-    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider .right-ole {
-      right: 42%;
+    #home .our-latest-events .container .row .col-md-9 .ole-list ul.row li.col-md-4 .ole-slider #right-ole {
+      top: 110%;
+      left: 9.5%;
       margin-bottom: 2px; }
   #home .our-latest-events .container .row .col-md-3 .ole-counter {
     text-align: center;
@@ -1825,12 +1836,12 @@ li.active {
             float: right; }
             #home .what-clients-say .container .row .col-md-12 .wcs-slider .wcs-slider-content .wcs-slider-list .wcs-slide-holder .wcs-slides:nth-child(even) figure figcaption span {
               margin-left: 15px; }
-  #home .what-clients-say .container .row .col-md-12 .wcs-slider .left-wcs {
-    left: -40px;
-    top: 30%; }
-  #home .what-clients-say .container .row .col-md-12 .wcs-slider .right-wcs {
-    right: -40px;
-    top: 30%; }
+  #home .what-clients-say .container .row .col-md-12 .wcs-slider #left-wcs {
+    left: 9.5%;
+    bottom: 0; }
+  #home .what-clients-say .container .row .col-md-12 .wcs-slider #right-wcs {
+    left: 10.5%;
+    bottom: 0; }
 #home .our-history {
   padding: 70px 0;
   background: url(../img/home/15.png);
@@ -1912,10 +1923,12 @@ li.active {
         font-family: "Merriweather Sans", sans-serif; }
       #home .our-history .container .row .col-md-7 .oh-subscribe form input[type="text"] {
         width: 28%;
-        border-right: 2px solid #c2c8e2; }
+        border-right: 2px solid #c2c8e2;
+        padding-right: 10px; }
       #home .our-history .container .row .col-md-7 .oh-subscribe form input[type="email"] {
         width: 46%;
-        border-right: 2px solid #c2c8e2; }
+        border-right: 2px solid #c2c8e2;
+        padding-right: 10px; }
       #home .our-history .container .row .col-md-7 .oh-subscribe form input[type="submit"] {
         font-weight: 600;
         text-transform: uppercase;
